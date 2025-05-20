@@ -1,0 +1,838 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ja" xml:lang="ja" data-mc-search-type="NGram" data-mc-help-system-file-name="5804sb0002.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="bSolid|[%=COMUNI/Stringhe/Ambienti.Amb_CadCam%]|[%=TITOLI/CONTAINER-TOC.variab%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>変数に関する基本概念</title>&#160;<link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" /><link href="../../../Resources/Stylesheets/KC-HTML5.css" rel="stylesheet" /><link href="../../../Resources/TableStyles/Puls-Icone-Tasti.css" rel="stylesheet" /><link href="../../../Resources/TableStyles/GenericaConFiletti.css" rel="stylesheet" /><script src="../../../Resources/Scripts/custom.modernizr.js"></script><script src="../../../Resources/Scripts/jquery.min.js"></script><script src="../../../Resources/Scripts/require.min.js"></script><script src="../../../Resources/Scripts/require.config.js"></script><script src="../../../Resources/Scripts/foundation.min.js"></script><script src="../../../Resources/Scripts/plugins.min.js"></script><script src="../../../Resources/Scripts/MadCapAll.js"></script></head>
+    <body>
+        <div style="background-repeat: no-repeat;background-color: #272727;background-position-x: center;padding-left: 0px;padding-right: 6px;padding-top: 6px;padding-bottom: 0px;border-left-style: none;border-left-width: 1px;border-right-style: none;border-right-width: 1px;border-top-style: none;border-top-width: 1px;border-bottom-style: none;border-bottom-width: 2px;border-bottom-color: #272727;">
+            <p class="XMasterDX"> <a href="../../../MODELLI-Snippet-sinc/MODELLI-COPERTINE/IndirizzoCostruttore.htm" class="MCTopicPopup MCTopicPopupHotSpot a aHyperMaster" title="製造業者の住所" data-mc-width="700px" data-mc-height="500px">BIESSE S.p.A.</a> © - <span class="SystemShortDate">2019/05/07</span></p>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="2" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                </div>
+            </div>
+        </div>
+        <h2 class="TIT-livello1"><a name="Levariable"></a>変数に関する基本概念<a name="CSH"></a></h2>
+        <hr class="RIGAINIZIALE" width="100%" size="0" align="center" />
+        <div class="MCDropDown MCDropDown_Closed dropDown dropDownICONALinkArgo"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-Proc MCDropDownHotSpot_ MCDropDownHotSpot_ICONALinkArgo MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />関連項目</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="../02-UTILIZZO/gestioneVariabili.htm" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" title="その手続きに必要な" data-mc-width="700px" data-mc-height="500px">変数を管理する</a>
+                        </td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="../02-UTILIZZO/Proced_programmaz.htm#b748kc0003_3737411565_1088210" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" title="そのプログラミング手続きに必要な" data-mc-width="700px" data-mc-height="500px">プログラムをパラメーター化する</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr class="RIGAINIZIALE" width="100%" size="0" align="center" />
+        <h4><a name="b746kc0001_1613647075_1102867"></a>導入<a name="kanchor280"></a><a name="kanchor281"></a><a name="kanchor282"></a><a name="kanchor283"></a></h4>
+        <p>変数という用語は、異なる<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">値<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>事前定義/プリセット。要求された情報が入力されていない場合、制御に便利な標準的な情報。</span></a>をとりうる、サイズや量のことを意味します。 </p>
+        <p><b>bSolid</b> は、2つのタイプの変数を区別します： <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b746kc0001_1613647075_1103143">"グローバル"</a> および <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b746kc0001_1613647075_1103141">"ドキュメント"</a>。</p>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;"> <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b746kc0001_1613647075_1103143">"グローバル"</a> 型変数はすべてのプログラムで有効です。どの変更も、その変数が現れるすべてのプログラムに影響を与えます;それゆえ、このタイプの変数を変更することは避けたほうが良いでしょう。</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;"> <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b746kc0001_1613647075_1103141">"ドキュメント"</a>この型変数はそれが作成されたプログラムでのみ有効です。</td>
+            </tr>
+        </table>
+        <p>この変数は関連する<a href="../../../_GlossaryDiProgetto/infissi/H-tronchetto.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">セクション</a>で管理（作成、削除、命令、保存など）されます。これらを見るために、<a href="../../../_GlossaryDiProgetto/SW-generale/barraStato.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ステータスバー</a>のボタン<span style="font-weight: bold;" class="COMUNI/strumenti/puls-testualipuls-Variabili">変数</span> を<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">クリック<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>（1）画面上のポインタの下にあるオブジェクト（アイコン、ボタンなど）の上でマウスボタンを押す（そしてすぐに離す）行為を示します。（2）（動詞）選択したコマンドの機能を有効にするため、マウスの左ボタンを押してすぐに離します。</span></a>します。</p>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">334.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="1.">変数のセクション<br /><br /><img src="../../../FIGURE/12-videateConPaline/arte4/b11b0646-P.jpg" class="Vid_GR_Autom" /></td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 32px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">A. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="A. "><a href="#b746kc0001_1613647075_1106722" class="MCXref xref">コマンドボタン</a>
+                </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 32px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">B. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="B. "><a href="#b746kc0001_1613647075_1103127" class="MCXref xref">テーブルのコマンド</a> </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 32px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">C. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="C. "><a href="#b746kc0001_1613647075_1106908" class="MCXref xref">変数テーブル</a> </td>
+            </tr>
+        </table>
+        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadTIT_LivelloS"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-LivelloS MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="b746kc0001_1613647075_1106722"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-LivelloS MCDropDownHotSpot_">コマンドボタン</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="TableStyle-Puls-Icone-Tasti" style="width: 628px;mc-table-style: url('../../../Resources/TableStyles/Puls-Icone-Tasti.css');" cellspacing="0">
+                    <col width="76px" class="TableStyle-Puls-Icone-Tasti-Column-Column1" />
+                    <col width="552px" class="TableStyle-Puls-Icone-Tasti-Column-Column2" />
+                    <thead>
+                        <tr class="TableStyle-Puls-Icone-Tasti-Head-Header1">
+                            <td class="TableStyle-Puls-Icone-Tasti-HeadE-Column1-Header1">
+                                <p>&#160;</p>
+                            </td>
+                            <td class="TableStyle-Puls-Icone-Tasti-HeadD-Column2-Header1">
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Puls-Icone-Tasti-Body-Body1">
+                            <td class="TableStyle-Puls-Icone-Tasti-BodyE-Column1-Body1">
+                                <p>
+                                    <img src="../../../FIGURE/15-icone/b15b0001/Selection_Add.png" style="width: 30.71925px;height: 30.71925px;" class="Icona_TAB_32px" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Puls-Icone-Tasti-BodyD-Column2-Body1">
+                                <p>新しい変数を作成し、テーブルに挿入します。</p>
+                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />ダイアログボックスの説明<span class="_REGbSOLID/finestrefin-NuovaVar">新しい変数</span></a></span>
+                                    <div class="MCDropDownBody dropDownBody">
+                                        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                            <col style="width: 0px;" />
+                                            <col style="width: 32px;" />
+                                            <col style="width: auto;" />
+                                            <tr>
+                                                <td valign="top" />
+                                                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                                                </td>
+                                                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;"><a href="#b746kc0001_1613647075_1108349" class="MCXref xref">名前</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                            <col style="width: 0px;" />
+                                            <col style="width: 32px;" />
+                                            <col style="width: auto;" />
+                                            <tr>
+                                                <td valign="top" />
+                                                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                                                </td>
+                                                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;"><a href="#b746kc0001_1613647075_1103148" class="MCXref xref">表示</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                            <col style="width: 0px;" />
+                                            <col style="width: 32px;" />
+                                            <col style="width: auto;" />
+                                            <tr>
+                                                <td valign="top" />
+                                                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                                                </td>
+                                                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">測定単位：参照します<a href="#Categori" class="MCXref xref">カテゴリ</a></td>
+                                            </tr>
+                                        </table>
+                                        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                            <col style="width: 0px;" />
+                                            <col style="width: 32px;" />
+                                            <col style="width: auto;" />
+                                            <tr>
+                                                <td valign="top" />
+                                                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                                                </td>
+                                                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;"><a href="#b746kc0001_1613647075_1103159" class="MCXref xref">コンテキスト</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                            <col style="width: 0px;" />
+                                            <col style="width: 32px;" />
+                                            <col style="width: auto;" />
+                                            <tr>
+                                                <td valign="top" />
+                                                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                                                </td>
+                                                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">説明</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Puls-Icone-Tasti-Body-Body1">
+                            <td class="TableStyle-Puls-Icone-Tasti-BodyE-Column1-Body1">
+                                <p>
+                                    <img src="../../../FIGURE/15-icone/b15b0001/Selection_Remove.png" style="width: 30.71925px;height: 30.71925px;" class="Icona_TAB_32px" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Puls-Icone-Tasti-BodyD-Column2-Body1">
+                                <p>テーブルから選択した変数を削除します。</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Puls-Icone-Tasti-Body-Body1">
+                            <td class="TableStyle-Puls-Icone-Tasti-BodyE-Column1-Body1">
+                                <p>
+                                    <img src="../../../FIGURE/15-icone/b15b0001/Draw_Text_Left.png" style="width: 30.71925px;height: 30.71925px;" class="Icona_TAB_32px" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Puls-Icone-Tasti-BodyD-Column2-Body1">
+                                <p>新しい変数を作成し、選択されたものの上に挿入します。</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Puls-Icone-Tasti-Body-Body1">
+                            <td class="TableStyle-Puls-Icone-Tasti-BodyE-Column1-Body1">
+                                <p>
+                                    <img src="../../../FIGURE/15-icone/b15b0001/move_down.png" style="width: 30.71925px;height: 30.71925px;" class="Icona_TAB_32px" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Puls-Icone-Tasti-BodyD-Column2-Body1">
+                                <p>選択された変数をスライドさせて、前の変数の上に移動させます。 </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Puls-Icone-Tasti-Body-Body1">
+                            <td class="TableStyle-Puls-Icone-Tasti-BodyE-Column1-Body1">
+                                <p>
+                                    <img src="../../../FIGURE/15-icone/b15b0001/move_up.png" style="width: 30.71925px;height: 30.71925px;" class="Icona_TAB_32px" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Puls-Icone-Tasti-BodyD-Column2-Body1">
+                                <p>選択された変数をスライドさせて、後の変数の下に移動させます。 </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Puls-Icone-Tasti-Body-Body1">
+                            <td class="TableStyle-Puls-Icone-Tasti-BodyB-Column1-Body1">
+                                <p>
+                                    <img src="../../../FIGURE/15-icone/b15b0007/Machining_Calculate.png" style="width: 30.71925px;height: 30.71925px;" class="Icona_TAB_32px" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Puls-Icone-Tasti-BodyA-Column2-Body1">
+                                <p>すべての加工作業をアップデートさせます。</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadTIT_LivelloS"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-LivelloS MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="b746kc0001_1613647075_1103127"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-LivelloS MCDropDownHotSpot_">テーブルのコマンド</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <h5 class="TIT-Parametri">自動再計算<a name="b746kc0001_1613647075_93642"></a></h5>
+                <p class="TES_Desc-Campi">値が変数テーブルで変更されたときはいつでも、すべての加工作業の自動のアップデートを許可します。</p>
+                <div class="MCDropDown MCDropDown_Closed dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />オプションから</a></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="TES_Desc-Opzioni">加工作業は、環境<span class="COMUNI/Stringhe/AmbientiAmb_Impostazioni">一般設定</span>の中の同じ名称のデータ<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">フィールド<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>データまたはコマンドを含む所定のエリア（データフィールドまたはコマンドフィールド）。</span></a>で定義されている設定に基づいてアップデートされます。</p>
+                    </div>
+                </div>
+                <div class="MCDropDown MCDropDown_Closed dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />常に</a></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="TES_Desc-Opzioni">加工作業は常にアップデートされています。</p>
+                    </div>
+                </div>
+                <div class="MCDropDown MCDropDown_Closed dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />シンプルな加工作業用にのみ</a></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="TES_Desc-Opzioni">必要な計算が複雑すぎないときにのみ、加工作業はアップデートされます。この場合には、複雑な加工作業はアップデートされません。単純な加工作業とは： 切削、ボアリング、切断です。</p>
+                    </div>
+                </div>
+                <div class="MCDropDown MCDropDown_Closed dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />決してない</a></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="TES_Desc-Opzioni">加工作業はアップデートされていません。修正フェーズ中は、アクティブな加工作業のみがアップデートされます（すなわち、<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">データエリア<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>データ入力用の特定のエリアを定義する一般的な用語です。</span></a>で表示されているものです）。 </p>
+                    </div>
+                </div>
+                <h5 class="TIT-Parametri">ドキュメント<a name="b746kc0001_1613647075_1103141"></a></h5>
+                <p class="TES_Desc-Campi">タイプ変数<a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b746kc0001_1613647075_1103141">"ドキュメント"</a>の表示を有効（ボックスにチェックを入れる）または無効にします。</p>
+                <h5 class="TIT-Parametri">グローバル<a name="b746kc0001_1613647075_1103143"></a></h5>
+                <p class="TES_Desc-Campi">タイプ変数<a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b746kc0001_1613647075_1103143">"グローバル"</a>の表示を有効（ボックスにチェックを入れる）または無効にします。</p>
+            </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadTIT_LivelloS"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-LivelloS MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="b746kc0001_1613647075_1106908"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-LivelloS MCDropDownHotSpot_">変数テーブル</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>名称の前の小さい、淡い青色の長方形は、作成された変数がどこかで使用されていることを表しています。名称の前の小さい、黒色の長方形は、作成された変数がどこにも使用されていないことを表しています。</p>
+                <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">335.</span>
+                        </td>
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="2.">テーブル<br /><br /><img src="../../../FIGURE/12-videateConPaline/arte4/b11b0637-P.jpg" class="Vid_GR_Autom" /></td>
+                    </tr>
+                </table>
+                <p class="TES_LegendaFigure">A.&#160; 小さい淡い青色の長方形、<br />B.&#160; 小さい黒色の長方形。 </p>
+                <h5 class="TIT-Parametri">名前<a name="b746kc0001_1613647075_1108349"></a></h5>
+                <p><span class="COMUNI/Descrizioni/Ut-RegoleVarName">変数の名称。</span>
+                </p>
+                <p data-mc-conditions="">名称を同じくする変数を作成することができますが、データフィールド<span class="_CadCam/stringhecamp-ambito">コンテキスト</span>のオプションは異なるものになります 。 </p>
+                <p data-mc-conditions="">どちらを使用すべきかを決定する（<span class="_CadCam/stringheopz-glob">グローバル</span>または<span class="_CadCam/stringheopz-doc"><a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">ドキュメント<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>形状パラメーターと技術パラメーターが挿入される電子ワークシート。</span></a></span>）ために、変数は次の文字により優先される必要があります：</p>
+                <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><span style="font-weight: bold;" class="NO_TRADURRE/CODICIv-doc">@D.</span>： 使用される変数がその<span class="_CadCam/stringheopz-doc">ドキュメント</span>タイプであることを表示します。</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><span style="font-weight: bold;" class="NO_TRADURRE/CODICIv-glob">@G.</span>： 使用される変数がその<span class="_CadCam/stringheopz-glob">グローバル</span>タイプであることを表示します。</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">336.</span>
+                        </td>
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="3.">例えば、2つの変数が作られたと仮定しましょう <span class="NO_TRADURRE/CODICIv-lun">LUN</span>、ひとつは900の値をもつタイプ <span class="_CadCam/stringheopz-glob">グローバル</span> のもの、もう一つは500の値をもつ<span class="_CadCam/stringheopz-doc">ドキュメント</span>タイプのもの<br />。 このタイプの変数を使用するためには<span class="_CadCam/stringheopz-doc">ドキュメント</span>、要求されるフィールドに "<span style="font-weight: bold;" class="NO_TRADURRE/CODICIv-doc">@D.</span><span style="font-weight: bold;" class="NO_TRADURRE/CODICIv-lun">LUN</span>" に入力を行います。</td>
+                    </tr>
+                </table>
+                <p class="TES_LegendaFigure">
+                    <img src="../../../FIGURE/12-videateConPaline/arte4-D/d12b0058.png" />
+                </p>
+                <h5 class="TIT-Parametri">表示<a name="b746kc0001_1613647075_1103148"></a></h5>
+                <p class="TES_Desc-Campi">絶対数値、公式、変数、算術演算子などを使用した式（<a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b746kc0001_1613647075_1091582">"算術演算子変数："</a>を参照します）。このデータフィールドに挿入される各変数は、それを含む変数の前に作成されたものである必要があります。</p>
+                <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">337.</span>
+                        </td>
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="4.">例：機能するためには、VARAB変数（その式に変数VARX01とVARX02が含まれています）を、それが含む2つの変数の後に挿入する必要があります。<br /><br /><img src="../../../FIGURE/11-videatePorzioni/arte4/b11b0637.gif" class="Vid_GR_Autom" /></td>
+                    </tr>
+                </table>
+                <h5 class="TIT-Parametri"><a name="Valore"></a>値</h5>
+                <p class="TES_Desc-Campi">前のフィールドに挿入された式の数値。</p>
+                <h5 class="TIT-Parametri" data-mc-conditions=""><a name="Categori"></a>カテゴリ</h5>
+                <p class="TES_Desc-Campi" data-mc-conditions=""><span class="COMUNI/Descrizioni/Ut-RegoleunitaMis">測定単位を選択するために使用されます。</span>
+                </p>
+                <h5 class="TIT-Parametri">コンテキスト<a name="b746kc0001_1613647075_1103159"></a></h5>
+                <p class="TES_Desc-Campi">適用する場所を定義する変数のタイプ - アクティブなドキュメント内のみ、またはどこでも。</p>
+            </div>
+        </div>
+        <h4><a name="b746kc0001_1613647075_1091582"></a>算術演算子変数：<a name="kanchor284"></a></h4>
+        <p>通常の英数字以外にも、計算文字および特定の計算機能を使用して、変数またはデータフィールドの値を定義することもできます。</p>
+        <h4 class="TIT-livelloS">標準および高度算術演算子のリスト</h4>
+        <table class="TableStyle-GenericaConFiletti" style="width: 628px;mc-table-style: url('../../../Resources/TableStyles/GenericaConFiletti.css');" cellspacing="0">
+            <col width="132px" class="TableStyle-GenericaConFiletti-Column-Column1" />
+            <col width="265px" class="TableStyle-GenericaConFiletti-Column-Column1" />
+            <col width="231px" class="TableStyle-GenericaConFiletti-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-GenericaConFiletti-Head-Header1">
+                    <td class="TableStyle-GenericaConFiletti-HeadE-Column1-Header1">
+                        <p class="TITper-cella">文字</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-HeadE-Column1-Header1">
+                        <p class="TITper-cella">数学的演算</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-HeadD-Column1-Header1">
+                        <p class="TITper-cella">構文例</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p class="TITper-cella">+</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>加算</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p><b>x+x</b> または（<b>x）+（x）</b></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p class="TITper-cella">-</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>減算</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p><b>x-x</b> または（<b>x）-（x）</b></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p class="TITper-cella">*</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>乗算</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p><b>x*x</b> または（<b>x）*（x）</b></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p class="TITper-cella">/</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>除算</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p><b>x/x</b> または（<b>x）/（x）</b></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyB-Column1-Body1">
+                        <p class="TITper-cella">^</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyB-Column1-Body1">
+                        <p>累乗</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyA-Column1-Body1">
+                        <p><b>x^2</b>（xを2乗する）</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="TIT-livelloS">比較演算子のリスト</h4>
+        <table class="TableStyle-GenericaConFiletti" style="width: 628px;mc-table-style: url('../../../Resources/TableStyles/GenericaConFiletti.css');" cellspacing="0">
+            <col width="132px" class="TableStyle-GenericaConFiletti-Column-Column1" />
+            <col width="265px" class="TableStyle-GenericaConFiletti-Column-Column1" />
+            <col width="231px" class="TableStyle-GenericaConFiletti-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-GenericaConFiletti-Head-Header1">
+                    <td class="TableStyle-GenericaConFiletti-HeadE-Column1-Header1">
+                        <p class="TITper-cella">文字</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-HeadE-Column1-Header1">
+                        <p class="TITper-cella">演算子の説明</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-HeadD-Column1-Header1">
+                        <p class="TITper-cella">構文例</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>=</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>～と等しい</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>x=10</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>&gt;=</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>～以上（～と等しいか、またはより大きい）</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>x&gt;=10</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>&lt;=</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>～以下（～と等しいか、またはより小さい）</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>x&lt;=10</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>&lt;&gt;</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>以外</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>x&lt;&gt;10</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>&lt;</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>～以下（～と等しいか、またはより小さい）</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>x&lt;10</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>&gt;</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>～以上（～と等しいか、またはより大きい）</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>x&gt;10</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>~</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>（Alt + 126）とは異なります</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>x~10</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyB-Column1-Body1">
+                        <p>ISPOSITIVE</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyB-Column1-Body1">
+                        <p>（x）の数値が正の数か負の数かを確認します。 正の数であれば0を、負の数であれば1に修正します。</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyA-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>ISPOSITIVE（x）</b>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="TIT-livelloS">主たる計算機能のリスト</h4>
+        <table class="TableStyle-GenericaConFiletti" style="width: 628px;mc-table-style: url('../../../Resources/TableStyles/GenericaConFiletti.css');" cellspacing="0">
+            <col width="132px" class="TableStyle-GenericaConFiletti-Column-Column1" />
+            <col width="265px" class="TableStyle-GenericaConFiletti-Column-Column1" />
+            <col width="231px" class="TableStyle-GenericaConFiletti-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-GenericaConFiletti-Head-Header1">
+                    <td class="TableStyle-GenericaConFiletti-HeadE-Column1-Header1">
+                        <p class="TITper-cella">機能</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-HeadE-Column1-Header1">
+                        <p class="TITper-cella">数学的演算</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-HeadD-Column1-Header1">
+                        <p class="TITper-cella">構文例</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>ABS</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>数の絶対値を計算する（+/-）ために</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>ABS（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>ARCTAN</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>アーク・タンジェントを計算するために</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>ARCTAN（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>COS</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>コサインを計算するために</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>COS（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>INT</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>小数部分を計算するために</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>INT（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>SIN</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>サインを計算するために</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>SIN（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>SQR</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>2乗根を計算するために</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>SQR（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>TAN</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>タンジェントを計算するために</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>TAN（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>ARCSIN</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>アークサイン</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>ARCSIN（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>アークコサイン</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>アークサイン</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>ARCCOS（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>LN</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>自然対数</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>LN（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>LOG</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>10底のログ</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>LOG（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>RAD</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>度からラジアンへの変換</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>RAD（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>DEG</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>ラジアンから度への変換</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p class="TES" style="font-weight: bold;"><b>DEG（x）</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyB-Column1-Body1">
+                        <p>PGR</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyB-Column1-Body1">
+                        <p>Pi</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyA-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="TIT-livelloS">論理演算子のリスト</h4>
+        <table class="TableStyle-GenericaConFiletti" style="width: 628px;mc-table-style: url('../../../Resources/TableStyles/GenericaConFiletti.css');" cellspacing="0">
+            <col width="132px" class="TableStyle-GenericaConFiletti-Column-Column1" />
+            <col width="265px" class="TableStyle-GenericaConFiletti-Column-Column1" />
+            <col width="231px" class="TableStyle-GenericaConFiletti-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-GenericaConFiletti-Head-Header1">
+                    <td class="TableStyle-GenericaConFiletti-HeadE-Column1-Header1">
+                        <p class="TITper-cella">文字</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-HeadE-Column1-Header1">
+                        <p class="TITper-cella">演算子の説明</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-HeadD-Column1-Header1">
+                        <p class="TITper-cella">構文例</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>&amp;</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyE-Column1-Body1">
+                        <p>論理積</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyD-Column1-Body1">
+                        <p>（x&gt;10）<b>&amp;（</b>y&lt;20）</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-GenericaConFiletti-Body-Body1">
+                    <td class="TableStyle-GenericaConFiletti-BodyB-Column1-Body1">
+                        <p>|</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyB-Column1-Body1">
+                        <p>または論理積</p>
+                    </td>
+                    <td class="TableStyle-GenericaConFiletti-BodyA-Column1-Body1">
+                        <p>（x&gt;10）<b>|（</b>y&lt;20）</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4><a name="b746kc0001_1613647075_1107142"></a>システム変数<a name="kanchor285"></a></h4>
+        <p>変数テーブルの文字列で使用できるシステム変数は次のとおりです：</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown dropDownBox_rientrato"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_Box_rientrato MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />F： </a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>フェイスの変数、そのあとにフェイスの番号が続きます（たとえばF6はフェイス番号6）。</p>
+            </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown dropDownBox_rientrato"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_Box_rientrato MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />LX： </a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>X軸に沿ったフェイスのサイド（長さ）。</p>
+            </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown dropDownBox_rientrato"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_Box_rientrato MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />LY： </a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>Y軸に沿ったフェイスのサイド（高さ）。</p>
+            </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown dropDownBox_rientrato" style="color: #ff00ff;"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_Box_rientrato MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />LA： </a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>フェイス傾斜角</p>
+                <p>例：フィールド<a href="#b746kc0001_1613647075_1103148" class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento">"表示"</a>に文字列P1010.F6.LA（ピース名、フェイスの番号、および角度）を挿入すると、フィールド<a href="#Valore" class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento">"値"</a>には作成されたフェイスの傾斜角を参照するデータ項目が表示されます。 </p>
+            </div>
+        </div>
+        <table style="width: 100%;border-spacing: 0px 0px;margin-left: 0;margin-right: auto;" class="PerMasterWeb">
+            <col />
+            <col />
+            <col style="width: 70px;" />
+            <tbody>
+                <tr>
+                    <td class="PerMasterweb">
+                    </td>
+                    <td class="PerMasterweb">
+                        <p class="XMasterDX"><span style="font-weight: bold;" class="MODELLI/Variablili-MasterEdizione">エディション：</span> <span class="MODELLI/Variablili-MasterN-Edizione">3.0</span></p>
+                    </td>
+                    <td class="PerMasterweb">
+                        <p class="XMasterDX">
+                            <img src="../../../Resources/Images/MODELLI/Imm-layout/logo_per_BSolid.png" class="Imm_Logo" style="height: 32px;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

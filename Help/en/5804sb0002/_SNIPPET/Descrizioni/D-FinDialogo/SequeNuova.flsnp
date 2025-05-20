@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><html MadCap:lastBlockDepth="6" MadCap:lastHeight="519" MadCap:lastWidth="1035" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<head>
+</head>
+<body>
+<p class="TES">
+<img src="../../../FIGURE/10-videateComplete/arte4/b10b0396.gif" class="VidPor01" />
+<br />
+</p>
+<MadCap:dropDown>
+<MadCap:dropDownHead>
+<MadCap:dropDownHotspot class="4_Opzioni">Sequence name</MadCap:dropDownHotspot>
+</MadCap:dropDownHead>
+<MadCap:dropDownBody>
+<p class="TES_Desc-Campi">Sequence name.</p>
+</MadCap:dropDownBody>
+</MadCap:dropDown>
+<MadCap:dropDown>
+<MadCap:dropDownHead>
+<MadCap:dropDownHotspot class="4_Opzioni">Sequence type</MadCap:dropDownHotspot>
+</MadCap:dropDownHead>
+<MadCap:dropDownBody>
+<p class="TES_Desc-Campi">Sequence type. Choose the type in the drop-down menu.</p>
+<MadCap:dropDown class="OpzioniBoxRientro">
+<MadCap:dropDownHead>
+<MadCap:dropDownHotspot class="4_Opzioni"> Generic</MadCap:dropDownHotspot>
+</MadCap:dropDownHead>
+<MadCap:dropDownBody>
+<p class="TES_Desc-Opzioni">Generic machining operation sequence. In this case, you can insert all the required machining operations.</p>
+</MadCap:dropDownBody>
+</MadCap:dropDown>
+</MadCap:dropDownBody>
+</MadCap:dropDown>
+<MadCap:dropDown>
+<MadCap:dropDownHead>
+<MadCap:dropDownHotspot class="4_Opzioni">Description</MadCap:dropDownHotspot>
+</MadCap:dropDownHead>
+<MadCap:dropDownBody>
+<p class="TES_Desc-Campi">Comment or description of the sequence.</p>
+</MadCap:dropDownBody>
+</MadCap:dropDown>
+<MadCap:dropDown>
+<MadCap:dropDownHead>
+<MadCap:dropDownHotspot class="4_Opzioni">Image</MadCap:dropDownHotspot>
+</MadCap:dropDownHead>
+<MadCap:dropDownBody>
+<p class="TES_Desc-Campi">Choose an image to be associated with the sequence. </p>
+</MadCap:dropDownBody>
+</MadCap:dropDown>
+</body>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="5804sb0002.xml" data-mc-path-to-help-system="../../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="bSolid|[%=COMUNI/Stringhe/Ambienti.Amb_CadCam%]|[%=TITOLI/CONTAINER-TOC.progettdxf%]|[%=System.LinkedTitle%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Designing the layer profiles and syntax</title>&#160;<link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" /><link href="../../../../Resources/Stylesheets/KC-HTML5.css" rel="stylesheet" /><script src="../../../../Resources/Scripts/custom.modernizr.js"></script><script src="../../../../Resources/Scripts/jquery.min.js"></script><script src="../../../../Resources/Scripts/require.min.js"></script><script src="../../../../Resources/Scripts/require.config.js"></script><script src="../../../../Resources/Scripts/foundation.min.js"></script><script src="../../../../Resources/Scripts/plugins.min.js"></script><script src="../../../../Resources/Scripts/MadCapAll.js"></script></head>
+    <body>
+        <div style="background-repeat: no-repeat;background-color: #272727;background-position-x: center;padding-left: 0px;padding-right: 6px;padding-top: 6px;padding-bottom: 0px;border-left-style: none;border-left-width: 1px;border-right-style: none;border-right-width: 1px;border-top-style: none;border-top-width: 1px;border-bottom-style: none;border-bottom-width: 2px;border-bottom-color: #272727;">
+            <p class="XMasterDX"> <MadCap:conditionalText data-mc-conditions="Cond_lingue.Bulgaro,Cond_lingue.Ceco,Cond_lingue.Cinese,Cond_lingue.Danese,Cond_lingue.Ebraico,Cond_lingue.Croato,Cond_lingue.Estone,Cond_lingue.Finlandese,Cond_lingue.Francese,Cond_lingue.Greco,Cond_lingue.Inglese,Cond_lingue.Lettone,Cond_lingue.Norvegese,Cond_lingue.Olandese,Cond_lingue.Polacco,Cond_lingue.Rumeno,Cond_lingue.Russo,Cond_lingue.Slovacco,Cond_lingue.Sloveno,Cond_lingue.Spagnolo,Cond_lingue.Svedese,Cond_lingue.Tedesco,Cond_lingue.Turco,Cond_lingue.Ungherese"><span class="MODELLI/Variablili-Masteristrud-trad">Translation of the original instructions</span> - </MadCap:conditionalText><a href="../../../../MODELLI-Snippet-sinc/MODELLI-COPERTINE/IndirizzoCostruttore.htm" class="MCTopicPopup MCTopicPopupHotSpot a aHyperMaster" title="Manufacturer's address" data-mc-width="700px" data-mc-height="500px">BIESSE S.p.A.</a> © - <span class="SystemShortDate">11/12/2018</span></p>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="2" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                </div>
+            </div>
+        </div>
+        <h3 class="TIT-livello2"><a name="Progetta"></a>Designing the layer profiles and syntax</h3>
+        <hr class="RIGAINIZIALE" width="100%" size="0" align="center" />
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-Proc MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Description of the topics</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>The following topics explain how to design the Biesse Works <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">DXF<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Acronym of "Drawing Interchange Format". Type of two-dimensional Vector graphics file used as a graphic data exchange format between the various CAD systems.</span></a> files to be imported.</p>
+                <p>The design of the DXF files, and the relative <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">layer<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Levels of a document created to carry out a drawing.</span></a> syntax, must respect the default keys indicated in the relevant table of the <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170912" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Layer parameters"</a> <a href="../../../../_GlossaryDiProgetto/infissi/H-tronchetto.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">section</a> of the <span class="_IMPOSTAZIONI/stringhepuls-definizioneDXF">DXF definition</span> <a href="../../../../_GlossaryDiProgetto/SW-generale/finestraDialogo.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">dialogue box</a>.</p>
+            </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Open dropDown dropDownICONALinkArgo"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-Proc MCDropDownHotSpot_ MCDropDownHotSpot_ICONALinkArgo MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Related topics</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="../01Gestione-DXF.htm#Struttur" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Structure of the DXF files to be imported</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr class="RIGAINIZIALE" width="100%" size="0" align="center" />
+        <h4><a name="progettazionefiledxffm_2927705210_1170433"></a>Creating the piece</h4>
+        <p>The piece must be geometrically represented by a closed rectangle, using the <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">command<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Tool designed to perform a specific function/operation. For example, the “Print” command allows you to print a document.</span></a> for generating closed polygons, lines or <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">polylines<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Set of consecutive straight lines, connected to each other at the ends.</span></a>. </p>
+        <p>To create the piece, use one of the following methods:</p>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">using a single rectangle, to which the three dimensions (width, thickness, height) are assigned. The dimensions relating to the length of the piece along the X and Y axes are provided directly by the geometry, whereas the thickness must be inserted in the layer associated with the rectangle. <br />If the depth is not specified it will be taken to be zero.</td>
+            </tr>
+        </table>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p class="TEScon-rientro">To draw a piece with dimensions 1000 x 300 x 30.20 (mm), it will be necessary to associate a rectangle 1000mm wide and 300mm high with the layer <b>TCHW0B8D3020</b>:</p>
+                <p class="TEScon-rientro">TCH is the prefix identifying the BIESSE layer.</p>
+                <p class="TEScon-rientro">W0: W = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1169990" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Face"</a>; 0 = face number.</p>
+                <p class="TEScon-rientro">B8: B = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>; 8 = identifies the piece.</p>
+                <p class="TEScon-rientro">D3020: D = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170044" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Depth"</a>; 3020 identifies the <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">value<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Predefined / pre-set. Standard information useful for the control, if the requested information is not entered.</span></a>, i.e. 30.20 mm (the last two numbers represent the obligatory decimals).</p>
+                <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">346.</span>
+                        </td>
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="1.">
+                            <br />
+                            <img src="../../../../FIGURE/08/arte4-D/d08b0065.png" class="Vid_GR_Autom" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">Via several rectangles, to create the standard sides of the piece, or lines inside the zero side associated with rectangles in order to create the general sides of the piece. </td>
+            </tr>
+        </table>
+        <p class="TEScon-rientro">A layer must be associated with each side created.</p>
+        <div class="MCDropDown MCDropDown_Open dropDown dropDownBox_rientrato"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCDropDownHotSpot_Box_rientrato MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />See also:</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="#progettazionefiledxffm_2927705210_1170464" class="MCXref xref">Creating and naming standard panel faces </a>
+                        </td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="#progettazionefiledxffm_2927705210_1170576" class="MCXref xref">Creating and naming generic faces</a>. </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Open dropDown dropDownNOTE"><span class="MCDropDownHead dropDownHead dropDownHeadNOTE"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotNotaInfo MCDropDownHotSpot_ MCDropDownHotSpot_NOTE MCHotSpotImage"><img src="../../../../Resources/Images/MODELLI/Imm-css/_info.png" class="icona_NOTE" />NOTES: <img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a></span>
+            <div class="MCDropDownBody dropDownBody dropDownBodyNotaInfoBody">
+                <p class="NOTE_Info">Standard sides are the 6 sides of the piece: the top, bottom and side <a href="../../../../_GlossaryDiProgetto/infissi/H-latiPezzi.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">faces</a>. Generic sides are the sides created by the user.</p>
+            </div>
+        </div>
+        <p>For piece recognition, always insert the parameter key (e.g. <b>B</b>) and the value 8 (e.g. <b>B8</b>) in the layer associated to the rectangle describing the single face <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>.</p>
+        <h4><a name="progettazionefiledxffm_2927705210_1170464"></a>Creating and naming standard panel faces </h4>
+        <p>The standard piece sides can be created in two different ways:</p>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">with rectangles drawn around face 0 of the piece. The segments of the rectangles considered as reference sides for defining the <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">surface<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Figures of a three-dimensional area, that represent a thin open or closed structure.</span></a> and the direction of the piece face are the external ones (see corner 2 ref. <b>A</b> figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170491">2</a>).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">347.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="2."><a name="progettazionefiledxffm_2927705210_1170491"></a>
+                    <br />
+                    <img src="../../../../FIGURE/08/arte4-D/d08b0066.png" class="Vid_GR_Autom" />
+                </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">With rectangles drawn under the zero face of the piece (figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170525">3</a>). The segments of the rectangles considered as reference sides for defining the surface and the direction of the piece face are the lower ones (see corner 2 ref. <b>B</b> figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170525">3</a>).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">348.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="3."><a name="progettazionefiledxffm_2927705210_1170525"></a>
+                    <br />
+                    <img src="../../../../FIGURE/08/arte4-D/d08b0067.png" class="Vid_GR_Autom" />
+                </td>
+            </tr>
+        </table>
+        <p>The key of the <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170000" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Generic face"</a> parameter (e.g. <b>WG</b>) can be used to define any face, while the key of the <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1169990" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Face"</a> parameter (e.g. <b>W</b>) must only be used to define the 5 standard faces of the piece when they are represented by a central rectangle and by other rectangles drawn around the central one (figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170491">2</a>).</p>
+        <p>The syntax to be used to create the layers differs according to the type of creation.</p>
+        <p>If the length of the side faces (ref. <b>1</b>, <b>2</b>, <b>3</b> and <b>4</b>) constructed as rectangles does not coincide with the length of the segments of the rectangle of face 0 (ref. <b>A</b>, <b>B</b>, <b>C</b> and <b>D</b>), the length of the segments of the rectangle of face 0 will be considered valid (figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170559">4</a>).</p>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">349.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="4."><a name="progettazionefiledxffm_2927705210_1170559"></a>
+                    <br />
+                    <img src="../../../../FIGURE/08/arte4-D/d08b0068.png" class="Vid_GR_Autom" />
+                </td>
+            </tr>
+        </table>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Examples:</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">If the faces are drawn around face 0 (figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170491">2</a>), then face 1 must be associated with the layer <b>TCHW1B8</b>:</td>
+                    </tr>
+                </table>
+                <p class="TEScon-rientro">TCH is the prefix identifying the BIESSE layer.</p>
+                <p class="TEScon-rientro">W1; W = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1169990" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Face"</a>; 1 = face number.</p>
+                <p class="TEScon-rientro">B8: B = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>; 8 = identifies the piece.</p>
+                <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">If the faces are drawn under face 0 (figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170525">3</a>), then face 1 must be associated with the layer <b>TCHWG1B8</b>:</td>
+                    </tr>
+                </table>
+                <p class="TEScon-rientro">TCH is the prefix identifying the BIESSE layer.</p>
+                <p class="TEScon-rientro">WG1; WG = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170000" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Generic face"</a>; 1 = face number.</p>
+                <p class="TEScon-rientro">B8: B = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>; 8 = identifies the piece.</p>
+            </div>
+        </div>
+        <h4><a name="progettazionefiledxffm_2927705210_1170576"></a>Creating and naming generic faces</h4>
+        <p>A generic face must be represented by a line or an arc, according to whether it is a straight or circular face. The arcs and lines must be drawn inside face 0, in the exact point in which a new side of the piece is to be created.</p>
+        <p>The layer must indicate the key for the generic face and the identification number for the new side, and it must provide the height of the side. If the height is not indicated, the height of the panel will be used.</p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>To create a general linear face associated with a line drawn inside face 0 of the piece with a height of 30mm, the face must be associated with the layer <b>TCHWG6B8HF3000</b>: </p>
+                <p class="TEScon-rientro">TCH is the prefix identifying the BIESSE layer.</p>
+                <p class="TEScon-rientro">WG6; WG = key of the <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170000" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Generic face"</a> parameter; 6 = number of the face (ref. <b>6</b> figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170607">5</a>).</p>
+                <p class="TEScon-rientro">B8; B = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>; 8 = identifies the piece (obligatory).</p>
+                <p class="TEScon-rientro">HF3000; HF = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170127" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Face height"</a>; 3000 identifies 30mm (the last two numbers represent the obligatory decimals).</p>
+            </div>
+        </div>
+        <p>The surface of the machinable side of the piece is determined by the direction in which segment <b>6</b> (shown in figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170607">5</a>) is drawn.</p>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">350.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="5."><a name="progettazionefiledxffm_2927705210_1170607"></a>
+                    <br />
+                    <img src="../../../../FIGURE/08/arte4-D/d08b0069.png" class="Vid_GR_Autom" />
+                </td>
+            </tr>
+        </table>
+        <p> The direction of the segment thus has a start point <b>P1</b> and an end point <b>P2</b>.<br />The part of the segment that identifies the machinable face (ref. <b>A</b> and <b>B</b>, figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1183598">6</a>) is the one that goes from the start point <b>P1 </b>to the end point <b>P2</b> (on the left of the segment, in direction P1-P2). It's possible to force one vertex of the segment by drawing a circle around it, defining it as the start point. This operation cancels the order in which the corners of the segment were drawn, so that the machinable face will always be recognisable.</p>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">351.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="6."><a name="progettazionefiledxffm_2927705210_1183598"></a>Machinable surface of face <b>6</b> (ref. <b>A </b>and<b> B</b>), identified by the start point. <br /><img src="../../../../FIGURE/08/arte4-D/d08b0070.png" class="Vid_GR_Autom" /></td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">352.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="7.">Forced setting of the segment vertex to establish the start point <b>P1</b>, i.e. the machinable surface of face <b>6</b> (ref. <b>C</b>).<br /><img src="../../../../FIGURE/08/arte4-D/d08b0071.png" class="Vid_GR_Autom" /></td>
+            </tr>
+        </table>
+        <p>When an arc is created to represent a generic curved face, the system interprets it as if it were created anticlockwise irrespective of the direction of what has been created. <br />For this reason it is advisable always to use forcing, i.e. the circle to establish the initial vertex of the arc (figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170673">8</a>).</p>
+        <p>Let's suppose we want to create an arc going from<b> P1</b> to <b>P2</b>, figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170673">8</a>, in a clockwise direction. The system will interpret <b>P2</b> as the first vertex of the arc and <b>P1</b> as the second vertex. To establish the vertex <b>P1</b> as the first part of the arc, it is therefore necessary to using forcing on <b>P1</b> to mark it with a circle.</p>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">353.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="8."><a name="progettazionefiledxffm_2927705210_1170673"></a>Forcing the arc vertex to establish the start point <b>P1<br /></b></td>
+            </tr>
+        </table>
+        <p class="TES_LegendaFigure">
+            <img src="../../../../FIGURE/08/arte4-D/d08b0072.png" class="Vid_GR_Autom" />
+        </p>
+        <h4>Creating machining operations on the general faces</h4>
+        <p>If the generic face is to contain machining operations, it must not only be drawn as a line/arc inside the piece, but also as a horizontal rectangle located under face 0 of the piece.<br />In this case different layers must be assigned to the line/arc identifying the face and to the rectangle. </p>
+        <p>To create generic faces with identification numbers higher than 5, always use parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170000" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Generic face"</a>, (e.g. <b>WG</b>) and draw the rectangle that represents them under face 0 or adjacent to it, with corner 2 facing towards the bottom left hand corner of the rectangle.</p>
+        <p>The dimensions of the rectangle drawn to represent the generic face do not have to coincide with those of the segment (line or arc) associated with them, as this value will be detected from the segment geometry and layer.</p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>If the segment (line or arc) that describes the position of the face has the layer called <b>TCHWG6B8HF3000</b>, then also the layer of the rectangle that represents it (and on which the machining operations will be carried out) must have the same syntax, with or without the data concerning the face height (HF3000).<br />This means that two types of code can be used: <b>TCHWG6B8HF3000</b> or <b>TCHWG6B8</b>: </p>
+                <p class="TEScon-rientro">TCH is the prefix identifying the BIESSE layer.</p>
+                <p class="TEScon-rientro">WG6; WG = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170000" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Generic face"</a>; 6 = face number.</p>
+                <p class="TEScon-rientro">B8; B = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>; 8 = identifies the piece (obligatory).</p>
+                <p class="TEScon-rientro">HF3000; HF= parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170127" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Face height"</a>; 3000 identifies the value, i.e. 30mm (the last two numbers represent the obligatory decimals).</p>
+            </div>
+        </div>
+        <h4><a name="Creare"></a>Creating standard borings</h4>
+        <p>Bores can be represented in two different ways:</p>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">by a circle, which can be drawn directly on the standard or generic faces created as rectangles. </td>
+            </tr>
+        </table>
+        <div class="BoxRientrato32" style="background-repeat: repeat;">
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Vertical boring operations represented by circles</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>With this method, bores can be made with the vertical spindle on face 0 or face 5 of the piece. In this case, the bore must be drawn inside the rectangle representing the required face. </p>
+                    <p>The diameter of the bore is given by the diameter of the circle, whereas the depth must be specified in the layer. If the depth is not specified it will be taken to be zero. </p>
+                    <p>The bore <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">application<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>A synonym of "program" - software with the specific task of managing data, graphics, etc.</span></a> point coincides with the centre of the circle.</p>
+                    <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></span>
+                        <div class="MCDropDownBody dropDownBody">
+                            <p>To create a bore with a depth of 25.5mm on face 0 of the piece, associate the bore drawing with the layer <b>TCHW0B2D2550</b>: </p>
+                            <p class="TEScon-rientro">TCH is the prefix identifying the BIESSE layer.</p>
+                            <p class="TEScon-rientro">W0; W = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1169990" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Face"</a>; 0 = standard face number.</p>
+                            <p class="TEScon-rientro">B2; B = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>; 2 = identifies the boring.</p>
+                            <p class="TEScon-rientro">D2550; D = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170044" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Depth"</a>; 2550 = identifies the value, i.e. 25.50mm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Horizontal boring operations represented by circles</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>This method can be used to create bores with the horizontal spindle on sides 1, 2, 3 and 4 of the piece, or on the general sides. In this case, the bore must be represented with a circle drawn on one of the side faces of the piece. </p>
+                    <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">354.</span>
+                            </td>
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="9.">
+                                <br />
+                                <img src="../../../../FIGURE/08/arte4-D/d08b0073.png" class="Vid_GR_Autom" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p>The diameter of the bore coincides with the diameter of the circle, while the depth must be specified in the layer. </p>
+                    <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></span>
+                        <div class="MCDropDownBody dropDownBody">
+                            <p>To create a bore with a depth of 25.5mm on face 3 of the piece, associate the bore drawing with the layer <b>TCHW3B2D2550</b>: </p>
+                            <p class="TEScon-rientro">TCH is the prefix identifying the BIESSE layer.</p>
+                            <p class="TEScon-rientro">W3; W = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1169990" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Face"</a>; 3 = standard face number.</p>
+                            <p class="TEScon-rientro">B2; B = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>; 2 = identifies the boring.</p>
+                            <p class="TEScon-rientro">D2550; D = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170044" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Depth"</a>; 2550 = identifies the value, i.e. 25.50mm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">by creating a rectangle or a closed polygonal line. In this case the rectangle must be created directly on face 0 of the piece, and indicates a bore to be applied to the relative side face, for example face 4 of the piece.</td>
+            </tr>
+        </table>
+        <div class="BoxRientrato32" style="background-repeat: repeat;">
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Horizontal boring operations represented by rectangles </a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>This method can be used to create bores with the horizontal spindle on sides 1, 2, 3 and 4 of the piece.</p>
+                    <p>When a bore is created using a rectangle, its diameter and depth are obtained from the geometry.</p>
+                    <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;"> The diameter is indicated by the length of segment <b>A</b> (figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170779">10</a>) performed on segment <b>C</b> (figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170779">10</a>), which represents face 1 on which the bore is made.</td>
+                        </tr>
+                    </table>
+                    <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">The depth is indicated by the length of segment <b>B </b>(figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170779">10</a>).</td>
+                        </tr>
+                    </table>
+                    <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">The application point is the average point of the segment, representing the bore diameter. </td>
+                        </tr>
+                    </table>
+                    <p>Figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170779">10</a> shows a rectangle drawn on side 0 of the piece, to be interpreted as the bore to be made on side 1 of the piece.</p>
+                    <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">355.</span>
+                            </td>
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="10."><a name="progettazionefiledxffm_2927705210_1170779"></a>
+                                <br />
+                                <img src="../../../../FIGURE/08/arte4-D/d08b0074.png" class="Vid_GR_Autom" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p> Figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#Esempio2">11</a> shows how this bore is interpreted.</p>
+                    <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">356.</span>
+                            </td>
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="11."><a name="Esempio2"></a>Example of how the rectangle created on face 0 is interpreted. </td>
+                        </tr>
+                    </table>
+                    <p class="TES_LegendaFigure"><b>A</b>: bore;<br /><b>B</b>: face 1; <br /><b>20mm</b>: distance of the bore from the upper side of the face. <br /><img src="../../../../FIGURE/08/arte4-D/d08b0075.png" class="Vid_GR_Autom" /></p>
+                    <p>To indicate the point in which the bore must be applied, write the value of the distance between the bore and the upper side of the face in the string of the layer associated with the bore rectangle. If this value is not set, the bore will be considered (by default) as halfway through the piece thickness. </p>
+                    <p>If you want to apply a recess in the piece, and make a bore in that recess, it is represented by the distance <b>A</b> between the bore application point and side 1 <b>B</b> of face 0 (figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#Esempio">12</a>).</p>
+                    <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">357.</span>
+                            </td>
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="12."><a name="Esempio"></a>Example of a recess<br /><img src="../../../../FIGURE/08/arte4-D/d08b0076.png" class="Vid_GR_Autom" /></td>
+                        </tr>
+                    </table>
+                    <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Examples:</a></span>
+                        <div class="MCDropDownBody dropDownBody">
+                            <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                <col style="width: 0px;" />
+                                <col style="width: 32px;" />
+                                <col style="width: auto;" />
+                                <tr>
+                                    <td valign="top" />
+                                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                                    </td>
+                                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">To represent a horizontal bore to be machined on face 1 at a position equal to half the thickness of the piece, drawn as a rectangle on face 0, associate the drawing with layer <b>TCHW1B2:</b></td>
+                                </tr>
+                            </table>
+                            <p class="TEScon-rientro">TCH is the prefix identifying the BIESSE layer.</p>
+                            <p class="TEScon-rientro">W1; W = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1169990" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Face"</a>; 1 = face number (side face).</p>
+                            <p class="TEScon-rientro">B2; B = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>; 2 = identifies the boring.</p>
+                            <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                <col style="width: 0px;" />
+                                <col style="width: 32px;" />
+                                <col style="width: auto;" />
+                                <tr>
+                                    <td valign="top" />
+                                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                                    </td>
+                                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">To represent a horizontal bore machined on face 1 at a distance of 20mm from corner 1 of the face, drawn as a rectangle on face 0, associate the drawing with layer <b>TCHW1B2D2000</b>:</td>
+                                </tr>
+                            </table>
+                            <p class="TEScon-rientro">TCH is the prefix identifying the BIESSE layer.</p>
+                            <p class="TEScon-rientro">W1; W = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1169990" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Face"</a>; 1 = face number (side face).</p>
+                            <p class="TEScon-rientro">B2; B = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>; 2 = identifies the boring.</p>
+                            <p class="TEScon-rientro">D2000; D = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170044" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Depth"</a>; 2000 = identifies the value, i.e. 20.00mm.</p>
+                        </div>
+                    </div>
+                    <h4><a name="Creare2"></a>Creating angular borings</h4>
+                    <p class="TEScon-rientro">To create tilting bores you must define the application point and the AR and AZ angles.<br />The AR angle represents the spindle axis rotation on the <i>xy</i> plane. <br />The AZ angle represents the tilt angle of the spindle rotation axis in relation to the <i>xy</i> plane. </p>
+                    <p class="TEScon-rientro">Angular bores can be illustrated by a circle, a rectangle or a closed polygonal line on the 0 face. </p>
+                    <table class="AutoNumber_p_TES_puntatore-sub" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 30px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> •</span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" •"><a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#progettazionefiledxffm_2927705210_1170833">"Angular boring represented by a circle"</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="AutoNumber_p_TES_puntatore-sub" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 30px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> •</span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" •"><a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#progettazionefiledxffm_2927705210_1170843">"Angular boring represented by a rectangle "</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="progettazionefiledxffm_2927705210_1170833"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_">Angular boring represented by a circle</a></span>
+                        <div class="MCDropDownBody dropDownBody">
+                            <p>If the angular bore is represented by a circle, the depth and the angles AR and AZ must be specified in the layer.</p>
+                            <p>The pre-set value for angles AR and AZ is zero.</p>
+                            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></span>
+                                <div class="MCDropDownBody dropDownBody">
+                                    <p>To create a bore on face 0 with a depth of 10mm, AR angle 45° and AZ angle 30°, associate the bore drawing with the layer <b>TCHW0B2D1000AR45AZ30</b>.</p>
+                                    <p class="TEScon-rientro">TCH is the prefix identifying the BIESSE layer.</p>
+                                    <p class="TEScon-rientro">W0: W = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1169990" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Face"</a>; 0 = face number.</p>
+                                    <p class="TEScon-rientro">B2; B = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>; 2 = identifies the boring.</p>
+                                    <p class="TEScon-rientro">D1000; D = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170044" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Depth"</a>; 1000 identifies the value, i.e. 10mm (the last two numbers represent the obligatory decimals).</p>
+                                    <p class="TEScon-rientro">AR45; AR = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170115" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"AR"</a>; 45 = angle value.</p>
+                                    <p class="TEScon-rientro">AZ30; AZ = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170121" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"AZ"</a>; 30 = angle value.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="progettazionefiledxffm_2927705210_1170843"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_">Angular boring represented by a rectangle </a></span>
+                        <div class="MCDropDownBody dropDownBody">
+                            <p>If the angular bore is represented by a rectangle, the diameter is given by the length of the first side, the one between corners 1 and 2 (ref. <b>A</b>, following figures), and the depth is given by the length of the second side, the one between corners 2 and 3 (ref. <b>B</b>, following figures). </p>
+                            <p>The tilt angle is between the second side and the positive X-axis. In this case the corners of the rectangle must be drawn in the correct order. If the AZ angle is other than zero, this must be specified in the layer.</p>
+                            <p>To specify the side of the rectangle that represents the diameter, it is possible to use a line drawn on this side (figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170889">14</a>).</p>
+                            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                <col style="width: 0px;" />
+                                <col style="width: 32px;" />
+                                <col style="width: auto;" />
+                                <tr>
+                                    <td valign="top" />
+                                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">358.</span>
+                                    </td>
+                                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="13.">Definition of the diameter of a tilted rectangular bore, using the order of the vertexes. <br /><img src="../../../../FIGURE/08/arte4-D/d08b0077.png" class="Vid_GR_Autom" /></td>
+                                </tr>
+                            </table>
+                            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                <col style="width: 0px;" />
+                                <col style="width: 32px;" />
+                                <col style="width: auto;" />
+                                <tr>
+                                    <td valign="top" />
+                                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">359.</span>
+                                    </td>
+                                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="14."><a name="progettazionefiledxffm_2927705210_1170889"></a>Definition of the diameter of a tilted rectangular bore, using a line. <br /><img src="../../../../FIGURE/08/arte4-D/d08b0078.png" class="Vid_GR_Autom" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4><a name="progettazionefiledxffm_2927705210_1170892"></a>Creating the cuts </h4>
+        <p>A cut is represented geometrically by a line. The layer associated with the line is used to specify not only the type of machining operation and the face on which it is carried out, but also the cut depth and other <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">technological parameters<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Data allowing you to specify how the created drawings should be reproduced on a piece.</span></a>. </p>
+        <p>If the depth is not specified it will be assumed to be zero.</p>
+        <p class="NOTE_Info">Cuts on side faces are also managed.</p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>To create a cut on face 2 (15mm deep and 2mm wide), associate the layer <b>TCHW2B3D1500TH0200</b> with the drawing:</p>
+                <p class="TEScon-rientro">TCH is the prefix identifying the BIESSE layer.</p>
+                <p class="TEScon-rientro">W2; W = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1169990" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Face"</a>; 2 = face number.</p>
+                <p class="TEScon-rientro">B3; B = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>; 3 = identifies the cut.</p>
+                <p class="TEScon-rientro">D1500; D = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170044" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Depth"</a>; 1500 identifies the value, i.e. 15mm (the last two numbers represent the obligatory decimals).</p>
+                <p class="TEScon-rientro">TH0200; TH = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170050" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Thickness"</a>; 200 = identifies the value, i.e. 2mm.</p>
+            </div>
+        </div>
+        <h4><a name="Creare3"></a>Creating the milling</h4>
+        <p>A milling operation can be represented geometrically by lines, arcs, circles, and closed or open polygonal lines. </p>
+        <p>The layer associated with the geometric elements is used to specify not only the type of machining operation, but also the milling depth and other technological parameters (tool descent speed, tool type, etc.). <br />If the depth is not specified it will be assumed to be zero.</p>
+        <p class="NOTE_Info">Milling operations on the side faces are also managed.</p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>To create a milling operation (10mm deep) on face 1, associate the layer <b>TCHW1B1D1000</b> with the drawing: </p>
+                <p class="TEScon-rientro">TCH is the prefix identifying the BIESSE layer.</p>
+                <p class="TEScon-rientro">W1; W = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1169990" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Face"</a>; 1 = face number.</p>
+                <p class="TEScon-rientro">B2; B = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170011" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Work"</a>; 1 = identifies the milling.</p>
+                <p class="TEScon-rientro">D1000; D = parameter key <a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1170044" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"Depth"</a>; 1000 identifies the value, i.e. 10mm (the last two numbers represent the obligatory decimals).</p>
+            </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadTIT_LivelloS"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-LivelloS MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Ways of creating the milling operations</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">To generate a milling operation containing several geometric elements, associate a single layer - for example <b>TCHW0B1DP1000</b> ref. <b>A</b> - with the whole drawing. </td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">To ensure that each single <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">geometric element<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>An abstract element associated with specific properties:&#160;the point, line, plane and space are all geometric elements.</span></a> is recognised as a single milling operation, you must create three layers (one for each geometric <a href="../../../../_GlossaryDiProgetto/infissi/H-elemento.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">element</a>):</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TES_puntatore-sub" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 30px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> •</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" •"> TCHW0B1DP1000 associated with drawing <b>B</b>;</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TES_puntatore-sub" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 30px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> •</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" •"> TCHW0B1PT1 associated with drawing <b>C</b>;</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TES_puntatore-sub" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 30px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> •</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" •"> TCHW0B1DP2000 associated with drawing <b>D</b>. </td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">360.</span>
+                        </td>
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="15.">Example<br /><img src="../../../../FIGURE/08/arte4-D/d08b0079.png" class="Vid_GR_Autom" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <table style="width: 100%;border-spacing: 0px 0px;margin-left: 0;margin-right: auto;" class="PerMasterWeb">
+            <col />
+            <col />
+            <col style="width: 70px;" />
+            <tbody>
+                <tr>
+                    <td class="PerMasterweb">
+                        <p class="XMasterLingua" data-mc-conditions="Cond_lingue.Inglese">ENGLISH</p>
+                    </td>
+                    <td class="PerMasterweb">
+                        <p class="XMasterDX"><span style="font-weight: bold;" class="MODELLI/Variablili-MasterEdizione">Edition:</span> <span class="MODELLI/Variablili-MasterN-Edizione">3.0</span></p>
+                    </td>
+                    <td class="PerMasterweb">
+                        <p class="XMasterDX">
+                            <img src="../../../../Resources/Images/MODELLI/Imm-layout/logo_per_BSolid.png" class="Imm_Logo" style="height: 32px;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+﻿define({'/5804-P-Distinte/Distinta-Uso.htm':{i:[2],t:['作業リストを管理する'],b:['']},'/5804-P-Distinte/Distinta-strumenti.htm':{i:[1],t:['ツールバー'],b:['']},'/5804-P-Distinte/DistintaUsobarcode.htm':{i:[3],t:['バーコードの読み取りによるリストの使用'],b:['']},'/5804-P-Distinte/Distinta_Presentazione.htm':{i:[0],t:['環境の導入'],b:['']}});

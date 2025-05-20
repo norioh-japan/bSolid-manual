@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="5804sb0002.xml" data-mc-path-to-help-system="../../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="bSolid|[%=COMUNI/Stringhe/Ambienti.Amb_CadCam%]|[%=System.LinkedTitle%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Boring </title>&#160;<link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" /><link href="../../../../Resources/Stylesheets/KC-HTML5.css" rel="stylesheet" /><script src="../../../../Resources/Scripts/custom.modernizr.js"></script><script src="../../../../Resources/Scripts/jquery.min.js"></script><script src="../../../../Resources/Scripts/require.min.js"></script><script src="../../../../Resources/Scripts/require.config.js"></script><script src="../../../../Resources/Scripts/foundation.min.js"></script><script src="../../../../Resources/Scripts/plugins.min.js"></script><script src="../../../../Resources/Scripts/MadCapAll.js"></script></head>
+    <body>
+        <div style="background-repeat: no-repeat;background-color: #272727;background-position-x: center;padding-left: 0px;padding-right: 6px;padding-top: 6px;padding-bottom: 0px;border-left-style: none;border-left-width: 1px;border-right-style: none;border-right-width: 1px;border-top-style: none;border-top-width: 1px;border-bottom-style: none;border-bottom-width: 2px;border-bottom-color: #272727;">
+            <p class="XMasterDX"> <MadCap:conditionalText data-mc-conditions="Cond_lingue.Bulgaro,Cond_lingue.Ceco,Cond_lingue.Cinese,Cond_lingue.Danese,Cond_lingue.Ebraico,Cond_lingue.Croato,Cond_lingue.Estone,Cond_lingue.Finlandese,Cond_lingue.Francese,Cond_lingue.Greco,Cond_lingue.Inglese,Cond_lingue.Lettone,Cond_lingue.Norvegese,Cond_lingue.Olandese,Cond_lingue.Polacco,Cond_lingue.Rumeno,Cond_lingue.Russo,Cond_lingue.Slovacco,Cond_lingue.Sloveno,Cond_lingue.Spagnolo,Cond_lingue.Svedese,Cond_lingue.Tedesco,Cond_lingue.Turco,Cond_lingue.Ungherese"><span class="MODELLI/Variablili-Masteristrud-trad">Translation of the original instructions</span> - </MadCap:conditionalText><a href="../../../../MODELLI-Snippet-sinc/MODELLI-COPERTINE/IndirizzoCostruttore.htm" class="MCTopicPopup MCTopicPopupHotSpot a aHyperMaster" title="Manufacturer's address" data-mc-width="700px" data-mc-height="500px">BIESSE S.p.A.</a> © - <span class="SystemShortDate">11/12/2018</span></p>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="2" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                </div>
+            </div>
+        </div>
+        <h2 class="TIT-livello1"><a name="b.boring_218219011_1220528"></a><a name="CSH-Fora"></a>Boring <img src="../../../../FIGURE/15-icone/b15b0001/work/Machining_Drill.png" class="icona_32a32pxCentrata" /><a name="kanchor99"></a></h2>
+        <hr class="RIGAINIZIALE" width="100%" size="0" align="center" />
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-Proc MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Description of the machining operation</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>Generates horizontal and vertical borings on the <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">surface<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Figures of a three-dimensional area, that represent a thin open or closed structure.</span></a> of the piece. </p>
+                <p>Boring operations can be “optimised” and “non optimised”. Both types can be carried out using the boring unit spindles or the electrospindles. The NC will automatically search for tools according to the data set (diameter, type of bit, etc.) selecting the spindles best suited for the type of work started from among the ones present in the machine configuration. There is only one difference between these two types of machining operation, which relates to the order in which the <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">machining program<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Type of document (file) containing all the instructions needed for machining the pieces of wood, glass or marble.</span></a> is carried out. In the case of “non optimised” machining operations the program will be carried out in sequence, as created by the operator, whereas in the case of “optimised” machining operations, the machining program will be processed by the NC which selects the fastest route to be used for machining operations.</p>
+                <p class="TES" style="font-weight: bold;">The programmable machining operations are:</p>
+                <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">Borings from a geometry (i.e. they can be applied to the two-dimensional geometries created on the <a href="../../../../_GlossaryDiProgetto/infissi/H-latiPezzi.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">faces</a> of the piece).</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">Repeated parametric borings, starting from the position of the first programmed bore.</td>
+                    </tr>
+                </table>
+                <p class="TES" style="font-weight: bold;">The geometries that can be used are:</p>
+                <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">circles; </td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">lines: in this case, the initial point of the line is the initial point of the machining operation, while the end point of the line corresponds to the boring depth.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">rectangles - see the <a href="#Rettango" class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento">"Rectangles as projections"</a> data <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">field<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>A defined area containing data or commands (data field or command field).</span></a>.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">137.</span>
+                        </td>
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="1.">Examples:</td>
+                    </tr>
+                </table>
+                <p class="TES_LegendaFigure">
+                    <img src="../../../../FIGURE/08/arte4-D/d08t0043.png" class="Vid_GR_550_sx" />
+                </p>
+            </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Open dropDown dropDownICONALinkArgo"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-Proc MCDropDownHotSpot_ MCDropDownHotSpot_ICONALinkArgo MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Associated procedures</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•">Teaching videos: <a href="../../VIDEO/02-lavorazioni.htm#Fresatur" class="MCXref xref">Milling operations - bores - cuts</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p class="TIT-Argomenti-Proc" data-mc-conditions="Modifiche.SOLO WEB"><a name="CSH"></a><a name="Sezioni"></a>List of sections</p>
+        <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="Tipologia"><span class="COMUNI/Stringhe/ListaSezionisez-Dati-geo">Geometric data</span><img class="MCToggler_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a>
+                </td>
+            </tr>
+        </table>
+        <div style="margin-left: 15px;">
+            <p data-mc-conditions="Modifiche.SOLO WEB">To view the geometric data, <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">click<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>(1) Indicates the action of pressing (and immediately releasing) the mouse button on an object (icon, button, etc.) located under the pointer on the screen. (2) (verb) Pressing and immediately releasing the left mouse button to enable the function of a selected command.</span></a> on the options of the data field<a href="#Tipologi" class="MCXref xref">Type</a> .</p>
+        </div>
+        <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="DUtensili"><span class="COMUNI/Stringhe/ListaSezionisez-DatUT">Tool data</span><img class="MCToggler_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a>
+                </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="DPVerticali"><span class="COMUNI/Stringhe/ListaSezionisez-datPassVert">Vertical step data</span><img class="MCToggler_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a>
+                </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="DRipetizioni"><span class="COMUNI/Stringhe/ListaSezionisez-datRipet">Repetition data</span><img class="MCToggler_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a>
+                </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="DVelocita"><span class="COMUNI/Stringhe/ListaSezionisez-datVel">Speed data</span><img class="MCToggler_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a>
+                </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="DSicurezza"><span class="COMUNI/Stringhe/ListaSezionisez-datSicur">Safety data</span><img class="MCToggler_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a>
+                </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a name="Dati"></a><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="DateSfond"><span class="COMUNI/Stringhe/ListaSezionisez-datSfonda">Piercing data</span><img class="MCToggler_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a>
+                </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="DLavorazioni"><span class="COMUNI/Stringhe/ListaSezionisez-DatiLav">Machining operation data</span><img class="MCToggler_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a> </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="avanzate">Tab<span class="_BNEST/schedesched-avanzate">Advanced</span><img class="MCToggler_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a>
+                </td>
+            </tr>
+        </table>
+        <div class="BoxRientrato32" style="background-repeat: repeat; display: none;" data-mc-target-name="avanzate">
+            <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 15px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="../Avanzate/Proprieta.htm#top" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Properties </a>
+                    </td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 15px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="../Avanzate/Dati-LavAgg/Per-Boring.htm" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Additional machining data </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr class="RIGAINIZIALE" width="100%" size="0" align="center" />
+        <div class="BoxNoRientro" style="display: none;" data-mc-target-name="Tipologia">
+            <h5 class="TIT-Parametri"><a name="Tipologi"></a>Type</h5>
+            <p class="_03-Parametro-Cod"><a name="TYP"></a>TYP</p>
+            <p class="TES_Desc-Campi">How to generate the borings. The data <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">fields<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>A defined area containing data or commands (data field or command field).</span></a> of the <span class="COMUNI/Stringhe/ListaSezionisez-Dati-geo">Geometric data</span> <a href="../../../../_GlossaryDiProgetto/infissi/H-tronchetto.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">section</a> vary according to the option chosen.</p>
+            <div class="BoxRientrato32" style="background-repeat: repeat;">
+                <h6 class="TIT-Opzioni"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="daGemeDesc;daGeome">From the geometry<img class="MCToggler_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a>
+                </h6>
+                <p class="TES_Desc-Opzioni" style="display: none;" data-mc-target-name="daGemeDesc">In the <span class="COMUNI/Stringhe/ListaSezionisez-Dati-geo">Geometric data</span> section, shows the data fields for generating boring operations starting from geometries.</p>
+                <h6 class="TIT-Opzioni"><a name="Da"></a><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="daPosiz;daPosizDesc">From the position<img class="MCToggler_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a>
+                </h6>
+                <p class="TES_Desc-Opzioni" style="display: none;" data-mc-target-name="daPosizDesc">In the <span class="COMUNI/Stringhe/ListaSezionisez-Dati-geo">Geometric data</span> section, shows the data fields for generating boring operations starting from the position of the first bore programmed.</p>
+            </div>
+        </div>
+        <div class="BoxRientrato32" style="display: none;" data-mc-target-name="daGeome">
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="Geometri"></a>Geometries to work</h5>
+                <p class="_03-Parametro-Cod"><a name="GID"></a>GID</p>
+            </p>
+            <p class="TES_Desc-Campi">Shows a list of the geometries created, so you can select the required ones. </p>
+            <p class="TES">Click on the <a href="../../../../_GlossaryDiProgetto/SW-generale/casellaMarcatori.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">check box</a> to choose the geometries to be worked.</p>
+            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">138.</span>
+                    </td>
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="2.">List of the geometries to be worked</td>
+                </tr>
+            </table>
+            <p class="TES_LegendaFigure">
+                <img src="../../../../FIGURE/11-videatePorzioni/arte4-D/d11b0024.png" class="Vid_GR_Autom" />
+            </p>
+            <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">Box <span class="_CadCam/stringhecamp-cerca">Search</span> permits to enter the name of a geometry to search in the list.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;"><a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">Button<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Command field that is responsive to mouse clicks and that enables operations to be activated.</span></a> <span class="_CadCam/stringhepuls-des">Deselect all</span>deactivates the previous selection of the geometries.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">Button <span class="_CadCam/stringhepuls-visual">Display selected</span> displays the geometry selected.</td>
+                </tr>
+            </table>
+            <h5 class="TIT-Parametri-conCod">Pairs of geometries</h5>
+            <p class="_03-Parametro-Cod"><a name="ALG1"></a>ALG1</p>
+            <p class="TES_Desc-Campi">Enables (box <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">ticked<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Click on a check box to tick it and thereby enable that function.</span></a>) or disables the creation of boring operations starting from two circles that are parallel in space and which, if joined, would form a cylindrical surface. The cylinder obtained by joining the two circles represents the bore to be created. </p>
+            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">139.</span>
+                    </td>
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="3.">Representation of a bore via pairs of circles</td>
+                </tr>
+            </table>
+            <p class="TES_LegendaFigure" style="text-decoration: underline;" data-mc-conditions="Modifiche.SOLO WEB">Click on the image to run the animated representation</p>
+            <p class="TES_LegendaFigure"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../FIGURE/13-animazioni/d13t0011.gif"><img class="MCPopupThumbnail img imgAnimazioni" data-mc-width="351" data-mc-height="303" src="../../../../FIGURE/13-animazioni/d13t0011_thumb_0_302.png" tabindex="" /></a>
+            </p>
+            <h5 class="TIT-Parametri-conCod"><a name="Rettango"></a>Rectangles as projections</h5>
+            <p class="_03-Parametro-Cod"><a name="ALG2"></a>ALG2</p>
+            <p class="TES_Desc-Campi">Enables (box ticked) or disables the creation of boring operations starting from a rectangle. In this case, the diameter and depth are obtained from the geometry. </p>
+            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">140.</span>
+                    </td>
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="4.">Representation of a bore via a rectangle</td>
+                </tr>
+            </table>
+            <p class="TES_LegendaFigure"> The diameter is indicated by the length of segment <b>A</b>.</p>
+            <p class="TES_LegendaFigure"> The depth is indicated by the length of segment <b>B</b>.</p>
+            <p class="TES_LegendaFigure"> The <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">application<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>A synonym of "program" - software with the specific task of managing data, graphics, etc.</span></a> point is the midway point of segment <b>A</b>, representing the bore diameter. <br /><img src="../../../../FIGURE/08/arte4-D/d08t0044.png" class="Vid_GR_Autom" /></p>
+            <p class="TES_LegendaFigure" style="text-decoration: underline;" data-mc-conditions="Modifiche.SOLO WEB">Click on the image to run the animated representation</p>
+            <p class="TES_LegendaFigure" data-mc-conditions="Modifiche.SOLO WEB"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../FIGURE/13-animazioni/d13t0012.gif"><img class="MCPopupThumbnail img imgAnimazioni" data-mc-width="410" data-mc-height="321" src="../../../../FIGURE/13-animazioni/d13t0012_thumb_0_302.png" tabindex="" /></a>
+            </p>
+        </div>
+        <div class="BoxRientrato32" style="display: none;" data-mc-target-name="daPosiz">
+            <p>
+                <h5 class="TIT-Parametri-conCod">Side and corner</h5>
+                <p class="_03-Parametro-Cod"><a name="SIDECRN"></a>SIDECRN</p>
+            </p>
+            <p class="TES_Desc-Campi">Reference corners and faces of the piece. Select the required corner on the figure.</p>
+            <p class="TES">Select the face, then click on the corner that will be the starting point for programming the machining operation.</p>
+            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">141.</span>
+                    </td>
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="5.">
+                        <br />
+                        <img src="../../../../FIGURE/11-videatePorzioni/arte4/b11b0635.gif" class="Vid_GR_Autom" />
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <h5 class="TIT-Parametri-conCod">Type of coordinates</h5>
+                <p class="_03-Parametro-Cod"><a name="TPL"></a>TPL</p>
+                <p class="TES_Desc-Campi">Used to choose the type of coordinate for generating the bore, if the <a href="#Da" class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento">"From the position"</a> option has been defined.</p>
+                <h5 class="TIT-Parametri-conCod">x position</h5>
+                <p class="_03-Parametro-Cod"><a name="X"></a>X</p>
+            </p>
+            <p class="TES_Desc-Campi">X co-ordinate of the bore centre, starting from the reference corner.</p>
+            <p>
+                <h5 class="TIT-Parametri-conCod">y position</h5>
+                <p class="_03-Parametro-Cod"><a name="Y"></a>Y</p>
+            </p>
+            <p class="TES_Desc-Campi">Y co-ordinate of the bore centre, starting from the reference corner.</p>
+            <h5 class="TIT-Parametri-conCod">Angle</h5>
+            <p class="_03-Parametro-Cod"><a name="A"></a>A</p>
+            <p>Angle of the straight line, starting from the Y coordinate, for establishing the point on which the bore should be generated.</p>
+        </div>
+        <div class="BoxNoRientro" style="display: none;" data-mc-target-name="DUtensili">
+            <p>
+                <h5 class="TIT-Parametri-conCod">Use tool<a name="b.boring_218219011_bcgdfaic"></a></h5>
+                <p class="_03-Parametro-Cod"><a name="BYTOOL"></a>BYTOOL</p>
+            </p>
+            <p class="TES_Desc-Campi">Used to select which type of tool data to use: whether to choose a tool directly from the <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">database<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Data bank. Stored data arranged in an organised manner so that they are readily available using a search and management program.</span></a> or set the tool type and diameter.</p>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />0: Diameter</a><a name="b.boring_218219011_bcgibeej"></a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">Used to define the tool diameter and type.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />1: Tool</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">Used to choose a tool from the database.</p>
+                </div>
+            </div>
+            <p>
+                <h5 class="TIT-Parametri-conCod">Tool</h5>
+                <p class="_03-Parametro-Cod"><a name="TNM"></a>TNM</p>
+            </p>
+            <p class="TES_Desc-Campi">Used to choose the required tool from those saved in the database. <br />Click on the field and select the tool in the relevant window.</p>
+            <p>
+                <h5 class="TIT-Parametri-conCod">Tool type<a name="b.boring_218219011_bcgfabdh"></a></h5>
+                <p class="_03-Parametro-Cod"><a name="TTP"></a>TTP</p>
+            </p>
+            <p class="TES_Desc-Campi">Predefined list of the tool types present in the database. Select an item from the list. The <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">CAM<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Acronym of "Computer Aided Manufacturing". Type of software allowing the use of a CAD to control and manage the functioning of the operating machines. A CAD/CAM system enables pieces to be designed, drawn and machined.</span></a> will find a tool with the diameter indicated from among all those of the type selected.</p>
+            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">142.</span>
+                    </td>
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="6."><a name="b.boring_218219011_1280813"></a>Types:<br /><br /><img src="../../../../FIGURE/03-uten-gruppi/arte4/b03b0032-P.jpg" class="Vid_GR_Autom" /></td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 32px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">A. </span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="A. "><a href="#b.boring_218219011_1280824" class="MCXref xref">Normal</a>
+                    </td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 32px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">B. </span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="B. "><a href="#b.boring_218219011_1280842" class="MCXref xref">Spear-shaped drill</a>
+                    </td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 32px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">C. </span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="C. "><a href="#b.boring_218219011_1280878" class="MCXref xref">NormalG</a>
+                    </td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 32px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">D. </span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="D. "><a href="#b.boring_218219011_1280860" class="MCXref xref">Countersunk</a>
+                    </td>
+                </tr>
+            </table>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Normal</a><a name="b.boring_218219011_1280824"></a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">Tool with a normal bit (see figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1280813">6</a>).</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Spear-shaped drill</a><a name="b.boring_218219011_1280842"></a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">Tool for making through bores (see figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1280813">6</a>).</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Countersunk</a><a name="b.boring_218219011_1280860"></a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">Tool with bit, for making countersunk bores (see figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1280813">6</a>).</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />NormalG</a><a name="b.boring_218219011_1280878"></a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">Tool with a normal bit, but larger (see figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1280813">6</a>).</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />End mill</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">Slot mill.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />Profiled</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">Mill with shaped bit.</p>
+                </div>
+            </div>
+            <p>
+                <h5 class="TIT-Parametri-conCod">Diameter<a name="b.boring_218219011_bcghdegh"></a></h5>
+                <p class="_03-Parametro-Cod"><a name="DIA"></a>DIA</p>
+            </p>
+            <p class="TES_Desc-Campi">Tool diameter. </p>
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1280942"></a>Depths</h5>
+                <p class="_03-Parametro-Cod"><a name="DP"></a>DP</p>
+                <p class="TES_Desc-Campi">Machining operation depth, or distance from the lower surface of the piece when performing through operations.</p>
+            </p>
+            <p>If you want to produce a through bore, click on the <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1280989">"Through hole"</a> check box; the number shown represents the distance between the lower surface of the piece and the lower vertex of the bit (ref.A, figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1280983">7</a>).</p>
+            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">143.</span>
+                    </td>
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="7."><a name="b.boring_218219011_1280983"></a><a href="#b.boring_218219011_1280989" class="MCXref xref">Through hole</a> <br /><img src="../../../../FIGURE/08/arte4-D/d08b0086.png" class="Vid_GR_Autom" /></td>
+                </tr>
+            </table>
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1280989"></a>Through hole</h5>
+                <p class="_03-Parametro-Cod"><a name="THR"></a>THR</p>
+            </p>
+            <p class="TES_Desc-Campi">Enables (box ticked) or disables through boring (see the <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1280942">"Depths"</a> data field).</p>
+        </div>
+        <div class="BoxNoRientro" style="display: none;" data-mc-target-name="DPVerticali">
+            <p>
+                <h5 class="TIT-Parametri-conCod">Multiple runs</h5>
+                <p class="_03-Parametro-Cod"><a name="VTR"></a>VTR</p>
+            </p>
+            <p class="TES_Desc-Campi">Number of stages affecting the depth of the programmed machining operation. For example, if the number 2 is entered, the machining is split into 2 parts until the depth indicated in field<a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1280942">"Depths"</a> has been reached. </p>
+            <p>
+                <h5 class="TIT-Parametri-conCod">Return mode</h5>
+                <p class="_03-Parametro-Cod"><a name="RMD"></a>RMD</p>
+            </p>
+            <p class="TES_Desc-Campi">How the tool emerges from the piece in order to expel the chips (only for borings split into several stages).</p>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />0: Complete unloading</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">The tool emerges from the piece and moves back to its initial position (in contact with the piece surface).</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />1: Partial unloading</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">The tool emerges from the piece and moves back to the working position of the previous <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">step<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Acronym of "STandard for the Exchange of Product model data". Type of normalised, neutral file used as a graphic data (3D, 2D and wireframe) exchange format between the various CAD and CAM systems.</span></a>.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />2: Unload at user defined position</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">The tool emerges from the piece and moves to the position defined in the <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1281217">"Unload position"</a> data field.</p>
+                </div>
+            </div>
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1281217"></a>Unload position</h5>
+                <p class="_03-Parametro-Cod"><a name="DQT"></a>DQT</p>
+            </p>
+            <p class="TES_Desc-Campi">Z position that the tool moves to, in order to be cleaned and to remove residue chips.</p>
+        </div>
+        <div class="BoxNoRientro" style="display: none;" data-mc-target-name="DRipetizioni">
+            <p>
+                <h5 class="TIT-Parametri-conCod">Repetition type</h5>
+                <p class="_03-Parametro-Cod"><a name="RPTP"></a>RPTP</p>
+            </p>
+            <p class="TES_Desc-Campi">Type of repeated bores. Chose the type of repetition by clicking on an item from the list.</p>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />0: None</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">No repetition. </p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />1: Matrix</a><a name="b.boring_218219011_1217755"></a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">Series of rectangular repetitions. Creates a series of bores arranged in lines and columns, starting from the first one.</p>
+                    <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">144.</span>
+                            </td>
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="8."><a name="b.boring_218219011_1294125"></a>Type <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1217755">"1: Matrix"</a></td>
+                        </tr>
+                    </table>
+                    <p class="TES_LegendaFigure">
+                        <img src="../../../../FIGURE/08/arte4/b08b0249_P.png" class="Vid_GR_Autom" />
+                    </p>
+                    <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 32px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">A. </span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="A. ">First bore</td>
+                        </tr>
+                    </table>
+                    <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 32px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">B. </span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="B. "><a href="#b.boring_218219011_1214974" class="MCXref xref">Number of repetitions in X</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 32px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">C. </span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="C. "><a href="#b.boring_218219011_1090824" class="MCXref xref">Number of repetitions in Y</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 32px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">D. </span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="D. "><a href="#b.boring_218219011_1090846" class="MCXref xref">x step</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 32px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">E. </span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="E. "><a href="#b.boring_218219011_1090868" class="MCXref xref">y step</a>. <br /><br /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />2: Linear</a><a name="b.boring_218219011_1217825"></a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">Series of linear repetition: horizontal, vertical or angled.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown dropDownOpzioniBoxRientro"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspot4_Opzioni MCDropDownHotSpot_ MCDropDownHotSpot_OpzioniBoxRientro MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />3: Circular</a><a name="b.boring_218219011_1214969"></a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="TES_Desc-Opzioni">Series of circular repetitions. Creates a series of bores arranged in a circle, starting from the first one. </p>
+                    <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">145.</span>
+                            </td>
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="9."><a name="b.boring_218219011_1294188"></a>Type <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1214969">"3: Circular"</a><br /><img src="../../../../FIGURE/08/arte4/b08b0250_P.png" class="Vid_GR_Autom" /></td>
+                        </tr>
+                    </table>
+                    <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 32px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">A. </span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="A. ">First bore</td>
+                        </tr>
+                    </table>
+                    <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 32px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">B. </span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="B. "><a href="#b.boring_218219011_1216386" class="MCXref xref">Circle centre X</a>e <a href="#b.boring_218219011_1090978" class="MCXref xref">Circle centre Y</a></td>
+                        </tr>
+                    </table>
+                    <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 32px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">C. </span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="C. "><a href="#b.boring_218219011_1091022" class="MCXref xref">Angular step</a>
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1214974"></a>Number of repetitions in X</h5>
+                <p class="_03-Parametro-Cod"><a name="MNUMX"></a>MNUMX</p>
+            </p>
+            <p class="TES_Desc-Campi">Number of bores along the X-axis (for <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1217755">"1: Matrix"</a> type repetitions). See figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1294125">8</a>. </p>
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1090824"></a>Number of repetitions in Y</h5>
+                <p class="_03-Parametro-Cod"><a name="MNUMY"></a>MNUMY</p>
+            </p>
+            <p class="TES_Desc-Campi">Number of bores along the Y-axis (for <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1217755">"1: Matrix"</a> type repetitions). See figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1294125">8</a>.</p>
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1090846"></a>x step</h5>
+                <p class="_03-Parametro-Cod"><a name="MSTEPX"></a>MSTEPX</p>
+            </p>
+            <p class="TES_Desc-Campi">Centre distance in the direction of the X-axis, for defining the distance between the bores (for <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1217755">"1: Matrix"</a> type repetitions). See figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1294125">8</a>.</p>
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1090868"></a>y step</h5>
+                <p class="_03-Parametro-Cod"><a name="MSTEPY"></a>MSTEPY</p>
+            </p>
+            <p class="TES_Desc-Campi">Centre distance in the direction of the Y-axis, for defining the distance between the bores (for <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1217755">"1: Matrix"</a> type repetitions). See figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1294125">8</a>.</p>
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1090890"></a>Angle</h5>
+                <p class="_03-Parametro-Cod"><a name="LANG"></a>LANG</p>
+            </p>
+            <p class="TES_Desc-Campi">Angle of the straight line (ref. A, figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1294703">10</a>) along which the repetitions are to be made, starting from the centre of the first bore (for <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1217825">"2: Linear"</a> type repetitions).</p>
+            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">146.</span>
+                    </td>
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="10."><a name="b.boring_218219011_1294703"></a>Example:<br /><img src="../../../../FIGURE/08/arte4/b08b0248_P.png" class="Vid_GR_Autom" /></td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 32px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">A. </span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="A. "><a href="#b.boring_218219011_1090890" class="MCXref xref">Angle</a>
+                    </td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 32px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">B. </span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="B. "><a href="#b.boring_218219011_1216369" class="MCXref xref">Pitch</a>
+                        <br />
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <h5 class="TIT-Parametri-conCod">Number of repetitions</h5>
+                <p class="_03-Parametro-Cod"><a name="LNUM"></a>LNUM</p>
+            </p>
+            <p class="TES_Desc-Campi">Number of bores to be made (for <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1217825">"2: Linear"</a> type repetitions).</p>
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1216369"></a>Pitch</h5>
+                <p class="_03-Parametro-Cod"><a name="LSTEP"></a>LSTEP</p>
+            </p>
+            <p class="TES_Desc-Campi">Centre distance (ref. B, figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1294703">10</a>) that defines the distance between the repeated bores (for <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1217825">"2: Linear"</a> type repetitions).</p>
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1216386"></a>Circle centre X</h5>
+                <p class="_03-Parametro-Cod"><a name="CCX"></a>CCX</p>
+            </p>
+            <p class="TES_Desc-Campi">X co-ordinate of the rotation centre of the circumference around which the bores are to be generated (for <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1214969">"3: Circular"</a> type repetitions). See figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1294188">9</a>.</p>
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1090978"></a>Circle centre Y</h5>
+                <p class="_03-Parametro-Cod"><a name="CCY"></a>CCY</p>
+            </p>
+            <p class="TES_Desc-Campi">Y co-ordinate of the rotation centre of the circumference around which the bores are to be generated (for <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1214969">"3: Circular"</a> type repetitions). See figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1294188">9</a>.</p>
+            <p>
+                <h5 class="TIT-Parametri-conCod">Number of repetitions</h5>
+                <p class="_03-Parametro-Cod"><a name="CNUM"></a>CNUM</p>
+            </p>
+            <p class="TES_Desc-Campi">Number of bores to be made (for <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1214969">"3: Circular"</a> type repetitions). See figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1294188">9</a>.</p>
+            <p>
+                <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1091022"></a>Angular step</h5>
+                <p class="_03-Parametro-Cod"><a name="CSTEP"></a>CSTEP</p>
+            </p>
+            <p class="TES_Desc-Campi">Centre distance that defines the distance between repeated bores (for <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1214969">"3: Circular"</a> type repetitions). See figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1294188">9</a>.</p>
+        </div>
+        <div class="BoxNoRientro" style="display: none;" data-mc-target-name="DVelocita">
+            <p>
+                <h5 class="TIT-Parametri-conCod">Machining speed</h5>
+                <p class="_03-Parametro-Cod"><a name="WSP"></a>WSP</p>
+            </p>
+            <p class="TES_Desc-Campi">Advance speed of the tool during the machining operation.</p>
+            <p>
+                <h5 class="TIT-Parametri-conCod">Lead-in/lead-out speed</h5>
+                <p class="_03-Parametro-Cod"><a name="IOS"></a>IOS</p>
+            </p>
+            <p class="TES_Desc-Campi">Speed at which the tool moves when performing the following operations: </p>
+            <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">Move from the safety position <b>A </b>to the piece surface <b>B </b>(figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1281904">11</a>).</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">Returning to the safety position <b>C </b>after completing the machining operation.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">147.</span>
+                    </td>
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="11."><a name="b.boring_218219011_1281904"></a>IOS<br /><br /><img src="../../../../FIGURE/08/arte3/a08b0173.png" class="Vid_GR_Autom" /></td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 32px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">A. </span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="A. ">Safety position</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 32px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">B. </span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="B. ">Piece surface</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 32px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">C. </span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="C. ">Safety position </td>
+                </tr>
+            </table>
+            <p>
+                <h5 class="TIT-Parametri-conCod">Rotation speed</h5>
+                <p class="_03-Parametro-Cod"><a name="RSP"></a>RSP</p>
+            </p>
+            <p class="TES_Desc-Campi">Tool rotation speed (rpm).</p>
+        </div>
+        <div class="BoxNoRientro" style="display: none;" data-mc-target-name="DSicurezza">
+            <h5 class="TIT-Parametri-conCod">Safety data from tool</h5>
+            <p class="_03-Parametro-Cod">ESTD</p>
+            <p class="TES_Desc-Campi">Enables (box ticked) or disables the data fields below, to define different safety values from those indicated in the characteristics of the chosen tool.</p>
+            <h5 class="TIT-Parametri-conCod">Jig safety</h5>
+            <p class="_03-Parametro-Cod">JSF</p>
+            <p class="TES_Desc-Campi">Safety distance between the tool and the piece locked with the shapeable suction cups.</p>
+            <h5 class="TIT-Parametri-conCod">Uniclamp safety</h5>
+            <p class="_03-Parametro-Cod">USF </p>
+            <p class="TES_Desc-Campi">Safety distance between the tool and the piece locked with the Uniclamps.</p>
+        </div>
+        <div class="BoxNoRientro" style="display: none;" data-mc-target-name="DateSfond">
+            <h5 class="TIT-Parametri-conCod" data-mc-conditions="">Piercing data from tool</h5>
+            <p class="_03-Parametro-Cod" data-mc-conditions=""><a name="EDDS"></a>EDDS</p>
+            <p class="TES_Desc-Campi" data-mc-conditions="">Enables (box ticked) or disables the data fields below, to define different values from those indicated in the characteristics of the chosen tool.</p>
+            <h5 class="TIT-Parametri-conCod"><a name="b.boring_218219011_1281008"></a>Piercing distance</h5>
+            <p class="_03-Parametro-Cod"><a name="DDS"></a>DDS</p>
+            <p class="TES_Desc-Campi">Position (mm) at which the bit must begin to slow down before finishing the boring operation. </p>
+            <p class="TES_Desc-Campi">This <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">value<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Predefined / pre-set. Standard information useful for the control, if the requested information is not entered.</span></a> depends on the value set in the <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1280942">"Depths"</a> data field. When value 0 is entered, the bit does not slow down.</p>
+            <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">Example A figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1281048">12</a>: if a value of 5 is set in this field, and a value of 30 is entered in the <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1280942">"Depths"</a> field, the bit will reduce its descent speed when it reaches a depth of 25mm.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">Example B figure <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#b.boring_218219011_1281048">12</a>: if a value of 3 is set in this field, and the through machining operation is defined in the <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1280942">"Depths"</a> field, the bit will reduce its descent speed when it is 3mm from the lower surface of the piece.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">148.</span>
+                    </td>
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="12."><a name="b.boring_218219011_1281048"></a><span class="COMUNI/titoloFigurefig-rappd">Representation of the data</span>
+                        <br />
+                        <br />
+                        <img src="../../../../FIGURE/03-uten-gruppi/arte4/b03b0038-P.jpg" class="Vid_GR_Autom" />
+                    </td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 32px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">A. </span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="A. ">Example of non-through borings;</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 32px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">B. </span>
+                    </td>
+                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="B. ">Example of through borings. </td>
+                </tr>
+            </table>
+            <p>
+                <h5 class="TIT-Parametri-conCod">Piercing speed</h5>
+                <p class="_03-Parametro-Cod"><a name="DSP"></a>DSP</p>
+            </p>
+            <p class="TES_Desc-Campi">Bit speed during the piece knock-through phase (can only be used for through borings). </p>
+            <p>Once the bit reaches the value set in the data field <a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="#b.boring_218219011_1281008">"Piercing distance"</a>, it carries out the last path of the machining operation at the speed set in this field. If this field is left empty, the system uses the speed defined in the tool parameters.</p>
+        </div>
+        <div class="BoxNoRientro" style="display: none;" data-mc-target-name="DLavorazioni">
+            <p>
+                <h5 class="TIT-Parametri-conCod">Angle AZ</h5>
+                <p class="_03-Parametro-Cod"><a name="AZ"></a>AZ</p>
+            </p>
+            <p class="TES_Desc-Campi">Tool tilt angle in relation to the geometry drawn on the <a href="../../../../_GlossaryDiProgetto/infissi/H-latiPezzi.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">upper face</a> of the piece.</p>
+            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">149.</span>
+                    </td>
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="13.">AZ<br /><br /><img src="../../../../FIGURE/08/arte4-D/d08t0215.png" class="Vid_GR_Autom" /></td>
+                </tr>
+            </table>
+            <p>
+                <h5 class="TIT-Parametri-conCod">Angle AR</h5>
+                <p class="_03-Parametro-Cod"><a name="AR"></a>AR</p>
+            </p>
+            <p class="TES_Desc-Campi">Tool rotation angle (i.e. the rotation angle of the spindle axis on the xy plane).</p>
+            <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 32px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">150.</span>
+                    </td>
+                    <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="14.">AR<br /><br /><img src="../../../../FIGURE/08/arte4-D/d08t0216.png" class="Vid_GR_Autom" /></td>
+                </tr>
+            </table>
+        </div>
+        <table style="width: 100%;border-spacing: 0px 0px;margin-left: 0;margin-right: auto;" class="PerMasterWeb">
+            <col />
+            <col />
+            <col style="width: 70px;" />
+            <tbody>
+                <tr>
+                    <td class="PerMasterweb">
+                        <p class="XMasterLingua" data-mc-conditions="Cond_lingue.Inglese">ENGLISH</p>
+                    </td>
+                    <td class="PerMasterweb">
+                        <p class="XMasterDX"><span style="font-weight: bold;" class="MODELLI/Variablili-MasterEdizione">Edition:</span> <span class="MODELLI/Variablili-MasterN-Edizione">3.0</span></p>
+                    </td>
+                    <td class="PerMasterweb">
+                        <p class="XMasterDX">
+                            <img src="../../../../Resources/Images/MODELLI/Imm-layout/logo_per_BSolid.png" class="Imm_Logo" style="height: 32px;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

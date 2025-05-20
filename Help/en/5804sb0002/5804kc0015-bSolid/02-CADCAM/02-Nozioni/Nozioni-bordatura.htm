@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="5804sb0002.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="bSolid|[%=COMUNI/Stringhe/Ambienti.Amb_CadCam%]|[%=TITOLI/CONTAINER-TOC.noz-prog%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Edgebanding concepts</title>&#160;<link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" /><link href="../../../Resources/Stylesheets/KC-HTML5.css" rel="stylesheet" /><script src="../../../Resources/Scripts/custom.modernizr.js"></script><script src="../../../Resources/Scripts/jquery.min.js"></script><script src="../../../Resources/Scripts/require.min.js"></script><script src="../../../Resources/Scripts/require.config.js"></script><script src="../../../Resources/Scripts/foundation.min.js"></script><script src="../../../Resources/Scripts/plugins.min.js"></script><script src="../../../Resources/Scripts/MadCapAll.js"></script></head>
+    <body>
+        <div style="background-repeat: no-repeat;background-color: #272727;background-position-x: center;padding-left: 0px;padding-right: 6px;padding-top: 6px;padding-bottom: 0px;border-left-style: none;border-left-width: 1px;border-right-style: none;border-right-width: 1px;border-top-style: none;border-top-width: 1px;border-bottom-style: none;border-bottom-width: 2px;border-bottom-color: #272727;">
+            <p class="XMasterDX"> <MadCap:conditionalText data-mc-conditions="Cond_lingue.Bulgaro,Cond_lingue.Ceco,Cond_lingue.Cinese,Cond_lingue.Danese,Cond_lingue.Ebraico,Cond_lingue.Croato,Cond_lingue.Estone,Cond_lingue.Finlandese,Cond_lingue.Francese,Cond_lingue.Greco,Cond_lingue.Inglese,Cond_lingue.Lettone,Cond_lingue.Norvegese,Cond_lingue.Olandese,Cond_lingue.Polacco,Cond_lingue.Rumeno,Cond_lingue.Russo,Cond_lingue.Slovacco,Cond_lingue.Sloveno,Cond_lingue.Spagnolo,Cond_lingue.Svedese,Cond_lingue.Tedesco,Cond_lingue.Turco,Cond_lingue.Ungherese"><span class="MODELLI/Variablili-Masteristrud-trad">Translation of the original instructions</span> - </MadCap:conditionalText><a href="../../../MODELLI-Snippet-sinc/MODELLI-COPERTINE/IndirizzoCostruttore.htm" class="MCTopicPopup MCTopicPopupHotSpot a aHyperMaster" title="Manufacturer's address" data-mc-width="700px" data-mc-height="500px">BIESSE S.p.A.</a> © - <span class="SystemShortDate">11/12/2018</span></p>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="2" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                </div>
+            </div>
+        </div>
+        <h2 class="TIT-livello1"><a name="top"></a>Edgebanding concepts</h2>
+        <h4><a name="Nozioni"></a>Programming concepts</h4>
+        <p>The operations for applying the <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">edgebanding<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Set of operations for covering the edge of the piece (gluing, cleaning, rounding off, etc.).</span></a> strip to the piece are programmed in the <span style="font-weight: bold;" class="COMUNI/Stringhe/AmbientiAmb_CadCam">Cad/Cam</span> environment. </p>
+        <p>The machining operations must be applied to the geometric profile, and the number of sides they are applied to is linked to the selection of the single geometry elements. </p>
+        <p>Each profile consists of geometric elements (lines and arcs), and represents the work trajectory to be followed. Each <a href="../../../_GlossaryDiProgetto/infissi/H-elemento.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">element</a> is linked to the one that follows it and the one that precedes it; this link allows you to establish the workable sides, and therefore to define two types of profile: the “disjointed” or “open” profile, and the “closed” profile.</p>
+        <h4><a name="Profilo"></a>Open or disjointed profile (open ring)<a name="kanchor992"></a><a name="kanchor993"></a></h4>
+        <p>When the geometric elements used to form the profile are contiguous but not tangent, they generate tangency interruptions and therefore a non-continuous trajectory (a discontinuous geometry); in this case, the profile is defined as “disjointed” or “open” and the machining operation is defined as “<b>open ring edgebanding</b>”.</p>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">28.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="1.">Examples of tangent and non-tangent profiles:<br /><img src="../../../FIGURE/08/arte4-D/d08b0094.png" class="Vid_GR_Autom" /></td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 32px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">A. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="A. ">Point of intersection between the ends of the geometric elements.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 32px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">B. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="B. ">Non-tangent elements.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 32px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">C. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="C. ">Tangent line and arc.</td>
+            </tr>
+        </table>
+        <p class="TES" style="color: #ff00ff;">&#160;</p>
+        <p>If you select an element of the profile in the graphics area, the system will automatically search for the elements contiguous or tangent to it, in order to determine the workable side.</p>
+        <p class="TES" style="color: #ff00ff;"><b>Example</b>:</p>
+        <p>The piece <b>A</b> represented in figure <a href="#Esempio" class="RIM_al_num MCXref xref xrefRIM_al_num">2</a> derives from a disjointed profile made up of 3 workable sides (1, 2 and 3), obtained from three tangency interruptions B, C and D. </p>
+        <p>Sides 1 and 2 are formed of several tangent elements; in this case, three edgebanding sequences are applied (the machine performs three edgebanding operations rather than one continuous operation).</p>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">29.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="2."><a name="Esempio"></a>Example<br /><img src="../../../FIGURE/08/arte4-D/d08b0091.png" class="Vid_GR_Autom" /></td>
+            </tr>
+        </table>
+        <p>Another example of open ring machining derives from a profile formed of just one tangency interruption <b>A</b>, figure <a href="#Profili" class="RIM_al_num MCXref xref xrefRIM_al_num">3</a>; in this case, the machining operation is called "<b>drop edgebanding</b>".<a name="kanchor994"></a></p>
+        <p class="TES" style="color: #ff00ff;">&#160;</p>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">30.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="3."><a name="Profili"></a>Drop profiles<br /><img src="../../../FIGURE/08/arte4-D/d08b0096.png" class="Vid_GR_Autom" /></td>
+            </tr>
+        </table>
+        <h4><a name="Profilo2"></a>Closed profile (closed ring)<a name="kanchor995"></a><a name="kanchor996"></a></h4>
+        <p>When the elements used to form the profile are contiguous and tangent, the trajectory generated is unique and it corresponds to a single side of the piece as it starts and ends in the same point. In this case, the profile is defined as “closed” and the machining operation is defined as “<b>closed ring edgebanding</b>”.</p>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">31.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="4.">Representation of closed ring profiles<br /><img src="../../../FIGURE/08/arte4-D/d08b0095.png" class="Vid_GR_Autom" /></td>
+            </tr>
+        </table>
+        <p>If you select an element of the profile in the graphics area, the system will automatically select the whole profile.</p>
+        <h4><a name="Tipi"></a>Types of machining operations that can be programmed</h4>
+        <h6>Blowing</h6>
+        <p class="TEScon-rientro">See <a href="../05-Lav/L-Borda/H3/01_Soffiatura_pulizia.htm#top" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Chip cleaning blower</a></p>
+        <h6>Gluing</h6>
+        <p class="TEScon-rientro">See <a href="../05-Lav/L-Borda/H3/01_Applica-bordo.htm#top" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Edgebanding strip application</a></p>
+        <h6>Edge trimming</h6>
+        <p class="TEScon-rientro">Refer to:</p>
+        <table class="AutoNumber_p_TES_puntatore-sub" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 30px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> •</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" •"><a href="../05-Lav/L-Borda/H3/02_Intestatura_bordoLam.htm#top" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Edgebanding strip trimming with blade </a>
+                </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatore-sub" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 30px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> •</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" •"><a href="../05-Lav/L-Borda/H3/08_Intest-bordoFresa.htm#top" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Edgebanding strip trimming with milling cutter </a>
+                </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatore-sub" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 30px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> •</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" •"><a href="../05-Lav/L-Borda/H3/08_Intest-bordoFresa.htm#top" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Edgebanding strip trimming with milling cutter </a>
+                </td>
+            </tr>
+        </table>
+        <h6>Double edge trimming</h6>
+        <p class="TEScon-rientro">See <a href="../05-Lav/L-Borda/H3/03_Rifilatura_bordo.htm#top" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Double edge trimming on the edgebanding strip </a></p>
+        <h6>scraping</h6>
+        <p class="TEScon-rientro">Refer to:</p>
+        <table class="AutoNumber_p_TES_puntatore-sub" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 30px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> •</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" •"><a href="../05-Lav/L-Borda/H3/04_Raschiatura_bordo.htm#raschia-bordo_2294155889_1031971" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Edgebanding strip scraping</a>
+                </td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatore-sub" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 30px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> •</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" •"> <a href="../05-Lav/L-Borda/H3/05_Raschiatura_colla.htm#raschia-colla_914557801_1031971" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Glue scraping</a></td>
+            </tr>
+        </table>
+        <h6>Corner trimming</h6>
+        <p class="TEScon-rientro">See <a href="../05-Lav/L-Borda/H3/06_Arrotondamento_bordo_su_spigoli.htm#top" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Rounding of edgebanding strip on corners</a></p>
+        <h6>Edgebanding refreshing</h6>
+        <p class="TEScon-rientro">See <a href="../05-Lav/L-Borda/H3/07_Riscaldamento_bordo.htm#top" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">Edgebanding strip heating</a></p>
+        <table style="width: 100%;border-spacing: 0px 0px;margin-left: 0;margin-right: auto;" class="PerMasterWeb">
+            <col />
+            <col />
+            <col style="width: 70px;" />
+            <tbody>
+                <tr>
+                    <td class="PerMasterweb">
+                        <p class="XMasterLingua" data-mc-conditions="Cond_lingue.Inglese">ENGLISH</p>
+                    </td>
+                    <td class="PerMasterweb">
+                        <p class="XMasterDX"><span style="font-weight: bold;" class="MODELLI/Variablili-MasterEdizione">Edition:</span> <span class="MODELLI/Variablili-MasterN-Edizione">3.0</span></p>
+                    </td>
+                    <td class="PerMasterweb">
+                        <p class="XMasterDX">
+                            <img src="../../../Resources/Images/MODELLI/Imm-layout/logo_per_BSolid.png" class="Imm_Logo" style="height: 32px;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,2537 @@
+﻿/*<meta />*/
+
+/* MadCap Styles */
+
+#contentBody.nav-closed
+{
+	width: 100%;
+}
+
+button,
+.button
+{
+	border-color: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea
+{
+	margin: 0;
+}
+
+.contain-to-grid
+{
+	background: none;
+}
+
+.complementary
+{
+	padding: 0;
+}
+
+.expand-for-small-10
+{
+	width: 83%;
+}
+
+.row
+{
+	max-width: 100%;
+}
+
+.menu-icon
+{
+	margin-top: -10px;
+	width: 60px;
+}
+
+.menu-icon a
+{
+	text-indent: -48px;
+	width: 60px;
+	height: 70px;
+	line-height: 33px;
+	padding: 0;
+	color: white;
+}
+
+.menu-icon a span
+{
+	position: absolute;
+	display: block;
+	width: 60px;
+	height: 28px;
+	top: 25px;
+	background: url('Images/ResponsiveMenuButton.png') no-repeat center center;
+}
+
+.hide-extras [role="main"]
+{
+	width: 83%;
+}
+
+#search-sidebar
+{
+	display: none;
+}
+
+._Skins_Skin_HTML5_KC .comments .timestamp
+{
+	color: #888888;
+	font-family: Georgia;
+	font-size: 11px;
+	font-style: italic;
+}
+
+._Skins_Skin_HTML5_KC .login-dialog-content
+{
+	border-top: solid 1px #767676;
+	background-color: #5a5a5a;
+}
+
+._Skins_Skin_HTML5_KC .login-dialog button
+{
+	color: #ffffff;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	border-top: solid 1px #2b2b2b;
+	border-right: solid 1px #2b2b2b;
+	border-bottom: solid 1px #2b2b2b;
+	border-left: solid 1px #2b2b2b;
+	background: #595959;
+	background: -moz-linear-gradient(top, #595959 0%, #4a4a4a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#595959), color-stop(100%,#4a4a4a));
+	background: -webkit-linear-gradient(top, #595959 0%, #4a4a4a 100%);
+	background: -o-linear-gradient(top, #595959 0%,#4a4a4a 100%);
+	background: -ms-linear-gradient(top, #595959 0%,#4a4a4a 100%);
+	background: linear-gradient(top, #595959 0%,#4a4a4a 100%);
+	-pie-background: linear-gradient(#595959, #4a4a4a);
+	background-position: center center;
+}
+
+._Skins_Skin_HTML5_KC .login-dialog-header
+{
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	border-bottom: solid 1px #2b2b2b;
+	background: #5a5a5a url('Images/login-dialog-icon.png') no-repeat 18px center;
+	background: url('Images/login-dialog-icon.png') no-repeat 18px center, -moz-linear-gradient(top, #5a5a5a 0%, #4a4a4a 100%);
+	background: url('Images/login-dialog-icon.png') no-repeat 18px center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5a5a5a), color-stop(100%,#4a4a4a));
+	background: url('Images/login-dialog-icon.png') no-repeat 18px center, -webkit-linear-gradient(top, #5a5a5a 0%, #4a4a4a 100%);
+	background: url('Images/login-dialog-icon.png') no-repeat 18px center, -o-linear-gradient(top, #5a5a5a 0%,#4a4a4a 100%);
+	background: url('Images/login-dialog-icon.png') no-repeat 18px center, -ms-linear-gradient(top, #5a5a5a 0%,#4a4a4a 100%);
+	background: url('Images/login-dialog-icon.png') no-repeat 18px center, linear-gradient(top, #5a5a5a 0%,#4a4a4a 100%);
+	-pie-background: url('Skins/Default/Stylesheets/Images/login-dialog-icon.png') no-repeat 18px center, linear-gradient(#5a5a5a, #4a4a4a);
+}
+
+._Skins_Skin_HTML5_KC .login-dialog-content .profile-item-wrapper .email-notifications-group
+{
+	background-color: #4a4a4a;
+}
+
+._Skins_Skin_HTML5_KC .login-dialog-content input[type=text]
+{
+	
+}
+
+._Skins_Skin_HTML5_KC .login-dialog-content .profile-item-wrapper
+{
+	color: #cecece;
+}
+
+._Skins_Skin_HTML5_KC #glossary .GlossaryPageEntry .GlossaryPageDefinition
+{
+	color: #e8faff;
+	font-style: italic;
+}
+
+._Skins_Skin_HTML5_KC #header
+{
+	display: block;
+	height: 70px;
+}
+
+._Skins_Skin_HTML5_KC #body
+{
+	top: 70px;
+}
+
+._Skins_Skin_HTML5_KC #contentBodyInner
+{
+	top: 52px;
+}
+
+._Skins_Skin_HTML5_KC #header .logo
+{
+	display: block;
+	background: transparent url('Images/logoBiesse_skin.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/logoBiesse_skin.png') no-repeat center center;
+	width: 43px;
+	height: 28px;
+	margin-top: -14px;
+}
+
+._Skins_Skin_HTML5_KC #responsiveHeader .logo
+{
+	display: block;
+	width: 43px;
+	background: transparent url('Images/logoBiesse_skin.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/logoBiesse_skin.png') no-repeat center center;
+}
+
+._Skins_Skin_HTML5_KC #header .logo > img
+{
+	width: 43px;
+	height: 28px;
+}
+
+._Skins_Skin_HTML5_KC #responsiveHeader .logo > img
+{
+	width: 43px;
+	height: 28px;
+}
+
+._Skins_Skin_HTML5_KC body
+{
+	color: #000000;
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	background: #272727 none;
+	-pie-background: #272727;
+}
+
+._Skins_Skin_HTML5_KC #responsiveHeader
+{
+	background: #272727 none;
+	-pie-background: #272727;
+}
+
+._Skins_Skin_HTML5_KC .MCWebHelpFramesetLink a
+{
+	color: #037f7b;
+}
+
+._Skins_Skin_HTML5_KC .MCWebHelpFramesetLink .MCWebHelpFramesetLinkBottom a
+{
+	
+}
+
+._Skins_Skin_HTML5_KC .MCWebHelpFramesetLink .MCWebHelpFramesetLinkTop a
+{
+	
+}
+
+._Skins_Skin_HTML5_KC .tabs-panel-content
+{
+	background-repeat: repeat;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 8px;
+	border-top: solid 2px #134042;
+	border-right: solid 2px #134042;
+	border-left: solid 0px #134042;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	background: transparent;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_Skin_HTML5_KC #browseSequences.tabs-panel-content
+{
+	background-repeat: repeat;
+	background: transparent;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_Skin_HTML5_KC #community.tabs-panel-content
+{
+	background-repeat: repeat;
+	background: transparent;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_Skin_HTML5_KC #glossary.tabs-panel-content
+{
+	background-repeat: repeat;
+	background: transparent;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_Skin_HTML5_KC #index.tabs-panel-content
+{
+	background-repeat: repeat;
+	background: transparent none;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_Skin_HTML5_KC #index .tree-node.tree-node-expanded > div
+{
+	background: transparent url('Images/index-exp-coll.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-exp-coll.png') no-repeat 0 3px;
+	padding-left: 15px;
+}
+
+._Skins_Skin_HTML5_KC .web #index .tree-node.tree-node-expanded > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-exp-coll.png') no-repeat 0 3px;
+	background: url('Images/index-exp-coll.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC #index .tree-node.tree-node-expanded.tree-node-selected > div
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-exp-coll.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/index-exp-coll.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC .web #index .tree-node.tree-node-expanded.tree-node-selected > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-exp-coll.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/index-exp-coll.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC #index .tree-node.tree-node-collapsed > div
+{
+	background: transparent url('Images/index-exp-coll.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-exp-coll.png') no-repeat 0 3px;
+	padding-left: 15px;
+}
+
+._Skins_Skin_HTML5_KC .web #index .tree-node.tree-node-collapsed > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-exp-coll.png') no-repeat 0 3px;
+	background: url('Images/index-exp-coll.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC #index .tree-node.tree-node-collapsed.tree-node-selected > div
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-exp-coll.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/index-exp-coll.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC .web #index .tree-node.tree-node-collapsed.tree-node-selected > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-exp-coll.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/index-exp-coll.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC #index .tree-node.tree-node-leaf > div
+{
+	background: transparent url('Images/indexTrasparent.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/indexTrasparent.png') no-repeat 0 3px;
+	padding-left: 15px;
+}
+
+._Skins_Skin_HTML5_KC .web #index .tree-node.tree-node-leaf > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/indexTrasparent.png') no-repeat 0 3px;
+	background: url('Images/indexTrasparent.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC #index .tree-node.tree-node-leaf.tree-node-selected > div
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/indexTrasparent.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/indexTrasparent.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC .web #index .tree-node.tree-node-leaf.tree-node-selected > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/indexTrasparent.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/indexTrasparent.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC #search.tabs-panel-content
+{
+	background-repeat: repeat;
+	background: transparent;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_Skin_HTML5_KC #toc.tabs-panel-content
+{
+	background-repeat: repeat;
+	background: transparent;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-collapsed > div
+{
+	background: transparent url('Images/book.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book.png') no-repeat 0 3px;
+	padding-left: 25px;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-collapsed > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book.png') no-repeat 0 3px;
+	color: #e8faff;
+	background: url('Images/book.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-collapsed.tree-node-selected > div
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/book.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-collapsed.tree-node-selected > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/book.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-expanded > div
+{
+	background: transparent url('Images/book-open.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book-open.png') no-repeat 0 3px;
+	padding-left: 25px;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-expanded > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book-open.png') no-repeat 0 3px;
+	color: #e8faff;
+	background: url('Images/book-open.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-expanded.tree-node-selected > div
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book-open.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/book-open.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-expanded.tree-node-selected > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book-open.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/book-open.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-leaf > div
+{
+	background: transparent url('Images/Topic.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Topic.png') no-repeat 0 3px;
+	padding-left: 21px;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-leaf > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Topic.png') no-repeat 0 3px;
+	color: #e8faff;
+	background: url('Images/Topic.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-leaf.tree-node-selected > div
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Topic.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/Topic.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-leaf.tree-node-selected > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Topic.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/Topic.png') no-repeat 0 3px, transparent;
+}
+
+._Skins_Skin_HTML5_KC .tree-node .new-indicator
+{
+	background: none;
+	background-repeat: no-repeat;
+}
+
+html.left-layout._Skins_Skin_HTML5_KC #show-hide-navigation:after
+{
+	color: #037f7b;
+	border-right-color: #037f7b;
+}
+
+html.left-layout._Skins_Skin_HTML5_KC .nav-closed #show-hide-navigation:after
+{
+	border-left-color: #037f7b;
+}
+
+._Skins_Skin_HTML5_KC .tree-node div
+{
+	color: #b9e1df;
+	font-weight: bold;
+	line-height: 1.9em;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-selected > div
+{
+	color: #037f7b;
+	background-color: transparent;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-selected > div:hover
+{
+	color: #037f7b;
+	background-color: transparent;
+}
+
+._Skins_Skin_HTML5_KC #index .tree-node.tree-node-selected > div
+{
+	color: #037f7b;
+	background-color: transparent;
+}
+
+._Skins_Skin_HTML5_KC .web #index .tree-node.tree-node-selected > div:hover
+{
+	color: #037f7b;
+	background-color: transparent;
+}
+
+._Skins_Skin_HTML5_KC .SearchFilterEntry.tree-node .SearchFilter.active
+{
+	background-color: transparent;
+	color: #037f7b;
+}
+
+._Skins_Skin_HTML5_KC .tabs-panel-search
+{
+	background-repeat: no-repeat;
+	border-top: none 1px #134042;
+	border-right: none 1px #b9e1df;
+	border-bottom: none 1px #b9e1df;
+	border-left: none 1px #134042;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	color: #e8faff;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background: -moz-linear-gradient(top, transparent 0%, #134042 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,#134042));
+	background: -webkit-linear-gradient(top, transparent 0%, #134042 100%);
+	background: -o-linear-gradient(top, transparent 0%,#134042 100%);
+	background: -ms-linear-gradient(top, transparent 0%,#134042 100%);
+	background: linear-gradient(top, transparent 0%,#134042 100%);
+	-pie-background: linear-gradient(transparent, #134042);
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li
+{
+	font-size: 0px;
+	font-weight: bold;
+	font-style: italic;
+	width: 45px;
+	height: 35px;
+	navigation-tab-layout: ImageOnly;
+	text-align: center;
+	line-height: 35px;
+}
+
+._Skins_Skin_HTML5_KC .tabs-panel
+{
+	top: 35px;
+	background-color: transparent;
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#BrowseSequencesTab
+{
+	
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#CommunityTab
+{
+	
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#GlossaryTab
+{
+	
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#IndexTab
+{
+	
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#SearchTab
+{
+	
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#TocTab
+{
+	
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li.tabs-nav-active
+{
+	color: transparent;
+	border-top: solid 1px #037f7b;
+	border-right: solid 1px #b9e1df;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_Skin_HTML5_KC #show-hide-navigation
+{
+	background-color: transparent;
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#BrowseSequencesTab.tabs-nav-active
+{
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_Skin_HTML5_KC .tab-icon #BrowseSequencesTab.tabs-nav-active .tabs-nav-icon
+{
+	background: transparent url('Images/browseActive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/browseActive.png');
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#CommunityTab.tabs-nav-active
+{
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_Skin_HTML5_KC .tab-icon #CommunityTab.tabs-nav-active .tabs-nav-icon
+{
+	background: transparent url('Images/communityActive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/communityActive.png');
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#GlossaryTab.tabs-nav-active
+{
+	border-top: solid 1px #037f7b;
+	border-right: solid 1px #b9e1df;
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_Skin_HTML5_KC .tab-icon #GlossaryTab.tabs-nav-active .tabs-nav-icon
+{
+	background: transparent url('Images/glossaryActive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/glossaryActive.png');
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#IndexTab.tabs-nav-active
+{
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_Skin_HTML5_KC .tab-icon #IndexTab.tabs-nav-active .tabs-nav-icon
+{
+	background: transparent url('Images/indexActive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/indexActive.png');
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#SearchTab.tabs-nav-active
+{
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_Skin_HTML5_KC .tab-icon #SearchTab.tabs-nav-active .tabs-nav-icon
+{
+	
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#TocTab.tabs-nav-active
+{
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_Skin_HTML5_KC .tab-icon #TocTab.tabs-nav-active .tabs-nav-icon
+{
+	background: transparent url('Images/tocActive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/tocActive.png');
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li.tabs-nav-inactive
+{
+	color: transparent;
+	border-top: solid 1px #b9e1df;
+	border-right: solid 1px #134042;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	text-shadow: none;
+	-webkit-text-shadow: none;
+	-moz-text-shadow: none;
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+	background-clip: padding-box;
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#BrowseSequencesTab.tabs-nav-inactive
+{
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_Skin_HTML5_KC .tab-icon #BrowseSequencesTab.tabs-nav-inactive .tabs-nav-icon
+{
+	background: transparent url('Images/browseInactive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/browseInactive.png');
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#CommunityTab.tabs-nav-inactive
+{
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_Skin_HTML5_KC .tab-icon #CommunityTab.tabs-nav-inactive .tabs-nav-icon
+{
+	background: transparent url('Images/communityInactive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/communityInactive.png');
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#GlossaryTab.tabs-nav-inactive
+{
+	border-top: solid 1px #b9e1df;
+	border-right: solid 1px #134042;
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_Skin_HTML5_KC .tab-icon #GlossaryTab.tabs-nav-inactive .tabs-nav-icon
+{
+	background: transparent url('Images/glossaryInactive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/glossaryInactive.png');
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#IndexTab.tabs-nav-inactive
+{
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_Skin_HTML5_KC .tab-icon #IndexTab.tabs-nav-inactive .tabs-nav-icon
+{
+	background: transparent url('Images/indexInactive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/indexInactive.png');
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#SearchTab.tabs-nav-inactive
+{
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_Skin_HTML5_KC .tab-icon #SearchTab.tabs-nav-inactive .tabs-nav-icon
+{
+	
+}
+
+._Skins_Skin_HTML5_KC .tabs-nav li#TocTab.tabs-nav-inactive
+{
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_Skin_HTML5_KC .tab-icon #TocTab.tabs-nav-inactive .tabs-nav-icon
+{
+	background: transparent url('Images/tocInactive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/tocInactive.png');
+}
+
+._Skins_Skin_HTML5_KC .search-bar
+{
+	display: block;
+	border-top: solid 1px #134042;
+	border-right: solid 1px #272727;
+	border-bottom: solid 1px #272727;
+	border-left: solid 1px #134042;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 16px;
+	border-bottom-left-radius: 0px;
+	-webkit-box-shadow: 0px 1px 0px #b9e1df;
+	-moz-box-shadow: 0px 1px 0px #b9e1df;
+	box-shadow: 0px 1px 0px #b9e1df;
+	-webkit-box-shadow: 0px 1px 0px #b9e1df;
+	-moz-box-shadow: 0px 1px 0px #b9e1df;
+	margin-top: -15px;
+}
+
+._Skins_Skin_HTML5_KC #search-field
+{
+	height: 28px;
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 0px;
+	color: #e8faff;
+	border-top: none 0px #134042;
+	border-right: none 0px #134042;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, #134042 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,#134042));
+	background: -webkit-linear-gradient(top, transparent 0%, #134042 100%);
+	background: -o-linear-gradient(top, transparent 0%,#134042 100%);
+	background: -ms-linear-gradient(top, transparent 0%,#134042 100%);
+	background: linear-gradient(top, transparent 0%,#134042 100%);
+	-pie-background: linear-gradient(transparent, #134042);
+}
+
+._Skins_Skin_HTML5_KC .search-filter
+{
+	height: 28px;
+	color: #e8faff;
+	border-left: solid 1px #363636;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_Skin_HTML5_KC .search-submit
+{
+	height: 28px;
+}
+
+._Skins_Skin_HTML5_KC .search-submit-wrapper
+{
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 16px;
+	border-top: none 1px #134042;
+	border-right: none 0px #b9e1df;
+	border-bottom: none 0px #b9e1df;
+	border-left: solid 1px #037f7b;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	background: transparent url('Images/magnifying_glass.png') no-repeat center center;
+	background: url('Images/magnifying_glass.png') no-repeat center center, -moz-linear-gradient(top, transparent 0%, #134042 100%);
+	background: url('Images/magnifying_glass.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,#134042));
+	background: url('Images/magnifying_glass.png') no-repeat center center, -webkit-linear-gradient(top, transparent 0%, #134042 100%);
+	background: url('Images/magnifying_glass.png') no-repeat center center, -o-linear-gradient(top, transparent 0%,#134042 100%);
+	background: url('Images/magnifying_glass.png') no-repeat center center, -ms-linear-gradient(top, transparent 0%,#134042 100%);
+	background: url('Images/magnifying_glass.png') no-repeat center center, linear-gradient(top, transparent 0%,#134042 100%);
+	-pie-background: url('Skins/Default/Stylesheets/Images/magnifying_glass.png') no-repeat center center, linear-gradient(transparent, #134042);
+}
+
+._Skins_Skin_HTML5_KC .search-filter span:after
+{
+	border-top-color: #e8faff;
+}
+
+._Skins_Skin_HTML5_KC .search-filter-content
+{
+	color: #e8faff;
+	background-color: #3f3f3f;
+}
+
+._Skins_Skin_HTML5_KC .search-filter.open
+{
+	color: #e8faff;
+	background-color: #3f3f3f;
+}
+
+._Skins_Skin_HTML5_KC .search-filter-content ul li:hover
+{
+	color: #037f7b;
+	background-color: transparent;
+}
+
+._Skins_Skin_HTML5_KC #resultList .glossary .definition
+{
+	color: #037f7b;
+	font-size: 10pt;
+}
+
+._Skins_Skin_HTML5_KC #resultList .glossary
+{
+	color: #134042;
+	font-size: 10pt;
+	margin-bottom: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-position: center center;
+	border-top: none 1px #b9e1df;
+	border-right: none 1px #b9e1df;
+	border-bottom: none 1px #b9e1df;
+	border-left: none 1px #b9e1df;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	background: #b9e1df;
+	background: -moz-linear-gradient(top, #b9e1df 0%, #b9e1df 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b9e1df), color-stop(100%,#b9e1df));
+	background: -webkit-linear-gradient(top, #b9e1df 0%, #b9e1df 100%);
+	background: -o-linear-gradient(top, #b9e1df 0%,#b9e1df 100%);
+	background: -ms-linear-gradient(top, #b9e1df 0%,#b9e1df 100%);
+	background: linear-gradient(top, #b9e1df 0%,#b9e1df 100%);
+	-pie-background: linear-gradient(#b9e1df, #b9e1df);
+}
+
+._Skins_Skin_HTML5_KC #resultList .glossary .term
+{
+	color: #134042;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+._Skins_Skin_HTML5_KC #resultList .glossary .term a
+{
+	color: #134042;
+	font-size: 12pt;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+
+._Skins_Skin_HTML5_KC #resultList .glossary .term a:visited
+{
+	
+}
+
+._Skins_Skin_HTML5_KC #resultList .title a:visited
+{
+	color: #037f7b;
+	text-decoration: underline;
+}
+
+._Skins_SkinCSH_KC #resultList .glossary .term a:visited
+{
+	
+}
+
+._Skins_SkinCSH_KC #resultList .title a:visited
+{
+	color: #037f7b;
+	text-decoration: underline;
+}
+
+._Skins_Skin_HTML5_KC #resultList .glossary .term a:focus
+{
+	
+}
+
+._Skins_Skin_HTML5_KC #resultList .title a:focus
+{
+	color: #037f7b;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+._Skins_SkinCSH_KC #resultList .glossary .term a:focus
+{
+	
+}
+
+._Skins_SkinCSH_KC #resultList .title a:focus
+{
+	color: #037f7b;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+._Skins_Skin_HTML5_KC #resultList .glossary .term a:hover
+{
+	
+}
+
+._Skins_Skin_HTML5_KC #pagination a:hover
+{
+	border-top: solid 1px #e2e2e6;
+}
+
+._Skins_Skin_HTML5_KC #resultList .title a:hover
+{
+	color: #037f7b;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+._Skins_SkinCSH_KC #resultList .glossary .term a:hover
+{
+	
+}
+
+._Skins_SkinCSH_KC #pagination a:hover
+{
+	border-top: solid 1px #e2e2e6;
+}
+
+._Skins_SkinCSH_KC #resultList .title a:hover
+{
+	color: #037f7b;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+._Skins_Skin_HTML5_KC #resultList .glossary .term a:active
+{
+	
+}
+
+._Skins_Skin_HTML5_KC #resultList .title a:active
+{
+	color: #037f7b;
+	text-decoration: underline;
+}
+
+._Skins_SkinCSH_KC #resultList .glossary .term a:active
+{
+	
+}
+
+._Skins_SkinCSH_KC #resultList .title a:active
+{
+	color: #037f7b;
+	text-decoration: underline;
+}
+
+._Skins_Skin_HTML5_KC #results-heading
+{
+	color: #037f7b;
+	font-family: 'Arial Narrow';
+	font-size: 22px;
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: solid 2px #b9e1df;
+}
+
+._Skins_Skin_HTML5_KC #search-field::-webkit-input-placeholder
+{
+	color: #e8faff;
+}
+
+._Skins_Skin_HTML5_KC #search-field::-moz-placeholder
+{
+	color: #e8faff;
+}
+
+._Skins_Skin_HTML5_KC #search-field:-moz-placeholder
+{
+	color: #e8faff;
+}
+
+._Skins_Skin_HTML5_KC #search-field:-ms-input-placeholder
+{
+	color: #e8faff;
+}
+
+._Skins_Skin_HTML5_KC #pagination
+{
+	height: 40px;
+	line-height: 40px;
+}
+
+._Skins_Skin_HTML5_KC #pagination a
+{
+	border-top: solid 1px #fafafc;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-decoration: none;
+}
+
+._Skins_Skin_HTML5_KC #pagination a#selected
+{
+	border-top: solid 1px #e2e2e6;
+	font-weight: bold;
+}
+
+._Skins_Skin_HTML5_KC #resultList .description
+{
+	font-size: 13px;
+}
+
+._Skins_Skin_HTML5_KC #resultList .title a
+{
+	color: #037f7b;
+	font-weight: normal;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+._Skins_Skin_HTML5_KC #resultList .url cite
+{
+	color: #01514e;
+	font-size: 13px;
+	font-style: italic;
+}
+
+._Skins_Skin_HTML5_KC #resultList
+{
+	text-align: left;
+}
+
+._Skins_Skin_HTML5_KC #search-field-sidebar
+{
+	background-image: url('Images/magnifying_glass.png');
+}
+
+._Skins_Skin_HTML5_KC #responsive-search-index
+{
+	background-image: url('Images/magnifying_glass.png');
+}
+
+._Skins_Skin_HTML5_KC #responsive-search-glossary
+{
+	background-image: url('Images/magnifying_glass.png');
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-collapsed.SubClass > div
+{
+	background: transparent url('Images/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-collapsed.SubClass > div:hover
+{
+	background: transparent url('Images/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-collapsed.tree-node-selected.SubClass > div
+{
+	background: transparent url('Images/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-collapsed.tree-node-selected.SubClass > div:hover
+{
+	background: transparent url('Images/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-expanded.SubClass > div
+{
+	background: transparent url('Images/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-expanded.SubClass > div:hover
+{
+	background: transparent url('Images/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-expanded.tree-node-selected.SubClass > div
+{
+	background: transparent url('Images/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-expanded.tree-node-selected.SubClass > div:hover
+{
+	background: transparent url('Images/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-leaf.SubClass > div
+{
+	background: transparent url('Images/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node-leaf.SubClass > div:hover
+{
+	background: transparent url('Images/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-leaf.tree-node-selected.SubClass > div
+{
+	background: transparent url('Images/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-leaf.tree-node-selected.SubClass > div:hover
+{
+	background: transparent url('Images/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.SubClass .new-indicator
+{
+	background: none;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.SubClass .new-indicator > div:hover
+{
+	background: none;
+}
+
+._Skins_Skin_HTML5_KC .tree-node.tree-node-selected.SubClass .new-indicator > div
+{
+	background: none;
+}
+
+._Skins_Skin_HTML5_KC .web .tree-node.tree-node-selected.SubClass .new-indicator > div:hover
+{
+	background: none;
+}
+
+._Skins_Skin_HTML5_KC #contentBody
+{
+	background-color: transparent;
+}
+
+._Skins_SkinCSH_KC .comments .timestamp
+{
+	color: #888888;
+	font-family: Georgia;
+	font-size: 11px;
+	font-style: italic;
+}
+
+._Skins_SkinCSH_KC .login-dialog-content
+{
+	border-top: solid 1px #767676;
+	background-color: #5a5a5a;
+}
+
+._Skins_SkinCSH_KC .login-dialog button
+{
+	color: #ffffff;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	border-top: solid 1px #2b2b2b;
+	border-right: solid 1px #2b2b2b;
+	border-bottom: solid 1px #2b2b2b;
+	border-left: solid 1px #2b2b2b;
+	background: #595959;
+	background: -moz-linear-gradient(top, #595959 0%, #4a4a4a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#595959), color-stop(100%,#4a4a4a));
+	background: -webkit-linear-gradient(top, #595959 0%, #4a4a4a 100%);
+	background: -o-linear-gradient(top, #595959 0%,#4a4a4a 100%);
+	background: -ms-linear-gradient(top, #595959 0%,#4a4a4a 100%);
+	background: linear-gradient(top, #595959 0%,#4a4a4a 100%);
+	-pie-background: linear-gradient(#595959, #4a4a4a);
+	background-position: center center;
+}
+
+._Skins_SkinCSH_KC .login-dialog-header
+{
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	border-bottom: solid 1px #2b2b2b;
+	background: #5a5a5a url('Images/SkinCSH-KC/login-dialog-icon.png') no-repeat 18px center;
+	background: url('Images/SkinCSH-KC/login-dialog-icon.png') no-repeat 18px center, -moz-linear-gradient(top, #5a5a5a 0%, #4a4a4a 100%);
+	background: url('Images/SkinCSH-KC/login-dialog-icon.png') no-repeat 18px center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5a5a5a), color-stop(100%,#4a4a4a));
+	background: url('Images/SkinCSH-KC/login-dialog-icon.png') no-repeat 18px center, -webkit-linear-gradient(top, #5a5a5a 0%, #4a4a4a 100%);
+	background: url('Images/SkinCSH-KC/login-dialog-icon.png') no-repeat 18px center, -o-linear-gradient(top, #5a5a5a 0%,#4a4a4a 100%);
+	background: url('Images/SkinCSH-KC/login-dialog-icon.png') no-repeat 18px center, -ms-linear-gradient(top, #5a5a5a 0%,#4a4a4a 100%);
+	background: url('Images/SkinCSH-KC/login-dialog-icon.png') no-repeat 18px center, linear-gradient(top, #5a5a5a 0%,#4a4a4a 100%);
+	-pie-background: url('Skins/Default/Stylesheets/Images/SkinCSH-KC/login-dialog-icon.png') no-repeat 18px center, linear-gradient(#5a5a5a, #4a4a4a);
+}
+
+._Skins_SkinCSH_KC .login-dialog-content .profile-item-wrapper .email-notifications-group
+{
+	background-color: #4a4a4a;
+}
+
+._Skins_SkinCSH_KC .login-dialog-content input[type=text]
+{
+	
+}
+
+._Skins_SkinCSH_KC .login-dialog-content .profile-item-wrapper
+{
+	color: #cecece;
+}
+
+._Skins_SkinCSH_KC #glossary .GlossaryPageEntry .GlossaryPageDefinition
+{
+	color: #e8faff;
+	font-style: italic;
+}
+
+._Skins_SkinCSH_KC #header
+{
+	display: block;
+	height: 70px;
+}
+
+._Skins_SkinCSH_KC #body
+{
+	top: 70px;
+}
+
+._Skins_SkinCSH_KC #contentBodyInner
+{
+	top: 52px;
+}
+
+._Skins_SkinCSH_KC #header .logo
+{
+	display: block;
+	background: transparent url('Images/SkinCSH-KC/logoBiesse_skin.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/logoBiesse_skin.png') no-repeat center center;
+	width: 43px;
+	height: 28px;
+	margin-top: -14px;
+}
+
+._Skins_SkinCSH_KC #responsiveHeader .logo
+{
+	display: block;
+	width: 43px;
+	background: transparent url('Images/SkinCSH-KC/logoBiesse_skin.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/logoBiesse_skin.png') no-repeat center center;
+}
+
+._Skins_SkinCSH_KC #header .logo > img
+{
+	width: 43px;
+	height: 28px;
+}
+
+._Skins_SkinCSH_KC #responsiveHeader .logo > img
+{
+	width: 43px;
+	height: 28px;
+}
+
+._Skins_SkinCSH_KC body
+{
+	color: #000000;
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	background: #272727 none;
+	-pie-background: #272727;
+}
+
+._Skins_SkinCSH_KC #responsiveHeader
+{
+	background: #272727 none;
+	-pie-background: #272727;
+}
+
+._Skins_SkinCSH_KC .MCWebHelpFramesetLink a
+{
+	color: #037f7b;
+}
+
+._Skins_SkinCSH_KC .MCWebHelpFramesetLink .MCWebHelpFramesetLinkBottom a
+{
+	
+}
+
+._Skins_SkinCSH_KC .MCWebHelpFramesetLink .MCWebHelpFramesetLinkTop a
+{
+	
+}
+
+._Skins_SkinCSH_KC .tabs-panel-content
+{
+	background-repeat: repeat;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 8px;
+	border-top: solid 2px #134042;
+	border-right: solid 2px #134042;
+	border-left: solid 0px #134042;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	background: transparent;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_SkinCSH_KC #browseSequences.tabs-panel-content
+{
+	background-repeat: repeat;
+	background: transparent;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_SkinCSH_KC #community.tabs-panel-content
+{
+	background-repeat: repeat;
+	background: transparent;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_SkinCSH_KC #glossary.tabs-panel-content
+{
+	background-repeat: repeat;
+	background: transparent;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_SkinCSH_KC #index.tabs-panel-content
+{
+	background-repeat: repeat;
+	background: transparent none;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_SkinCSH_KC #index .tree-node.tree-node-expanded > div
+{
+	background: transparent url('Images/SkinCSH-KC/index-exp-coll.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/index-exp-coll.png') no-repeat 0 3px;
+	padding-left: 15px;
+}
+
+._Skins_SkinCSH_KC .web #index .tree-node.tree-node-expanded > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/index-exp-coll.png') no-repeat 0 3px;
+	background: url('Images/SkinCSH-KC/index-exp-coll.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC #index .tree-node.tree-node-expanded.tree-node-selected > div
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/index-exp-coll.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/SkinCSH-KC/index-exp-coll.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC .web #index .tree-node.tree-node-expanded.tree-node-selected > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/index-exp-coll.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/SkinCSH-KC/index-exp-coll.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC #index .tree-node.tree-node-collapsed > div
+{
+	background: transparent url('Images/SkinCSH-KC/index-exp-coll.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/index-exp-coll.png') no-repeat 0 3px;
+	padding-left: 15px;
+}
+
+._Skins_SkinCSH_KC .web #index .tree-node.tree-node-collapsed > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/index-exp-coll.png') no-repeat 0 3px;
+	background: url('Images/SkinCSH-KC/index-exp-coll.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC #index .tree-node.tree-node-collapsed.tree-node-selected > div
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/index-exp-coll.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/SkinCSH-KC/index-exp-coll.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC .web #index .tree-node.tree-node-collapsed.tree-node-selected > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/index-exp-coll.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/SkinCSH-KC/index-exp-coll.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC #index .tree-node.tree-node-leaf > div
+{
+	background: transparent url('Images/SkinCSH-KC/indexTrasparent.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/indexTrasparent.png') no-repeat 0 3px;
+	padding-left: 15px;
+}
+
+._Skins_SkinCSH_KC .web #index .tree-node.tree-node-leaf > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/indexTrasparent.png') no-repeat 0 3px;
+	background: url('Images/SkinCSH-KC/indexTrasparent.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC #index .tree-node.tree-node-leaf.tree-node-selected > div
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/indexTrasparent.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/SkinCSH-KC/indexTrasparent.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC .web #index .tree-node.tree-node-leaf.tree-node-selected > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/indexTrasparent.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/SkinCSH-KC/indexTrasparent.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC #search.tabs-panel-content
+{
+	background-repeat: repeat;
+	background: transparent;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_SkinCSH_KC #toc.tabs-panel-content
+{
+	background-repeat: repeat;
+	background: transparent;
+	background: -moz-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#272727));
+	background: -webkit-linear-gradient(top, #272727 0%, #272727 100%);
+	background: -o-linear-gradient(top, #272727 0%,#272727 100%);
+	background: -ms-linear-gradient(top, #272727 0%,#272727 100%);
+	background: linear-gradient(top, #272727 0%,#272727 100%);
+	-pie-background: linear-gradient(#272727, #272727);
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-collapsed > div
+{
+	background: transparent url('Images/SkinCSH-KC/book.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/book.png') no-repeat 0 3px;
+	padding-left: 25px;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-collapsed > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/book.png') no-repeat 0 3px;
+	color: #e8faff;
+	background: url('Images/SkinCSH-KC/book.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-collapsed.tree-node-selected > div
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/book.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/SkinCSH-KC/book.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-collapsed.tree-node-selected > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/book.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/SkinCSH-KC/book.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-expanded > div
+{
+	background: transparent url('Images/SkinCSH-KC/book-open.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/book-open.png') no-repeat 0 3px;
+	padding-left: 25px;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-expanded > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/book-open.png') no-repeat 0 3px;
+	color: #e8faff;
+	background: url('Images/SkinCSH-KC/book-open.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-expanded.tree-node-selected > div
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/book-open.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/SkinCSH-KC/book-open.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-expanded.tree-node-selected > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/book-open.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/SkinCSH-KC/book-open.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-leaf > div
+{
+	background: transparent url('Images/SkinCSH-KC/Topic.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Topic.png') no-repeat 0 3px;
+	padding-left: 21px;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-leaf > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Topic.png') no-repeat 0 3px;
+	color: #e8faff;
+	background: url('Images/SkinCSH-KC/Topic.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-leaf.tree-node-selected > div
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Topic.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/SkinCSH-KC/Topic.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-leaf.tree-node-selected > div:hover
+{
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Topic.png') no-repeat 0 3px;
+	color: #037f7b;
+	background: url('Images/SkinCSH-KC/Topic.png') no-repeat  0 3px,transparent;
+}
+
+._Skins_SkinCSH_KC .tree-node .new-indicator
+{
+	background: none;
+	background-repeat: no-repeat;
+}
+
+html.left-layout._Skins_SkinCSH_KC #show-hide-navigation:after
+{
+	color: #037f7b;
+	border-right-color: #037f7b;
+}
+
+html.left-layout._Skins_SkinCSH_KC .nav-closed #show-hide-navigation:after
+{
+	border-left-color: #037f7b;
+}
+
+._Skins_SkinCSH_KC .tree-node div
+{
+	color: #b9e1df;
+	font-weight: bold;
+	line-height: 1.9em;
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-selected > div
+{
+	color: #037f7b;
+	background-color: transparent;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-selected > div:hover
+{
+	color: #037f7b;
+	background-color: transparent;
+}
+
+._Skins_SkinCSH_KC #index .tree-node.tree-node-selected > div
+{
+	color: #037f7b;
+	background-color: transparent;
+}
+
+._Skins_SkinCSH_KC .web #index .tree-node.tree-node-selected > div:hover
+{
+	color: #037f7b;
+	background-color: transparent;
+}
+
+._Skins_SkinCSH_KC .SearchFilterEntry.tree-node .SearchFilter.active
+{
+	background-color: transparent;
+	color: #037f7b;
+}
+
+._Skins_SkinCSH_KC .tabs-panel-search
+{
+	background-repeat: no-repeat;
+	border-top: none 1px #134042;
+	border-right: none 1px #b9e1df;
+	border-bottom: none 1px #b9e1df;
+	border-left: none 1px #134042;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	color: #e8faff;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background: -moz-linear-gradient(top, transparent 0%, #134042 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,#134042));
+	background: -webkit-linear-gradient(top, transparent 0%, #134042 100%);
+	background: -o-linear-gradient(top, transparent 0%,#134042 100%);
+	background: -ms-linear-gradient(top, transparent 0%,#134042 100%);
+	background: linear-gradient(top, transparent 0%,#134042 100%);
+	-pie-background: linear-gradient(transparent, #134042);
+}
+
+._Skins_SkinCSH_KC .tabs-nav li
+{
+	font-size: 0px;
+	font-weight: bold;
+	font-style: italic;
+	width: 45px;
+	height: 35px;
+	navigation-tab-layout: ImageOnly;
+	text-align: center;
+	line-height: 35px;
+}
+
+._Skins_SkinCSH_KC .tabs-panel
+{
+	top: 35px;
+	background-color: transparent;
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#BrowseSequencesTab
+{
+	
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#CommunityTab
+{
+	
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#GlossaryTab
+{
+	
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#IndexTab
+{
+	
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#SearchTab
+{
+	
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#TocTab
+{
+	
+}
+
+._Skins_SkinCSH_KC .tabs-nav li.tabs-nav-active
+{
+	color: transparent;
+	border-top: solid 1px #037f7b;
+	border-right: solid 1px #b9e1df;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_SkinCSH_KC #show-hide-navigation
+{
+	background-color: transparent;
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#BrowseSequencesTab.tabs-nav-active
+{
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_SkinCSH_KC .tab-icon #BrowseSequencesTab.tabs-nav-active .tabs-nav-icon
+{
+	background: transparent url('Images/SkinCSH-KC/browseActive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/browseActive.png');
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#CommunityTab.tabs-nav-active
+{
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_SkinCSH_KC .tab-icon #CommunityTab.tabs-nav-active .tabs-nav-icon
+{
+	background: transparent url('Images/SkinCSH-KC/communityActive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/communityActive.png');
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#GlossaryTab.tabs-nav-active
+{
+	border-top: solid 1px #037f7b;
+	border-right: solid 1px #b9e1df;
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_SkinCSH_KC .tab-icon #GlossaryTab.tabs-nav-active .tabs-nav-icon
+{
+	background: transparent url('Images/SkinCSH-KC/glossaryActive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/glossaryActive.png');
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#IndexTab.tabs-nav-active
+{
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_SkinCSH_KC .tab-icon #IndexTab.tabs-nav-active .tabs-nav-icon
+{
+	background: transparent url('Images/SkinCSH-KC/indexActive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/indexActive.png');
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#SearchTab.tabs-nav-active
+{
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_SkinCSH_KC .tab-icon #SearchTab.tabs-nav-active .tabs-nav-icon
+{
+	
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#TocTab.tabs-nav-active
+{
+	text-shadow: 0px 1px 0px #b9e1df;
+	-webkit-text-shadow: 0px 1px 0px #b9e1df;
+	-moz-text-shadow: 0px 1px 0px #b9e1df;
+	background: transparent;
+	background: -moz-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134042), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, #134042 0%, transparent 100%);
+	background: -o-linear-gradient(top, #134042 0%,transparent 100%);
+	background: -ms-linear-gradient(top, #134042 0%,transparent 100%);
+	background: linear-gradient(top, #134042 0%,transparent 100%);
+	-pie-background: linear-gradient(#134042, transparent);
+}
+
+._Skins_SkinCSH_KC .tab-icon #TocTab.tabs-nav-active .tabs-nav-icon
+{
+	background: transparent url('Images/SkinCSH-KC/tocActive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/tocActive.png');
+}
+
+._Skins_SkinCSH_KC .tabs-nav li.tabs-nav-inactive
+{
+	color: transparent;
+	border-top: solid 1px #b9e1df;
+	border-right: solid 1px #134042;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	text-shadow: none;
+	-webkit-text-shadow: none;
+	-moz-text-shadow: none;
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+	background-clip: padding-box;
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#BrowseSequencesTab.tabs-nav-inactive
+{
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_SkinCSH_KC .tab-icon #BrowseSequencesTab.tabs-nav-inactive .tabs-nav-icon
+{
+	background: transparent url('Images/SkinCSH-KC/browseInactive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/browseInactive.png');
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#CommunityTab.tabs-nav-inactive
+{
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_SkinCSH_KC .tab-icon #CommunityTab.tabs-nav-inactive .tabs-nav-icon
+{
+	background: transparent url('Images/SkinCSH-KC/communityInactive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/communityInactive.png');
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#GlossaryTab.tabs-nav-inactive
+{
+	border-top: solid 1px #b9e1df;
+	border-right: solid 1px #134042;
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_SkinCSH_KC .tab-icon #GlossaryTab.tabs-nav-inactive .tabs-nav-icon
+{
+	background: transparent url('Images/SkinCSH-KC/glossaryInactive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/glossaryInactive.png');
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#IndexTab.tabs-nav-inactive
+{
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_SkinCSH_KC .tab-icon #IndexTab.tabs-nav-inactive .tabs-nav-icon
+{
+	background: transparent url('Images/SkinCSH-KC/indexInactive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/indexInactive.png');
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#SearchTab.tabs-nav-inactive
+{
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_SkinCSH_KC .tab-icon #SearchTab.tabs-nav-inactive .tabs-nav-icon
+{
+	
+}
+
+._Skins_SkinCSH_KC .tabs-nav li#TocTab.tabs-nav-inactive
+{
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_SkinCSH_KC .tab-icon #TocTab.tabs-nav-inactive .tabs-nav-icon
+{
+	background: transparent url('Images/SkinCSH-KC/tocInactive.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/tocInactive.png');
+}
+
+._Skins_SkinCSH_KC .search-bar
+{
+	display: block;
+	border-top: solid 1px #134042;
+	border-right: solid 1px #272727;
+	border-bottom: solid 1px #272727;
+	border-left: solid 1px #134042;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 16px;
+	border-bottom-left-radius: 0px;
+	-webkit-box-shadow: 0px 1px 0px #b9e1df;
+	-moz-box-shadow: 0px 1px 0px #b9e1df;
+	box-shadow: 0px 1px 0px #b9e1df;
+	-webkit-box-shadow: 0px 1px 0px #b9e1df;
+	-moz-box-shadow: 0px 1px 0px #b9e1df;
+	margin-top: -15px;
+}
+
+._Skins_SkinCSH_KC #search-field
+{
+	height: 28px;
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 0px;
+	color: #e8faff;
+	border-top: none 0px #134042;
+	border-right: none 0px #134042;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, #134042 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,#134042));
+	background: -webkit-linear-gradient(top, transparent 0%, #134042 100%);
+	background: -o-linear-gradient(top, transparent 0%,#134042 100%);
+	background: -ms-linear-gradient(top, transparent 0%,#134042 100%);
+	background: linear-gradient(top, transparent 0%,#134042 100%);
+	-pie-background: linear-gradient(transparent, #134042);
+}
+
+._Skins_SkinCSH_KC .search-filter
+{
+	height: 28px;
+	color: #e8faff;
+	border-left: solid 1px #363636;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+._Skins_SkinCSH_KC .search-submit
+{
+	height: 28px;
+}
+
+._Skins_SkinCSH_KC .search-submit-wrapper
+{
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 16px;
+	border-top: none 1px #134042;
+	border-right: none 0px #b9e1df;
+	border-bottom: none 0px #b9e1df;
+	border-left: solid 1px #037f7b;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	background: transparent url('Images/SkinCSH-KC/magnifying_glass.png') no-repeat center center;
+	background: url('Images/SkinCSH-KC/magnifying_glass.png') no-repeat center center, -moz-linear-gradient(top, transparent 0%, #134042 100%);
+	background: url('Images/SkinCSH-KC/magnifying_glass.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,#134042));
+	background: url('Images/SkinCSH-KC/magnifying_glass.png') no-repeat center center, -webkit-linear-gradient(top, transparent 0%, #134042 100%);
+	background: url('Images/SkinCSH-KC/magnifying_glass.png') no-repeat center center, -o-linear-gradient(top, transparent 0%,#134042 100%);
+	background: url('Images/SkinCSH-KC/magnifying_glass.png') no-repeat center center, -ms-linear-gradient(top, transparent 0%,#134042 100%);
+	background: url('Images/SkinCSH-KC/magnifying_glass.png') no-repeat center center, linear-gradient(top, transparent 0%,#134042 100%);
+	-pie-background: url('Skins/Default/Stylesheets/Images/SkinCSH-KC/magnifying_glass.png') no-repeat center center, linear-gradient(transparent, #134042);
+}
+
+._Skins_SkinCSH_KC .search-filter span:after
+{
+	border-top-color: #e8faff;
+}
+
+._Skins_SkinCSH_KC .search-filter-content
+{
+	color: #e8faff;
+	background-color: #3f3f3f;
+}
+
+._Skins_SkinCSH_KC .search-filter.open
+{
+	color: #e8faff;
+	background-color: #3f3f3f;
+}
+
+._Skins_SkinCSH_KC .search-filter-content ul li:hover
+{
+	color: #037f7b;
+	background-color: transparent;
+}
+
+._Skins_SkinCSH_KC #resultList .glossary .definition
+{
+	color: #037f7b;
+	font-size: 10pt;
+}
+
+._Skins_SkinCSH_KC #resultList .glossary
+{
+	color: #134042;
+	font-size: 10pt;
+	margin-bottom: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-position: center center;
+	border-top: none 1px #b9e1df;
+	border-right: none 1px #b9e1df;
+	border-bottom: none 1px #b9e1df;
+	border-left: none 1px #b9e1df;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	background: #b9e1df;
+	background: -moz-linear-gradient(top, #b9e1df 0%, #b9e1df 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b9e1df), color-stop(100%,#b9e1df));
+	background: -webkit-linear-gradient(top, #b9e1df 0%, #b9e1df 100%);
+	background: -o-linear-gradient(top, #b9e1df 0%,#b9e1df 100%);
+	background: -ms-linear-gradient(top, #b9e1df 0%,#b9e1df 100%);
+	background: linear-gradient(top, #b9e1df 0%,#b9e1df 100%);
+	-pie-background: linear-gradient(#b9e1df, #b9e1df);
+}
+
+._Skins_SkinCSH_KC #resultList .glossary .term
+{
+	color: #134042;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+._Skins_SkinCSH_KC #resultList .glossary .term a
+{
+	color: #134042;
+	font-size: 12pt;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+
+._Skins_SkinCSH_KC #results-heading
+{
+	color: #037f7b;
+	font-family: 'Arial Narrow';
+	font-size: 22px;
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: solid 2px #b9e1df;
+}
+
+._Skins_SkinCSH_KC #search-field::-webkit-input-placeholder
+{
+	color: #e8faff;
+}
+
+._Skins_SkinCSH_KC #search-field::-moz-placeholder
+{
+	color: #e8faff;
+}
+
+._Skins_SkinCSH_KC #search-field:-moz-placeholder
+{
+	color: #e8faff;
+}
+
+._Skins_SkinCSH_KC #search-field:-ms-input-placeholder
+{
+	color: #e8faff;
+}
+
+._Skins_SkinCSH_KC #pagination
+{
+	height: 40px;
+	line-height: 40px;
+}
+
+._Skins_SkinCSH_KC #pagination a
+{
+	border-top: solid 1px #fafafc;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-decoration: none;
+}
+
+._Skins_SkinCSH_KC #pagination a#selected
+{
+	border-top: solid 1px #e2e2e6;
+	font-weight: bold;
+}
+
+._Skins_SkinCSH_KC #resultList .description
+{
+	font-size: 13px;
+}
+
+._Skins_SkinCSH_KC #resultList .title a
+{
+	color: #037f7b;
+	font-weight: normal;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+._Skins_SkinCSH_KC #resultList .url cite
+{
+	color: #01514e;
+	font-size: 13px;
+	font-style: italic;
+}
+
+._Skins_SkinCSH_KC #resultList
+{
+	text-align: left;
+}
+
+._Skins_SkinCSH_KC #search-field-sidebar
+{
+	background-image: url('Images/SkinCSH-KC/magnifying_glass.png');
+}
+
+._Skins_SkinCSH_KC #responsive-search-index
+{
+	background-image: url('Images/SkinCSH-KC/magnifying_glass.png');
+}
+
+._Skins_SkinCSH_KC #responsive-search-glossary
+{
+	background-image: url('Images/SkinCSH-KC/magnifying_glass.png');
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-collapsed.SubClass > div
+{
+	background: transparent url('Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-collapsed.SubClass > div:hover
+{
+	background: transparent url('Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-collapsed.tree-node-selected.SubClass > div
+{
+	background: transparent url('Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-collapsed.tree-node-selected.SubClass > div:hover
+{
+	background: transparent url('Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-expanded.SubClass > div
+{
+	background: transparent url('Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-expanded.SubClass > div:hover
+{
+	background: transparent url('Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-expanded.tree-node-selected.SubClass > div
+{
+	background: transparent url('Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-expanded.tree-node-selected.SubClass > div:hover
+{
+	background: transparent url('Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-leaf.SubClass > div
+{
+	background: transparent url('Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_SkinCSH_KC .web .tree-node-leaf.SubClass > div:hover
+{
+	background: transparent url('Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-leaf.tree-node-selected.SubClass > div
+{
+	background: transparent url('Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-leaf.tree-node-selected.SubClass > div:hover
+{
+	background: transparent url('Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/SkinCSH-KC/Book-Link-subclass.png') no-repeat 0 3px;
+}
+
+._Skins_SkinCSH_KC .tree-node.SubClass .new-indicator
+{
+	background: none;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.SubClass .new-indicator > div:hover
+{
+	background: none;
+}
+
+._Skins_SkinCSH_KC .tree-node.tree-node-selected.SubClass .new-indicator > div
+{
+	background: none;
+}
+
+._Skins_SkinCSH_KC .web .tree-node.tree-node-selected.SubClass .new-indicator > div:hover
+{
+	background: none;
+}
+
+._Skins_SkinCSH_KC #contentBody
+{
+	background-color: transparent;
+}
+

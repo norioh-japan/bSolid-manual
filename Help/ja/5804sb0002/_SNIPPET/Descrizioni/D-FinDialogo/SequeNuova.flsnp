@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><html MadCap:lastBlockDepth="6" MadCap:lastHeight="519" MadCap:lastWidth="1035" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<head>
+</head>
+<body>
+<p class="TES">
+<img src="../../../FIGURE/10-videateComplete/arte4/b10b0396.gif" class="VidPor01" />
+<br />
+</p>
+<MadCap:dropDown>
+<MadCap:dropDownHead>
+<MadCap:dropDownHotspot class="4_Opzioni">シーケンス名</MadCap:dropDownHotspot>
+</MadCap:dropDownHead>
+<MadCap:dropDownBody>
+<p class="TES_Desc-Campi">シーケンス名。</p>
+</MadCap:dropDownBody>
+</MadCap:dropDown>
+<MadCap:dropDown>
+<MadCap:dropDownHead>
+<MadCap:dropDownHotspot class="4_Opzioni">シーケンスタイプ</MadCap:dropDownHotspot>
+</MadCap:dropDownHead>
+<MadCap:dropDownBody>
+<p class="TES_Desc-Campi">シーケンスタイプ。ドロップダウンメニューでタイプを選択します。</p>
+<MadCap:dropDown class="OpzioniBoxRientro">
+<MadCap:dropDownHead>
+<MadCap:dropDownHotspot class="4_Opzioni"> 一般的</MadCap:dropDownHotspot>
+</MadCap:dropDownHead>
+<MadCap:dropDownBody>
+<p class="TES_Desc-Opzioni">一般加工操作順序。この場合、すべての必要な加工作業を挿入することができる。</p>
+</MadCap:dropDownBody>
+</MadCap:dropDown>
+</MadCap:dropDownBody>
+</MadCap:dropDown>
+<MadCap:dropDown>
+<MadCap:dropDownHead>
+<MadCap:dropDownHotspot class="4_Opzioni">説明</MadCap:dropDownHotspot>
+</MadCap:dropDownHead>
+<MadCap:dropDownBody>
+<p class="TES_Desc-Campi">シーケンスのコメントまたは説明。</p>
+</MadCap:dropDownBody>
+</MadCap:dropDown>
+<MadCap:dropDown>
+<MadCap:dropDownHead>
+<MadCap:dropDownHotspot class="4_Opzioni">画像</MadCap:dropDownHotspot>
+</MadCap:dropDownHead>
+<MadCap:dropDownBody>
+<p class="TES_Desc-Campi">順序と関連付ける画像を選択します。</p>
+</MadCap:dropDownBody>
+</MadCap:dropDown>
+</body>
+</html>

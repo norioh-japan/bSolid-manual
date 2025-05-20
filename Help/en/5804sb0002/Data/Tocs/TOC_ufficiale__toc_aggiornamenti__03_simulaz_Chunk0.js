@@ -1,0 +1,1 @@
+define({'/5804kc0015-bSolid/SimMacchina/Macc-struttura01.htm':{i:[0],t:['Environment structure'],b:['']},'/5804kc0015-bSolid/SimMacchina/legno/Macc-attrez.htm':{i:[1],t:['Tooling the work table'],b:['']},'/5804kc0015-bSolid/SimMacchina/strumenti/Macc-strumenti.htm':{i:[2],t:['Commands of the environment'],b:['']}});

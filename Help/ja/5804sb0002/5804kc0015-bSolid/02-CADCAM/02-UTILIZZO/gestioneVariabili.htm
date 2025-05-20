@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ja" xml:lang="ja" data-mc-search-type="NGram" data-mc-help-system-file-name="5804sb0002.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="bSolid|[%=COMUNI/Stringhe/Ambienti.Amb_CadCam%]|[%=TITOLI/CONTAINER-TOC.uso%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>変数を管理する</title>&#160;<link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" /><link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" /><link href="../../../Resources/Stylesheets/KC-HTML5.css" rel="stylesheet" /><script src="../../../Resources/Scripts/custom.modernizr.js"></script><script src="../../../Resources/Scripts/jquery.min.js"></script><script src="../../../Resources/Scripts/require.min.js"></script><script src="../../../Resources/Scripts/require.config.js"></script><script src="../../../Resources/Scripts/foundation.min.js"></script><script src="../../../Resources/Scripts/plugins.min.js"></script><script src="../../../Resources/Scripts/MadCapAll.js"></script></head>
+    <body>
+        <div style="background-repeat: no-repeat;background-color: #272727;background-position-x: center;padding-left: 0px;padding-right: 6px;padding-top: 6px;padding-bottom: 0px;border-left-style: none;border-left-width: 1px;border-right-style: none;border-right-width: 1px;border-top-style: none;border-top-width: 1px;border-bottom-style: none;border-bottom-width: 2px;border-bottom-color: #272727;">
+            <p class="XMasterDX"> <a href="../../../MODELLI-Snippet-sinc/MODELLI-COPERTINE/IndirizzoCostruttore.htm" class="MCTopicPopup MCTopicPopupHotSpot a aHyperMaster" title="製造業者の住所" data-mc-width="700px" data-mc-height="500px">BIESSE S.p.A.</a> © - <span class="SystemShortDate">2019/05/07</span></p>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="2" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                </div>
+            </div>
+        </div>
+        <h2 class="TIT-livello1"><a name="top"></a>変数を管理する<a name="kanchor837"></a><a name="kanchor838"></a></h2>
+        <hr class="RIGAINIZIALE" width="100%" size="0" align="center" />
+        <div class="MCDropDown MCDropDown_Closed dropDown dropDownICONALinkArgo"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-Proc MCDropDownHotSpot_ MCDropDownHotSpot_ICONALinkArgo MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />関連項目</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="../07-Lav-Seq-var/Lav_variabili.htm" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" title="説明について" data-mc-width="700px" data-mc-height="500px">変数に関する基本概念</a>
+                        </td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="Proced_programmaz.htm#b748kc0003_3737411565_1088210" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" title="プログラム手順について" data-mc-width="700px" data-mc-height="500px">プログラムをパラメーター化する</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr class="RIGAINIZIALE" width="100%" size="0" align="center" />
+        <h4>変数作成の注<a name="kanchor839"></a></h4>
+        <p>変数の名前を作成するときは、以下のルールに留意する。</p>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">ピースの変数の名前および加工作業のパラメーターとは異なる名前にすること。</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">数字から始めないこと。常にアルファベットの文字で始めること。</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">スペースおよび他の特殊文字（+、 &lt;、 &gt;、 -、 xなど）は含まないこと。</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">255文字以上の文字を含まないこと。</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">大文字も小文字も使用することができます。</td>
+            </tr>
+        </table>
+        <p>変数の<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">値<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>事前定義/プリセット。要求された情報が入力されていない場合、制御に便利な標準的な情報。</span></a>を作成するときは、以下のルールに留意する。</p>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">数字でもよい；</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">文字列でもよい。この場合、引用符で囲むこと（例：”LENGTH”）。</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">文字列に数値や変数を合わせたものでもよい。この場合、算術演算子「+」で区切ること。<br />例： “LENGTH”+F6LXの場合、“LENGTH”は文字列を表し、F6LXは<a href="../../../_GlossaryDiProgetto/infissi/H-latiPezzi.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">面</a>番号6の長さの値です。</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">事前に定義したパラメーター（例：LPX、LPYなど）を含む表示でもよいし、変数テーブルで作成された変数でもよい。</td>
+            </tr>
+        </table>
+        <p>他のユーザーが読みやすく解釈しやすいプログラムを作成するには、変数に論理名をつけることを推奨する。例えば、繰り返しの数を含むまたは計算しなくてはならない変数は、「<b>nrRep</b>」と呼ばれ、「<b>nr</b>…」は「数字」を表し、「…<b>Rep</b>」は繰り返しを表す。</p>
+        <p>複数のピースがある場合は、特定のピースのパラメーターを含む文字列を作成することができます。ピースと関連付けられた形状または技術的パラメーターを示す構文は以下の通りである：ピースの名前（例えばP1003など）を示し、その後に<b>dot</b> そして変数またはパラメーターを続ける（<a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="../07-Lav-Seq-var/Lav_variabili.htm#b746kc0001_1613647075_1107142">"システム変数"</a>を参照）。</p>
+        <p>例： <b>P1003.F6.ANG</b> は、作成された変数の値は、P1003と呼ばれるピースの面番号6（F6）の角度（ANG）の値を含まなければならないということを表している。</p>
+        <h4>変数を作成する<a name="kanchor840"></a><a name="kanchor841"></a></h4>
+        <table class="AutoNumber_p_TEScon-num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">1. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="1. ">
+                    <img src="../../../FIGURE/15-icone/b15b0001/Selection_Add.png" class="icona_32a24px" />ボタンを<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">クリック<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>（1）画面上のポインタの下にあるオブジェクト（アイコン、ボタンなど）の上でマウスボタンを押す（そしてすぐに離す）行為を示します。（2）（動詞）選択したコマンドの機能を有効にするため、マウスの左ボタンを押してすぐに離します。</span></a>して新規の行を追加します。</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">2. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="2. "><a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="../07-Lav-Seq-var/Lav_variabili.htm#b746kc0001_1613647075_1108349">"名前"</a><a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">フィールド<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>データまたはコマンドを含む所定のエリア（データフィールドまたはコマンドフィールド）。</span></a>の変数名を入力します。</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">3. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="3. "><a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="../07-Lav-Seq-var/Lav_variabili.htm#b746kc0001_1613647075_1103148">"表示"</a>フィールドの値を入力します。</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">4. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="4. "><a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="../07-Lav-Seq-var/Lav_variabili.htm#b746kc0001_1613647075_1103159">"コンテキスト"</a><a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">ドロップダウンメニュー<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>ドロップダウンボタンをクリックすると、垂直または水平方向に広がるオプションまたは手段のリスト。</span></a>から変数を選択します。</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">5. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="5. "><b>OK</b>ボタンをクリックして、保存します。</td>
+            </tr>
+        </table>
+        <p>新規の変数がテーブルに追加されます。この点で、テーブルのボックスを経由してデータを修正することができる（例えば、<a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="../07-Lav-Seq-var/Lav_variabili.htm#b746kc0001_1613647075_1103148">"表示"</a>セルに表示を挿入するなど）。</p>
+        <h4>テーブルから変数を削除する<a name="kanchor842"></a><a name="kanchor843"></a></h4>
+        <table class="AutoNumber_p_TEScon-num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">1. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="1. ">テーブルから削除する変数を選択します。</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">2. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="2. ">
+                    <img src="../../../FIGURE/15-icone/b15b0001/Selection_Remove.png" class="icona_32a24px" />ボタンをクリックします。</td>
+            </tr>
+        </table>
+        <div class="MCDropDown MCDropDown_Closed dropDown dropDownNOTE"><span class="MCDropDownHead dropDownHead dropDownHeadNOTE"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotNotaInfo MCDropDownHotSpot_ MCDropDownHotSpot_NOTE MCHotSpotImage"> <img src="../../../Resources/Images/MODELLI/Imm-css/_info.png" class="icona_NOTE" />注：<img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" /></a></span>
+            <div class="MCDropDownBody dropDownBody dropDownBodyNotaInfoBody">
+                <p class="NOTE_Info"><a class="RIM_al_riferimento MCXref xref xrefRIM_al_riferimento" href="../07-Lav-Seq-var/Lav_variabili.htm#b746kc0001_1613647075_1103143">"グローバル"</a>タイプの変数を削除すると、その変数が含まれるプログラムに影響する。したがって、そういった変数を削除する前に、このタイプの変数を含むプログラムがあるかどうか常に確認することを推奨する。</p>
+            </div>
+        </div>
+        <h4>テーブルに変数を配列する<a name="kanchor844"></a><a name="kanchor845"></a></h4>
+        <p>変数を順番に配列するには、動かしたい変数を選択して、<img src="../../../FIGURE/15-icone/b15b0001/move_down.png" class="icona_32a24px" />か<img src="../../../FIGURE/15-icone/b15b0001/move_up.png" class="icona_32a24px" />のボタンをクリックします。</p>
+        <table style="width: 100%;border-spacing: 0px 0px;margin-left: 0;margin-right: auto;" class="PerMasterWeb">
+            <col />
+            <col />
+            <col style="width: 70px;" />
+            <tbody>
+                <tr>
+                    <td class="PerMasterweb">
+                    </td>
+                    <td class="PerMasterweb">
+                        <p class="XMasterDX"><span style="font-weight: bold;" class="MODELLI/Variablili-MasterEdizione">エディション：</span> <span class="MODELLI/Variablili-MasterN-Edizione">3.0</span></p>
+                    </td>
+                    <td class="PerMasterweb">
+                        <p class="XMasterDX">
+                            <img src="../../../Resources/Images/MODELLI/Imm-layout/logo_per_BSolid.png" class="Imm_Logo" style="height: 32px;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

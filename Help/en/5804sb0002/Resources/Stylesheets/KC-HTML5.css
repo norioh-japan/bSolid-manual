@@ -1,0 +1,4917 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/*
+14-11-2017 modifiche rispetto al css del 31-10-2017 precedente:
+- spostato in fondo i media print e non print
+- riorganizzato tutti gli stili in gruppi che iniziano con NOTE:
+- (12-2017) tolta formattazioni TES perchè messe nel P
+- (12-2017)  cretao "p.inizioDIV" con formattazioni che prima erano di p
+Sostituiti stili:
+   - caption class="TITLivello3" ---con---   caption class="TIT-H4"
+   - h4 class="TIT-livello3"	---con---  h4
+   - MadCap:dropDownHead class="TIT_Livello3" ---con---   MadCap:dropDownHead class="TIT-H4"
+   - MadCap:dropDownHotspot class="TIT-H4" ---con--- MadCap:dropDownHotspot class="TIT-H4"
+   - tolti gli headingLevel 7 per "p.TES_puntatore...."
+   - per il no print messo livello 8 per gli stili "p.TES_puntatore.."; usarli quando si fa cross a un testo puntato
+MODIFICHE 01-2018
+   - messi xref orver e focus all'inizio del gruppo
+   - aggiunti stili per MENUPROXY in fondo da inserire nelle parti/sezioni in cui caricare un TOC:
+      div; span; img; dorpdownbody
+   - p-_TFS; per id tfs
+   - p.CopertinaSezioni : per PDF: tolta farzatura a pagina sinisgtra perchè con icona non veniva
+   - cambiato stile font per tutti stili parametri e opzioni; messo "sans-serif"
+   - ggiunto stile object.MP4
+   - messo anche tit figura a outside-head
+   - risistemati i margini MadCap|dropDownBody delle NOTE
+   - fatto il box "div.BoxNoteTecnico" uguale alle note da usare per inserire una nota per il tecnico
+   - messo margin sx a 0 per sitle p.NOTE_Info
+   - creato span.NUMFIGURA
+   - aggiunte img.VidAltez anche per le altezze; le altre erano per la larghezza
+   - tolta formattazione TES (serve solo per import) 
+   - tolta formattazione TES_Desc-Campi: lasciat solo dopo il p per codici per fare in modo che metta uno stile diverso
+   - creato stile "p.TIT-Opz-TAB" da applicare alle opzioni descritte in una tabella
+   -aggiunti stili per nuove note
+   -aggiunti stili (p.GlossaryTerm - div.Box-GlossaryDefinition) per lemmi glossario nei file html lincati; in modo da poterli fare vedere anche le PDF
+   - tolto 	mc-next-class: TES; da tutti gli stili dei titoli perchè non si usa più
+   - creato div.TesTecnico: usare come box per dei testi p sotto il paragrafo "p.NOTE_Tecnico"
+ */
+
+body
+{
+	font-family: Arial;
+	font-size: 10pt;
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+html.concept
+{
+	color: #696969;
+	mc-master-page: prova;
+}
+
+/*NOTE: LISTA TITOLI per classe H*/
+
+h1	/*CONTENITORE:Parti-NON per i FILE;per file usare la SOTTOCLASSE(Settato questo e non la sottoclasse)*/
+{
+	text-align: left;
+	font-family: 'Arial Narrow';
+	mc-hyphenate: never;
+	mc-auto-number-position: inside-head;
+	mc-next-tag: p;
+	mc-next-class: TES_puntatorePiccolo;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #e8faff;
+	background-color: #272727;
+	margin-bottom: 50pt;
+	font-size: 34pt;
+	line-height: 45pt;
+	margin-top: 40pt;
+	page-break-after: right;
+	page-break-before: left;
+	page-break-inside: avoid;
+	mc-heading-level: 1;
+}
+
+h1.Parti	/*Per FILE:Parti.Set da H1 - solo settaggi per Print Support*/
+{
+	page-break-after: avoid;
+	page-break-before: always;
+	page-break-inside: avoid;
+}
+
+h2	/*NON usare per File. Per i File usare la SOTTOCLASSE*/
+{
+	text-align: left;
+	font-family: 'Arial Narrow';
+	font-weight: normal;
+	font-style: normal;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	text-decoration: none;
+	background-color: #272727;
+	font-size: 21pt;
+	line-height: 29pt;
+	margin-top: 40pt;
+	margin-bottom: 27pt;
+	page-break-after: avoid;
+	page-break-before: always;
+	page-break-inside: avoid;
+	color: #e8faff;
+	mc-heading-level: 2;
+}
+
+h2.TIT-livello1	/*Per FILE:Capitolo. TITOLO sempre a INIZIO PG (per pdf)*/
+{
+	page-break-before: left;
+	page-break-after: avoid;
+	page-break-inside: avoid;
+}
+
+h3	/*CONTENITORE e Per FILE. TIT inizia OVUNQUE attaccato a H2 (per pdf)*/
+{
+	text-align: left;
+	margin-top: 40pt;
+	font-family: 'Arial Narrow';
+	font-style: normal;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	text-decoration: none;
+	margin-bottom: 27pt;
+	font-weight: normal;
+	font-size: 18pt;
+	line-height: 25pt;
+	page-break-after: avoid;
+	page-break-before: inherit;
+	page-break-inside: avoid;
+	background-color: #272727;
+	color: #ffffff;
+	mc-heading-level: 3;
+}
+
+h3.TIT-livello2	/*Per FILE. TIT sempre a INIZIO PG staccato da H2 (per pdf)*/
+{
+	page-break-before: left;
+	page-break-after: avoid;
+	page-break-inside: avoid;
+}
+
+h4	/*Per FILE:livello 4. Ha una sottoclasse per livello 5; set Print Support ovunque 5*/
+{
+	color: #134042;
+	font-style: normal;
+	font-family: 'Arial Narrow';
+	font-weight: normal;
+	font-size: 18pt;
+	line-height: 25pt;
+	text-align: left;
+	text-decoration: none;
+	margin-top: 40pt;
+	border-top-style: solid;
+	border-top-width: 1px;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	margin-bottom: 24pt;
+	border-top-color: #ffffff;
+	border-bottom: solid 1px #134042;
+	page-break-after: avoid;
+	page-break-before: avoid;
+	page-break-inside: avoid;
+	mc-heading-level: 4;
+}
+
+h4.TIT-livello3	/*NON UTILIZZATO (usare H4) tenere solo per IMPORT FM da sostituire con H4*/
+{
+	color: #db0000;
+}
+
+h4.TIT-livelloS	/*H4:di livello 5 (settaggi diversi da H4)*/
+{
+	color: #134042;
+	font-style: italic;
+	font-family: Helvetica;
+	font-weight: normal;
+	font-size: 14pt;
+	text-align: left;
+	text-decoration: underline;
+	margin-top: 20pt;
+	margin-bottom: 12pt;
+	border: none;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	line-height: 18pt;
+	mc-heading-level: 5;
+}
+
+h5	/*set comuni per stili campi dati*/
+{
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	line-height: 14pt;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	margin-bottom: 10pt;
+	margin-top: 17pt;
+	color: #134042;
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	mc-heading-level: 6;
+	font-family: sans-serif;
+	mc-disable-glossary-terms: true;
+}
+
+h5.TIT-Parametri-conCod	/*Uguale H5;set diversi per campi con codice*/
+{
+	mc-next-class: _03-Parametro-Cod;
+	margin-bottom: 0pt;
+	color: #134042;
+	margin-top: 17pt;
+}
+
+h5.TIT-Parametri	/*Uguale H5;set diversi per campi senza codice*/
+{
+	margin-bottom: 10pt;
+	color: #134042;
+	margin-top: 17pt;
+}
+
+h5.TitolinoDiv32	/*usare per dei tioli per dividere i campi dati che vengono inseriti in un div rientrato; quando non si usa titolo della sezione interfaccia*/
+{
+	color: #666666;
+	margin-bottom: 17pt;
+	mc-heading-level: 6;
+	text-decoration: none;
+	border-top: solid 1px #666666;
+}
+
+h6	/*Titolo delle Opzioni dell'interfaccia da usare con Box rientrato*/
+{
+	text-align: left;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 10pt;
+	line-height: 12pt;
+	text-decoration: none;
+	margin-top: 12pt;
+	margin-bottom: 6pt;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	mc-next-class: TES_Desc-Opzioni;
+	color: #01514e;
+	mc-heading-level: 7;
+	font-family: sans-serif;
+	mc-disable-glossary-terms: true;
+}
+
+h6.TIT-Opzioni	/*SET li prende di def da H6*/
+{
+	
+}
+
+/*NOTE: LISTA TITOLI tabella classe Caption*/
+
+caption	/*titoli tabella default*/
+{
+	text-align: left;
+	padding-bottom: 0pt;
+	padding-top: 0pt;
+}
+
+caption.TIT-H4	/*come h4: titolo Tabella argomento secondario*/
+{
+	text-align: left;
+	font-style: normal;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	text-decoration: none;
+	font-family: Helvetica;
+	padding-top: 30pt;
+	color: #134042;
+	mc-heading-level: 4;
+	padding-bottom: 15pt;
+	font-size: 18pt;
+	font-weight: normal;
+	line-height: 22pt;
+}
+
+caption.TITLivelloS	/*H4: come h4.TIT-livelloS;titolo Tabella argomento di terzolivello*/
+{
+	text-align: left;
+	font-style: italic;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	text-decoration: none;
+	font-family: Helvetica;
+	font-size: 14pt;
+	mc-heading-level: 5;
+	color: #134042;
+	padding-top: 15pt;
+	padding-bottom: 15pt;
+	font-weight: normal;
+	line-height: 18pt;
+}
+
+/*NOTE: LISTA TITOLI drop  classe dropDownHead e dropDownHotspot*/
+
+MadCap|dropDownHead.TIT-H4	/*H4: come h4.TIT*/
+{
+	font-weight: normal;
+	font-style: normal;
+	font-family: Helvetica;
+	line-height: 22pt;
+	margin-bottom: 0pt;
+	margin-top: 18pt;
+	font-size: 15pt;
+}
+
+MadCap|dropDownHead.TIT_LivelloS	/*H4:come h4.TIT-livelloS*/
+{
+	font-style: italic;
+	font-family: Helvetica;
+	font-weight: normal;
+	font-size: 13pt;
+	line-height: 18pt;
+	text-decoration: none;
+	margin-top: 12pt;
+	margin-bottom: 0pt;
+}
+
+MadCap|dropDownHotspot	/*Testo che apre il drop; settato: colore e font;per i margini vedere Head*/
+{
+	mc-heading-level: none;
+	color: #01514e;
+	font-style: italic;
+	font-weight: bold;
+}
+
+MadCap|dropDownHotspot.TIT-H4	/*H4: come h4;argomento secondario DROPPATO */
+{
+	text-align: left;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	text-decoration: none;
+	font-style: normal;
+	color: #01514e;
+	font-family: Helvetica;
+	line-height: 22pt;
+	mc-heading-level: 4;
+	font-weight: normal;
+	font-size: 15pt;
+}
+
+MadCap|dropDownHotspot.TIT-LivelloS	/*H4:come h4.TIT-livelloS ; argomento di terzolivello DROPPATO- */
+{
+	text-align: left;
+	font-style: italic;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	text-indent: 0px;
+	color: #01514e;
+	font-weight: normal;
+	font-family: Helvetica;
+	mc-heading-level: 5;
+	font-size: 13pt;
+	line-height: 18pt;
+	text-transform: none;
+	text-decoration: none;
+	mc-heading-level: 5;
+}
+
+MadCap|dropDownHotspot.3_Parametri	/*H5:come h5.TIT-Parametri;Titolo del campo-cella dell'interfaccia*/
+{
+	text-align: left;
+	mc-hyphenate: never;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 12pt;
+	font-family: sans-serif;
+	color: #01514e;
+	line-height: 14pt;
+	mc-heading-level: 6;
+}
+
+MadCap|dropDownHotspot.ListaPulsanti	/*H6-Titolo Strumenti DROPPATO per una lista di ICONE al posto della TABELLA; con parte descrittiva*/
+{
+	text-align: left;
+	font-family: sans-serif;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 12pt;
+	color: #037f7b;
+	mc-heading-level: 6;
+	line-height: 14pt;
+}
+
+MadCap|dropDownHotspot.4_Opzioni	/*H6: come h6.TIT-Opzioni; Titolo delle Opzioni dell'interfaccia*/
+{
+	text-align: left;
+	mc-hyphenate: never;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 10pt;
+	text-decoration: none;
+	color: #01514e;
+	line-height: 12pt;
+	font-family: sans-serif;
+	mc-heading-level: 7;
+}
+
+/*NOTE: LISTA TITOLI classe Toggler*/
+
+MadCap|toggler.TitCampi	/*testo per toggler titoli sezioni che racchiudono una lista di campi dati*/
+{
+	color: #134042;
+	mc-image-position: right;
+	font-style: italic;
+	mc-heading-level: 6;
+}
+
+MadCap|toggler.TitCampi:focus
+{
+	font-style: oblique;
+	color: #037f7b;
+}
+
+MadCap|toggler.TitCampi:hover
+{
+	font-style: oblique;
+	color: #037f7b;
+}
+
+/*NOTE: LISTA TITOLI per classe P*/
+
+p.TIT-Sommario	/*H2:Titolo del SOMMARIO;settaggi nel print*/
+{
+	font-size: 30pt;
+}
+
+p.TIT-Argomenti-Proc	/*Titolino solo per lista argomenti e procedure a inizio capitolo; anche per stile dei drop*/
+{
+	margin-top: 10pt;
+	margin-bottom: 2pt;
+	font-family: 'Arial Narrow';
+	Text-align: left;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	mc-next-class: TES_puntatorePiccolo;
+	line-height: 17pt;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+	color: #666666;
+	font-size: 12.5pt;
+	mc-disable-glossary-terms: true;
+}
+
+p.TIT-RelatetTOPIC	/*Reletet topic: stile del paragrafo in cui si mette un related topic (usato solo nelle parti)*/
+{
+	text-align: left;
+	mc-next-tag: p;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Arial;
+	margin-left: 0;
+	margin-right: 0;
+	color: #037f7b;
+	margin-bottom: 0pt;
+	padding-bottom: 0pt;
+	line-height: 35pt;
+	font-size: 9pt;
+	margin-top: 9pt;
+	mc-disable-glossary-terms: true;
+}
+
+p.TITper-cella	/*H5: Tabella: titolo colonne tabella*/
+{
+	font-family: Helvetica;
+	font-size: 13pt;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0px;
+	mc-hyphenate: never;
+	mc-disable-glossary-terms: true;
+	color: #000000;
+	vertical-align: middle;
+}
+
+p.CopertinaSezioni	/*Heading 1 (H1)  per PDF; SEZIONI del libro solo per pdf 38pt*/
+{
+	font-weight: bold;
+	font-style: normal;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	text-indent: 0px;
+	text-decoration: none;
+	font-size: 38pt;
+	font-family: 'Arial Narrow';
+	text-align: left;
+	background-color: transparent;
+	color: #134042;
+	margin-top: 0px;
+	margin: 0;
+	margin-bottom: 30pt;
+	line-height: 46pt;
+	page-break-after: avoid;
+	page-break-before: left;
+	page-break-inside: avoid;
+	mc-heading-level: 1;
+}
+
+p.CopertinaTIT-01	/*00-titolo copertina; stile TITOLO SW; MODIF 04-2017 per nuova masterWeb*/
+{
+	margin-left: 0pt;
+	margin-right: 0pt;
+	font-family: 'Roboto Thin';
+	color: #FFFFFF;
+	font-weight: bold;
+	font-style: normal;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	text-decoration: none;
+	text-align: left;
+	line-height: 36.5pt;
+	font-size: 60px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+p.CopertinaTIT02Indirizzo	/*00-titolo indirizzo biesse */
+{
+	text-align: left;
+	margin-left: 3px;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: italic;
+	color: #000000;
+	font-size: 8pt;
+	line-height: 8px;
+	margin-top: 8pt;
+}
+
+p.CopertinaTIT03Biesse	/*00-titolo: Biesse s.p.a nell'indirizzo*/
+{
+	text-align: left;
+	margin-left: 3px;
+	margin-right: 0pt;
+	margin-top: 4pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 12pt;
+	letter-spacing: 0em;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 14pt;
+	text-decoration: none;
+	color: #134042;
+}
+
+p.CopertinaTIT04Istruzioni	/*00-titolo; ISTRUZIONI PER L'USO;MODIF 02-2016 per nuova masterWeb*/
+{
+	text-align: left;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 24pt;
+	letter-spacing: 0em;
+	mc-hyphenate: never;
+	mc-auto-number-position: inside-head;
+	mc-auto-number-offset: 0px;
+	text-indent: 0px;
+	line-height: 25pt;
+	text-decoration: none;
+	color: #FFFFFF;
+	margin-top: 30px;
+}
+
+p.CopertinaTIT-Codice	/*00-titolo codice man copertina del PDF*/
+{
+	text-align: left;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 0pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 12pt;
+	letter-spacing: 0em;
+	mc-hyphenate: never;
+	mc-auto-number-format: ;
+	mc-auto-number-position: inside-head;
+	mc-auto-number-offset: 0px;
+	text-indent: 0px;
+	line-height: 14pt;
+	text-decoration: none;
+	color: #134042;
+}
+
+p.CopertinaTIT-Trad-Lingue	/*00-titolo copertina;stile per "traduzione delle istruzioni originali"*/
+{
+	text-align: left;
+	margin-right: 0pt;
+	margin-top: 4pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: normal;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 16pt;
+	text-decoration: none;
+	color: #134042;
+	font-size: 9pt;
+	margin-left: 0;
+}
+
+p.Cop-TIT-InfoIndiriz	/*00-titolo : Indirizzo del costruttore*/
+{
+	text-align: left;
+	margin-left: 3px;
+	margin-right: 0pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: normal;
+	letter-spacing: 0em;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 14pt;
+	text-decoration: none;
+	color: #134042;
+	font-size: 18pt;
+	margin-bottom: 27pt;
+	margin-top: 45pt;
+}
+
+p._03-Parametro-Cod	/*07- parametro dell'interfaccia sotto il campo dati; stile che segue:p*/
+{
+	font-family: 'Arial Narrow';
+	mc-hyphenate: never;
+	mc-auto-number-position: inside-head;
+	mc-auto-number-offset: 0px;
+	mc-next-tag: p;
+	mc-next-class: TES_Desc-Campi;
+	text-indent: 0px;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: left;
+	mc-float: none;
+	margin-top: 2pt;
+	margin-bottom: 10pt;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	vertical-align: text-top;
+	display: block;
+	color: #696969;
+	line-height: 12pt;
+	padding-left: 0px;
+	font-weight: normal;
+	font-size: 10pt;
+	font-style: oblique;
+	mc-heading-level: none;
+}
+
+p.TIT-ListaPulsanti	/*07-Titolo Strumenti per una lista di ICONE al posto della TABELLA; senza parte descrittiva*/
+{
+	font-family: 'Arial Narrow';
+	font-style: italic;
+	font-weight: bold;
+	font-size: 12pt;
+	text-align: left;
+	text-decoration: none;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	mc-disable-glossary-terms: true;
+	margin-top: 18pt;
+	margin-bottom: 15pt;
+	color: #134042;
+	line-height: 14pt;
+	mc-heading-level: 6;
+}
+
+p.TIT-Para-TAB	/*H5(6 PDF) Titolo per lista Campi in una TABELLA - MODIFICHE: 31-10*/
+{
+	text-align: left;
+	font-family: sans-serif;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	text-decoration: none;
+	margin-top: 8pt;
+	font-style: italic;
+	mc-disable-glossary-terms: true;
+	font-size: 12pt;
+	color: #134042;
+	line-height: 14pt;
+	margin-bottom: 0pt;
+	font-weight: bold;
+	mc-heading-level: 6;
+}
+
+p.TIT-Opz-TAB	/*testo grassetto per lista opzioni in una TABELLA */
+{
+	font-family: sans-serif;
+	color: #01514e;
+	font-weight: bold;
+	font-size: 10pt;
+	font-style: italic;
+	text-align: left;
+	line-height: 12pt;
+	mc-hyphenate: never;
+	text-decoration: none;
+	margin-top: 8pt;
+	margin-bottom: 0pt;
+	mc-disable-glossary-terms: true;
+	mc-heading-level: 7;
+}
+
+p.TITper_FIGita	/*Figura: numerazione e titolo per figura; stile che segue: p.TES_LegendaFigure
+(disabilitato mc-dysable-glossary-term; perchè sballava nel popup e non si poteva sistemare)*/
+{
+	text-align: left;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: italic;
+	color: #000000;
+	mc-hyphenate: never;
+	mc-auto-number-class: NUMFIGURA;
+	mc-next-tag: p;
+	mc-next-class: TES_LegendaFigure;
+	line-height: 12pt;
+	text-decoration: none;
+	margin-bottom: 6pt;
+	margin-top: 8pt;
+	mc-auto-number-offset: 0;
+	margin-right: 0;
+	font-size: 10pt;
+	mc-heading-level: 8;
+	mc-auto-number-position: outside-head;
+	margin-left: 32px;
+	mc-auto-number-offset: 32px;
+	vertical-align: text-bottom;
+	mc-disable-glossary-terms: true;
+	mc-auto-number-format: 'GH:{n+}.';
+}
+
+/* NOTE:LISTA paragrafi puntati e numerati*/
+
+p.TEScon-num_1	/*Testo numerato 1 per procedure; rientrato 32px; testo da usare sotto: p.TEScon-rientro. mc-heading-level: 8 COME LA FIGURA*/
+{
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	color: #000000;
+	mc-hyphenate: never;
+	mc-auto-number-position: outside-head;
+	mc-auto-number-class: GRASSETTO;
+	mc-next-tag: p;
+	mc-next-class: TEScon-num_1_;
+	mc-auto-number-format: 'B:{n=1}. ';
+	text-decoration: none;
+	margin-left: 32px;
+	margin-top: 8pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	mc-auto-number-offset: 32px;
+	text-align: left;
+	vertical-align: text-bottom;
+	mc-heading-level: 8;
+}
+
+p.TEScon-num_1_	/*Testo numerato + per procedure; rientrato 32 px; testo da usare sotto: p.TEScon-rientro. mc-heading-level: 8 COME LA FIGURA*/
+{
+	text-align: left;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	color: #000000;
+	mc-hyphenate: never;
+	mc-auto-number-position: outside-head;
+	mc-auto-number-class: GRASSETTO;
+	mc-auto-number-format: 'B:{n+}. ';
+	text-decoration: none;
+	margin-left: 32px;
+	margin-top: 8pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	mc-auto-number-offset: 32px;
+	vertical-align: text-bottom;
+	mc-heading-level: 8;
+}
+
+p.TEScon-num_A	/*Figura: numerazione A riferiementi figura. mc-heading-level: 8 COME LA FIGURA*/
+{
+	text-align: left;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	margin-top: 4pt;
+	color: #000000;
+	text-decoration: none;
+	mc-heading-level: 8;
+	mc-hyphenate: never;
+	mc-auto-number-class: GRASSETTO;
+	mc-next-tag: p;
+	mc-next-class: TEScon-num_A_;
+	text-indent: 0;
+	mc-auto-number-position: outside-head;
+	vertical-align: text-bottom;
+	mc-auto-number-format: 'A:{A=1}. ';
+	margin-left: 64px;
+	mc-auto-number-offset: 32px;
+}
+
+p.TEScon-num_A_	/*Figura: numerazione + riferiementi figura. mc-heading-level: 8 COME LA FIGURA*/
+{
+	text-align: left;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	color: #000000;
+	font-size: 10pt;
+	margin-top: 4pt;
+	text-decoration: none;
+	mc-heading-level: 8;
+	mc-hyphenate: never;
+	mc-auto-number-class: GRASSETTO;
+	text-indent: 0;
+	mc-auto-number-position: outside-head;
+	vertical-align: text-bottom;
+	mc-auto-number-format: 'A:{A+}. ';
+	margin-left: 64px;
+	mc-auto-number-offset: 32px;
+}
+
+p.TES_puntatoreGrande	/*Testo puntato: lista puntata principale. Tolto mc-headingLevel(14-11-2107)*/
+{
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	color: #000000;
+	mc-hyphenate: never;
+	line-height: 12pt;
+	text-decoration: none;
+	margin-top: 8pt;
+	margin-bottom: 8pt;
+	margin-right: 0pt;
+	text-align: left;
+	mc-auto-number-position: outside-head;
+	margin-left: 32px;
+	mc-auto-number-offset: 32px;
+	mc-auto-number-class: NERO;
+	mc-auto-number-format: 'B:   •   ';
+	vertical-align: text-bottom;
+}
+
+p.TES_puntatorePiccolo	/*Testo puntato SOLO per indici e link associati. Tolto mc-headingLevel(14-11-2107)*/
+{
+	text-align: left;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	color: #000000;
+	mc-hyphenate: never;
+	line-height: 11pt;
+	text-decoration: none;
+	mc-auto-number-class: NERO;
+	mc-auto-number-position: outside-head;
+	mc-auto-number-format: 'B:•';
+	vertical-align: text-bottom;
+	text-indent: 0;
+	margin-left: 15px;
+	mc-auto-number-offset: 15px;
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	margin-right: 0pt;
+}
+
+p.TES_puntatore-sub	/*Testo puntato rientrato 62;*/
+{
+	text-align: left;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	color: #000000;
+	mc-hyphenate: never;
+	line-height: 12pt;
+	text-decoration: none;
+	margin-right: 0pt;
+	margin-top: 4pt;
+	margin-bottom: 4pt;
+	margin-left: 62px;
+	mc-auto-number-class: NERO;
+	mc-auto-number-position: outside-head;
+	vertical-align: text-bottom;
+	mc-auto-number-format: 'B: •';
+	mc-auto-number-offset: 32px;
+}
+
+/*NOTE: LISTA tutte le classi P per i testi generici e rientrati */
+
+p	/*stile per il testo normale*/
+{
+	color: #000000;
+	text-align: left;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 8pt;
+	margin-bottom: 4pt;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	text-decoration: none;
+	line-height: 12pt;
+	letter-spacing: 0em;
+}
+
+p.TES	/*tolte formattazioni; uguale a P; lasciarlo solo per import da FM*/
+{
+	
+}
+
+p.TES_Desc-Campi	/*tolte formattazioni; uguale a P; lasciarlo solo per import da FM*/
+{
+	
+}
+
+p.inizioDIV	/*da usare solo sotto i puntatori piccoli dentro un div rientrato.*/
+{
+	color: #000000;
+	margin-top: 4pt;
+	margin-bottom: 4pt;
+}
+
+p.Hyperlink-Video	/*NON USATO: se si fanno di link a video usare questo*/
+{
+	text-align: left;
+	margin-right: 0pt;
+	font-family: Arial;
+	font-style: normal;
+	mc-hyphenate: never;
+	mc-auto-number-position: outside-head;
+	line-height: 12pt;
+	text-decoration: none;
+	mc-auto-number-class: Stile-Puntatore;
+	mc-heading-level: none;
+	font-weight: bold;
+	font-size: 10pt;
+	text-indent: 0;
+	mc-auto-number-offset: 25px;
+	mc-auto-number-format: 'C:►';
+	margin-left: 65px;
+	color: #01514e;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+p.TES09	/*Testo 9 punti*/
+{
+	text-align: left;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-top: 0pt;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 9pt;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	text-decoration: none;
+	line-height: 9pt;
+}
+
+p.TEScon-numASotto	/*Figura: testo rientrato sotto la numerazione alfabetica delle figure; per descrizioni*/
+{
+	text-align: left;
+	margin-right: 0pt;
+	margin-top: 2pt;
+	margin-bottom: 2pt;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	text-decoration: none;
+	font-size: 10pt;
+	margin-left: 58px;
+}
+
+p.TEScon-rientro	/*Testo normale rientrato di 32 px; esempio sotto la lista puntata*/
+{
+	text-align: left;
+	margin-right: 0pt;
+	margin-top: 4pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 12pt;
+	text-decoration: none;
+	margin-left: 32px;
+}
+
+p.TEScon-rientro-sub	/*Testo normale rientrato di 62 px; sotto stile p.TES_puntatore-sub*/
+{
+	text-align: left;
+	margin-right: 0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	letter-spacing: 0em;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 12pt;
+	text-decoration: none;
+	margin-left: 62px;
+}
+
+p.TES_LegendaFigure	/*Figura: testo rientrato sotto il titolo della figura*/
+{
+	text-align: left;
+	margin-right: 0pt;
+	margin-top: 2pt;
+	margin-bottom: 2pt;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 0em;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 11pt;
+	text-decoration: none;
+	font-size: 10pt;
+	margin-left: 32px;
+}
+
+p.TES_Rigaprogramma	/*Testo per righe di programmazione*/
+{
+	text-align: left;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 2pt;
+	margin-bottom: 0pt;
+	font-family: 'Courier New';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 9pt;
+	letter-spacing: -0.03em;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 11pt;
+	text-decoration: none;
+}
+
+p.TES_Desc-Opzioni	/*Testo descrittivo di tutte le opzioni*/
+{
+	text-align: left;
+	margin-right: 0pt;
+	margin-top: 4pt;
+	margin-left: 0px;
+	margin-bottom: 4pt;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	letter-spacing: 0em;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 12pt;
+	text-decoration: none;
+}
+
+p.VariabileHeader	/*Per page layout: Stile per header per pdf; quello inserito nello snipet  HeaderXPDF.flsnp. In tal caso dare lo stile al paragrafo e lo stile alla variabile: MadCap:variable.VarHeaderLayout*/
+{
+	text-align: right;
+	margin-left: 0pt;
+	margin-top: 0pt;
+	margin-bottom: 3pt;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 14pt;
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 10pt;
+	margin-right: 15pt;
+}
+
+p.Variabile_NumPag	/*Per page layout: Numero del foot per il pdf. In tal caso bisogna applicare due stili; uno per il paragrafo e uno per la variabile: madCap:variable.VarNumLayout*/
+{
+	margin-left: 0cm;
+	margin-right: 0cm;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: 'Arial Narrow';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 12pt;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 14pt;
+	text-decoration: none;
+	text-align: center;
+}
+
+p.VariabileData	/*Per page layout: Data del sistema inserita nelle PageLayouts per il pdf. associata a stile.MadCap:variable.VarDateLayout*/
+{
+	text-align: left;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	font-family: 'Arial Narrow';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 6pt;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 5pt;
+	text-decoration: none;
+	margin-top: 8pt;
+}
+
+p.Variabile-footer	/*Per page layout*/
+{
+	text-align: left;
+	margin-left: 0cm;
+	margin-right: 0cm;
+	margin-top: 2pt;
+	margin-bottom: 0pt;
+	font-family: 'Arial Narrow';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 6pt;
+	letter-spacing: 0em;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 5pt;
+	text-decoration: none;
+}
+
+p.XMP-Logo	/*Per page layout: Stile per Header della MasterPages 2015 per il web.*/
+{
+	text-align: left;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 7pt;
+	letter-spacing: 0em;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 8pt;
+	text-decoration: none;
+}
+
+p.NOTE_Cautela	/*NOTE; per cautela*/
+{
+	text-align: left;
+	margin-left: 0px;
+	margin-right: 0pt;
+	margin-top: 8pt;
+	margin-bottom: 4pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 10pt;
+	letter-spacing: 0em;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 12pt;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position-x: 0;
+	background-position-y: top;
+	padding-left: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-image: url('../Images/MODELLI/Imm-css/_cautela.png');
+}
+
+p.NOTE_Info	/*NOTE: imformazioni */
+{
+	text-align: left;
+	margin-left: 0px;
+	margin-right: 0pt;
+	margin-top: 8pt;
+	margin-bottom: 4pt;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	letter-spacing: 0em;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 12pt;
+	text-decoration: none;
+	background-image: url('../Images/MODELLI/Imm-css/_info.png');
+	background-repeat: no-repeat;
+	background-position-x: 0;
+	background-position-y: top;
+	padding-left: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+p.NOTE_Pericolo	/*NOTE; per pericolo*/
+{
+	text-align: left;
+	margin-left: 0px;
+	margin-right: 0pt;
+	margin-top: 8pt;
+	margin-bottom: 4pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 10pt;
+	letter-spacing: 0em;
+	color: #db0000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 12pt;
+	text-decoration: none;
+	background-image: url('../Images/MODELLI/Imm-css/_Pericolo.png');
+	background-repeat: no-repeat;
+	background-position-x: 0;
+	background-position-y: top;
+	padding-left: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+p.NOTE_Tecnico	/*NOTE*/
+{
+	text-align: left;
+	margin-left: 0px;
+	margin-right: 0pt;
+	margin-top: 8pt;
+	margin-bottom: 4pt;
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	letter-spacing: 0em;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 12pt;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position-x: 0;
+	background-position-y: top;
+	padding-left: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-image: url('../Images/MODELLI/Imm-css/_TecnicoM.png');
+}
+
+p.IndexHeading	/*Indice analitico: set LETTERINA index PDF*/
+{
+	font-family: Arial;
+	font-size: 13;
+	font-weight: bold;
+	font-style: italic;
+	color: #e8faff;
+	background-color: #000000;
+	text-align: center;
+	margin-bottom: 14pt;
+}
+
+p.Foot-automatico	/*ELIMINATO;non usato;sistemato stili foot*/
+{
+	
+}
+
+p.TES_NotaInCella	/*Testo per le notine nelle tabelle senza numerello*/
+{
+	text-align: left;
+	margin-right: 0pt;
+	font-family: Arial;
+	mc-hyphenate: never;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: italic;
+	color: #696969;
+	margin-top: 4pt;
+	margin-left: 0;
+	text-indent: 0;
+	margin-bottom: 10pt;
+	line-height: 11pt;
+	font-size: 9pt;
+}
+
+p.XMasterLingua	/*NUOVO-Per la Master web 2016; per testi a piè di pagina:lingua*/
+{
+	font-family: Arial;
+	text-align: left;
+	text-decoration: none;
+	margin-left: 0px;
+	color: #e8faff;
+	font-size: 9pt;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+p.XLOGOCopertine	/*per mettere il logo a destra nelle copertine.*/
+{
+	font-style: normal;
+	text-align: right;
+	color: #a9a9a9;
+	line-height: 40pt;
+	font-size: 10;
+	margin-bottom: 1.12em;
+	margin-top: 1.12em;
+}
+
+p.XMasterDX	/*NUOVO:Per MasterPagelayout: Stile per header della MasterPages per il web che comprende istuzioni,data,logo*/
+{
+	margin-left: 0pt;
+	margin-right: 0pt;
+	font-family: Arial;
+	mc-hyphenate: never;
+	font-size: 9pt;
+	display: block;
+	text-align: right;
+	color: #e8faff;
+	background-color: #272727;
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+
+p.Foot-manual-Tab	/*per fooot note inserite a mano in celle delle tabelle*/
+{
+	text-align: left;
+	margin-right: 0pt;
+	font-family: Arial;
+	mc-hyphenate: never;
+	text-decoration: none;
+	font-size: 9pt;
+	font-weight: normal;
+	font-style: italic;
+	text-indent: -12pt;
+	margin-left: 12pt;
+	color: #696969;
+	mc-auto-number-format: '{sup}({a+}){/sup}  ';
+	margin-bottom: 10pt;
+	margin-top: 10pt;
+	line-height: 10.5pt;
+	mc-heading-level: 8;
+}
+
+p.Index1	/*Indice analitico: primo livello per PDF*/
+{
+	font-family: Arial;
+	font-size: 10pt;
+	font-style: italic;
+	color: #01514e;
+	margin-top: 8pt;
+	margin-bottom: 4pt;
+}
+
+p.Index2	/*Indice analitico: secondo livello per PDF*/
+{
+	color: #037f7b;
+	margin-left: 10px;
+	margin-bottom: 5pt;
+	font-family: Arial;
+	font-size: 10pt;
+	font-style: italic;
+	margin-top: 1pt;
+}
+
+p.Index3	/*Indice analitico: terzo livello per PDF*/
+{
+	color: #037f7b;
+	margin-top: 3pt;
+	margin-bottom: 3pt;
+	margin-left: 20px;
+}
+
+p.MiniTOC1	/*formato per titolo H2*/
+{
+	font-family: Arial;
+	text-align: left;
+	mc-leader-indent: 0pt;
+	margin-right: 0;
+	margin-bottom: 6pt;
+	margin-top: 8pt;
+	mc-leader-format: '.';
+	mc-leader-align: right;
+	mc-pagenum-display: all;
+	margin-left: 0pt;
+	color: #037f7b;
+	font-size: 10pt;
+	font-style: italic;
+	font-weight: normal;
+}
+
+p.MiniTOC2	/*settaggio per titolo H3*/
+{
+	font-size: 10pt;
+	font-style: italic;
+	font-family: Aial;
+	text-align: left;
+	margin-bottom: 6pt;
+	margin-top: 6pt;
+	mc-leader-indent: 5pt;
+	margin-left: 10pt;
+	font-weight: normal;
+	color: #037f7b;
+}
+
+p.MiniTOC3	/*settaggio per titolo H4*/
+{
+	font-size: 10pt;
+	font-style: italic;
+	font-family: Aial;
+	text-align: left;
+	margin: 0;
+	margin-bottom: 6pt;
+	margin-top: 6pt;
+	mc-leader-indent: 10pt;
+	margin-left: 20pt;
+	color: #037f7b;
+}
+
+p.MiniTOC4	/*formato per titolo h4 s*/
+{
+	margin-left: 30pt;
+	font-style: italic;
+	color: #037f7b;
+}
+
+p.MiniTOC5	/*formato per tiolo H5 parametro*/
+{
+	font-style: italic;
+	color: #037f7b;
+}
+
+p.MiniTOC6
+{
+	font-style: italic;
+	color: #037f7b;
+}
+
+p.MiniTOC7
+{
+	color: #037f7b;
+	font-style: italic;
+}
+
+/*NOTE: LISTA STILI DI CARATTERE B-I-SPAN-DIV- ECC.*/
+
+b	/*Stili Caratteri: bold di default*/
+{
+	color: #01514e;
+}
+
+b.BLU-GR	/*Stili Caratteri: BOLD*/
+{
+	font-weight: bold;
+	color: #0000ff;
+}
+
+b.PT_09-Arial-Bold	/*Stili Caratteri: BOLD*/
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 9pt;
+	letter-spacing: 0em;
+	line-height: 11pt;
+}
+
+b.PT_10-Arial-Bold	/*Stili Caratteri: BOLD*/
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 10pt;
+	letter-spacing: 0em;
+	color: #000000;
+	line-height: 12pt;
+}
+
+b.PT_11-Arial-Bold	/*Stili Caratteri: BOLD*/
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 11pt;
+	letter-spacing: 0em;
+	color: #000000;
+	line-height: 13pt;
+}
+
+b.PT_14-ArialN	/*Stili Caratteri: BOLD*/
+{
+	font-family: 'Arial Narrow';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 14pt;
+	letter-spacing: 0em;
+	color: #000000;
+	line-height: 16pt;
+}
+
+b.PT_12-Arial-Bold	/*Stili Caratteri: BOLD*/
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 12pt;
+	letter-spacing: 0em;
+	color: #000000;
+	line-height: 14pt;
+}
+
+span.stileFONT-Wingdings	/*Stili Caratteri:*/
+{
+	font-family: Wingdings;
+	line-height: 10.5pt;
+	font-size: 10pt;
+}
+
+span.PT_09-rigaprog	/*Stili Caratteri:*/
+{
+	font-family: 'Courier New';
+	font-size: 9pt;
+	letter-spacing: -0.03em;
+	line-height: 11pt;
+}
+
+span.PT_08	/*Stili Caratteri:*/
+{
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 8pt;
+	letter-spacing: 0em;
+	color: #000000;
+	line-height: 10pt;
+	text-decoration: none;
+}
+
+span.PT_11	/*Stili Caratteri:*/
+{
+	font-weight: normal;
+	font-size: 11pt;
+	letter-spacing: 0em;
+	line-height: 13pt;
+}
+
+span.SOPRALINEATO	/*Stili Caratteri:*/
+{
+	color: #000000;
+	text-decoration: overline;
+}
+
+span.ESPONENTE	/*Stili Caratteri:*/
+{
+	font-family: 'Arial Narrow';
+	font-weight: bold;
+	font-style: italic;
+	font-size: 80%;
+	vertical-align: super;
+}
+
+span.stileFONT-Symbol	/*Stili Caratteri:*/
+{
+	font-family: Symbol;
+	font-weight: normal;
+	font-size: 10pt;
+}
+
+span._MAIUSCOLO	/*Stili Caratteri: TUTTO MAIUSCOLO*/
+{
+	text-transform: uppercase;
+}
+
+span._PRIMO_MAIUSCOLA	/*Stili Caratteri: PRIMA MAIUSCOLO*/
+{
+	text-transform: capitalize;
+}
+
+span._MINUSCOLO	/*Stili Caratteri: TUTTO MINUSCOLO*/
+{
+	text-transform: inherit;
+}
+
+span.Inclinato-Sottolin	/*Stili Caratteri: SOTTOLINEATO INCLIATO*/
+{
+	font-style: italic;
+	text-decoration: underline;
+}
+
+i.PT_13-italic	/*Stili Caratteri: inclinati*/
+{
+	font-family: 'Arial Narrow';
+	font-weight: bold;
+	font-style: italic;
+	font-size: 13pt;
+	letter-spacing: 0em;
+	line-height: 15pt;
+}
+
+i.INCLINATO	/*Stili Caratteri: inclinati*/
+{
+	font-style: italic;
+	color: #000000;
+}
+
+div.GlossaryPageDefinition	/*Box glossario PDF: Definizione lemma glossario*/
+{
+	font-size: 10pt;
+	font-family: Arial;
+	font-style: italic;
+	color: #e8faff;
+	font-weight: bold;
+}
+
+div.GlossaryPageTerm	/*Box glossario PDF:X Lemma*/
+{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 11pt;
+	color: #134042;
+	mc-auto-number-position: none;
+	font-family: Arial;
+	text-align: left;
+	margin-left: 0pt;
+	line-height: 13pt;
+	margin-top: 12pt;
+	margin-bottom: 2pt;
+	display: block;
+}
+
+div.GlossaryPageHeading	/*Box glossario PDF:X Letterina*/
+{
+	color: #e8faff;
+	background-color: #272727;
+	font-size: 14pt;
+	font-family: Arial;
+	font-style: italic;
+	display: block;
+	text-align: center;
+	margin-top: 30pt;
+	margin-left: -15px;
+	margin-bottom: 20pt;
+	border-bottom-style: none;
+}
+
+div.GlossaryPageEntry
+{
+	margin-bottom: 12pt;
+}
+
+pre
+{
+	display: inline-block;
+}
+
+div.BoxDentroTAB	/*box per Toggle inseriti in una tabella per descrivere es le finestre di dialogo*/
+{
+	margin-top: 20pt;
+	margin-bottom: 20pt;
+	padding-left: 4px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	border-top: solid 1px;
+	border-color: #037f7b;
+	margin-left: 0px;
+}
+
+div.BoxListaLINK	/*02-feb:box rientrato per toggler procedure-argomenti per lista dei link (non usato per ora)*/
+{
+	padding: 2px;
+	width: 400px;
+	border-radius: 4px;
+	border: solid 4px #b9e1df;
+	height: auto;
+	float: none;
+	background-color: #ffffff;
+	border-color: #ffffff;
+	margin-left: 20px;
+}
+
+div.BoxListaPulsanti	/*per ListaPulsanti TOGGLER-rientro left 77 (08-06)*/
+{
+	padding: 0px;
+	padding-left: 0px;
+	margin-left: 77px;
+}
+
+div.BoxListaPulsantiDrop	/*per ListaPulsanti DROP-rientro left 60 (26-06)*/
+{
+	padding: 0px;
+	padding-left: 0px;
+	margin-left: 60px;
+}
+
+div.BoxRientrato32	/*box rientrato:per Opzioni o sotto puntatori/numerazioni;margine left 32*/
+{
+	margin-left: 32px;
+	padding-bottom: 4pt;
+	margin-top: 0px;
+}
+
+div.BoxRientrato4X	/*box rientrato SOLO Toggle con descrizioni sotto numerazioni figure NO TIT;margine left 60;border top*/
+{
+	margin-top: 20pt;
+	margin-bottom: 20pt;
+	padding-left: 4px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	border-top: solid 1px;
+	border-color: #037f7b;
+	margin-left: 60px;
+}
+
+div.BoxRientrato6X	/*box doppio rientro;margine left 62 sotto liste puntate*/
+{
+	margin-left: 62px;
+	padding-bottom: 4pt;
+	margin-top: 0px;
+}
+
+div.BoxNoRientro	/*box per toggler  normale senza rientri; es per desc param sotto titoli H4.*/
+{
+	
+}
+
+div.BoxNoteTecnico	/*Box:testo delle note sollo x il pNoteTecnico*/
+{
+	padding: 0px;
+	margin-left: 54px;
+	background: #d1f6f4;
+	border: solid 1px #037f7b;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+}
+
+div.copertina
+{
+	height: auto;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-color: #272727;
+	margin-top: 18px;
+	padding-left: 0px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border-left-style: none;
+	border-left-width: 1px;
+	border-right-style: none;
+	border-right-width: 1px;
+	border-top-style: none;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-bottom-width: 2px;
+	border-bottom-color: #272727;
+}
+
+div.ReportEntry_Level1	/*Box: NON USATO*/
+{
+	font-weight: bold;
+	font-style: normal;
+	margin-top: 8px;
+	font-size: 10pt;
+}
+
+div.TesTecnico	/*Box: testo rietnrato sotto "p.NOTE_Tecnico"*/
+{
+	margin-left: 0px;
+	margin-right: 0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	padding-left: 50px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+span.footnote	/*stie per il numerino del footnote per PDF quando è un textPopup*/
+{
+	font-family: monospace;
+	font-weight: bold;
+	color: #037f7b;
+	font-style: italic;
+	mc-italic-correction: 2px;
+	vertical-align: super;
+	font-size: 85%;
+}
+
+span.GRASSETTO	/*Stili Caratteri: BOLD*/
+{
+	font-weight: bold;
+	color: #01514e;
+}
+
+span.MasterChiaro	/*NUOVO:SOLO COLORE chiaro testo MASTER*/
+{
+	color: #e8faff;
+}
+
+span.NERO	/*Stili Caratteri: TUTTO NERO*/
+{
+	color: #000000;
+}
+
+span.RobotoMedium
+{
+	font-family: 'Roboto Medium';
+}
+
+span.Tes_IconaDropDown	/*Stili Caratteri: NON PIU USATO*/
+{
+	color: #01514e;
+}
+
+span.ScuroXCopertina
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-style: normal;
+	color: #134042;
+}
+
+span.stringhe	/*Stili Caratteri:*/
+{
+	font-weight: bold;
+	font-style: italic;
+	color: #134042;
+	text-decoration: none;
+}
+
+span.stileFONT-CourierNew	/*Stili Caratteri:*/
+{
+	font-family: 'Courier New';
+	font-size: 9pt;
+	letter-spacing: -0.03em;
+	line-height: 11pt;
+}
+
+/*NOTE: LISTA STILI DELLE IMMAGINI - OGGETTI*/
+
+img
+{
+	border-color: #ffffff;
+	mc-thumbnail-max-height: auto;
+}
+
+img.Vid_GR_Autom	/*Figura: per videate e disegni con paline; dimensioni di creazione, già dimensionate*/
+{
+	height: auto;
+	width: auto;
+	mc-float: none;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 1px;
+	mc-thumbnail-max-height: auto;
+	margin-top: 12px;
+}
+
+img.Imm_Sez_300
+{
+	height: auto;
+	float: right;
+	width: auto;
+	height: 300px;
+	margin-top: 0px;
+	margin-left: 50pt;
+}
+
+img.icona_32a24px	/*ICONA:mezzo al TESTO ALTA 24PX e Punt-Num; trasparente-CENTRATA*/
+{
+	margin-left: 0, 6301417px;
+	margin-top: 0, 6301417px;
+	margin-right: 0, 6298585px;
+	margin-bottom: 0, 6298585px;
+	mc-printer-page-custom-width: 24px;
+	height: 24px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 1px;
+	padding-bottom: 2px;
+	vertical-align: middle;
+	border-color: #ffffff;
+	width: auto;
+	mc-thumbnail-max-height: 24px;
+}
+
+img.icona_32a32pxBase	/*ICONA alla BASE: per pulsanti in fondo aiTIT; alta 32px; trasparente*/
+{
+	margin-left: 0, 1023307px;
+	margin-top: 0, 1023307px;
+	margin-right: 0, 1023297px;
+	margin-bottom: 0, 1023297px;
+	padding-left: 1px;
+	padding-right: 4px;
+	padding-top: 4px;
+	padding-bottom: 0px;
+	mc-printer-page-custom-width: 32px;
+	mc-printer-page-custom-height: 32px;
+	height: 32px;
+	width: auto;
+	vertical-align: baseline;
+	border-color: #ffffff;
+	mc-thumbnail-max-height: 32px;
+}
+
+img.Vid_GR_550_sx	/*Figura: per videate interfaccia senza paline: 600px*/
+{
+	mc-float: none;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 1px;
+	height: auto;
+	margin-top: 12px;
+	width: 500px;
+	mc-thumbnail-max-height: 400px;
+}
+
+img.Imm_Logo	/*MODIF 02-2016 per nuova MasterWeb;logo nel footer a destra;*/
+{
+	clear: none;
+	vertical-align: middle;
+	width: auto;
+	mc-float: none;
+	mc-thumbnail-max-height: 50px;
+	margin-left: 10px;
+	margin-right: 6px;
+	height: 32px;
+}
+
+img.Icona_TAB_100a48px	/*Tabella: per icona alta 48 px trasparente*/
+{
+	height: 48px;
+	width: auto;
+	vertical-align: middle;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	padding-left: 2px;
+	mc-float: none;
+	mc-thumbnail-max-height: 48px;
+}
+
+img.Icona_TAB_32px	/*Tabella: per icona alta 32 px trasparente*/
+{
+	height: 32px;
+	width: auto;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	padding-left: 2px;
+	mc-float: none;
+	vertical-align: middle;
+	mc-thumbnail-max-height: 32px;
+}
+
+img.icona_32a32pxCentrata	/*ICONA CENTRATA: Per TIT con icone; alta 32px; trasparente*/
+{
+	margin-left: 0, 6301417px;
+	margin-top: 0, 6301417px;
+	margin-right: 0, 6298585px;
+	margin-bottom: 0, 6298585px;
+	vertical-align: middle;
+	padding-left: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	height: 32px;
+	width: auto;
+	padding-right: 2px;
+	border-color: #ffffff;
+	mc-thumbnail-max-height: 32px;
+}
+
+img.Animazioni	/*Figura: per videate e disegni con paline; dimensioni di creazione, già dimensionate*/
+{
+	height: auto;
+	width: auto;
+	mc-float: none;
+	margin-left: 2px;
+	margin-right: 2px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	mc-thumbnail-max-height: 8cm;
+	mc-thumbnail-max-width: auto;
+	mc-thumbnail: popup;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+img.icona_GrandeBase	/*ICONA:in fondo al TIT: imm sfondo trasparente per pulsanti  più grandi di 48x48 nei titolini(ex:icona_48pxCentrata)*/
+{
+	margin-left: 0, 6301417px;
+	margin-top: 0, 6301417px;
+	margin-right: 0, 6298585px;
+	margin-bottom: 0, 6298585px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	width: auto;
+	height: 40px;
+	vertical-align: baseline;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-color: #ffffff;
+	mc-thumbnail-max-height: 48px;
+}
+
+img.icona_32DropA32	/*DROP: per icone nel caso di descrizioni opzioni o parametri; CONTORNO bianco; alta 32px*/
+{
+	margin-left: 0, 1023307px;
+	margin-top: 0, 1023307px;
+	margin-right: 0, 1023297px;
+	margin-bottom: 0, 1023297px;
+	vertical-align: baseline;
+	mc-printer-page-custom-width: 32px;
+	mc-printer-page-custom-height: 32px;
+	height: 32px;
+	width: auto;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #ffffff;
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-right-color: #ffffff;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color: #ffffff;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #ffffff;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	mc-thumbnail-max-height: 32px;
+}
+
+img.IconeListaMedie	/*DROP e Lista icone alte 40px con titolo:contorno bianco-applicare solo a icone sopra 48x48 per rimpicciolirle*/
+{
+	margin-left: 0, 1023307px;
+	margin-top: 0, 1023307px;
+	margin-right: 0, 1023297px;
+	margin-bottom: 0, 1023297px;
+	height: 40px;
+	width: auto;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #ffffff;
+	border-right-style: solid;
+	border-right-width: 35px;
+	border-right-color: #ffffff;
+	border-top-style: solid;
+	border-top-width: 4px;
+	border-top-color: #ffffff;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #ffffff;
+	vertical-align: bottom;
+	mc-float: none;
+	mc-thumbnail-max-height: 40px;
+}
+
+img.IconeListaPiccole	/*DROP e Lista icone alte 32 px con titolo:contorno bianco-applicare a icone sopra i 32 px*/
+{
+	margin-left: 0, 1023307px;
+	margin-top: 0, 1023307px;
+	margin-right: 0, 1023297px;
+	margin-bottom: 0, 1023297px;
+	width: auto;
+	height: 32px;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #ffffff;
+	border-right-style: solid;
+	border-right-width: 42px;
+	border-right-color: #ffffff;
+	border-top-style: solid;
+	border-top-width: 4px;
+	border-top-color: #ffffff;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #ffffff;
+	mc-float: none;
+	vertical-align: bottom;
+	mc-thumbnail-max-height: 32px;
+}
+
+img.VidPor01	/*Figura:videate LARGHEZZA 350;ex:Vid_Por_350*/
+{
+	height: auto;
+	margin-left: 2px;
+	margin-right: 2px;
+	mc-float: none;
+	margin-bottom: 1px;
+	width: 350px;
+	mc-thumbnail-max-width: 350px;
+	margin-top: 10px;
+}
+
+img.VidPor02	/*Figura: videate LARGHEZZA 250; ex:Vid_Por_250*/
+{
+	height: auto;
+	margin-left: 2px;
+	margin-right: 2px;
+	mc-float: none;
+	margin-bottom: 1px;
+	width: 250px;
+	mc-thumbnail-max-width: 250px;
+	margin-top: 10px;
+}
+
+img.VidPor03	/*Figura: videate LARGHEZZA 150: 150px*/
+{
+	height: auto;
+	float: none;
+	width: 150px;
+	margin-bottom: 1px;
+	margin-left: 2px;
+	margin-right: 2px;
+	mc-thumbnail-max-width: 150px;
+	margin-top: 10px;
+}
+
+img.VidAltez01	/*Figura:videate ALTEZZA 350*/
+{
+	height: auto;
+	margin-left: 2px;
+	margin-right: 2px;
+	mc-float: none;
+	margin-bottom: 1px;
+	height: 350px;
+	mc-thumbnail-max-height: 350px;
+	margin-top: 10px;
+	width: auto;
+}
+
+img.VidAltez02	/*Figura:videate ALTEZZA 250*/
+{
+	height: auto;
+	margin-left: 2px;
+	margin-right: 2px;
+	mc-float: none;
+	margin-bottom: 1px;
+	height: 250px;
+	mc-thumbnail-max-height: 250px;
+	margin-top: 10px;
+	width: auto;
+}
+
+img.VidAltez03	/*Figura:videate ALTEZZA 150*/
+{
+	height: auto;
+	float: none;
+	height: 150px;
+	margin-bottom: 1px;
+	margin-left: 2px;
+	margin-right: 2px;
+	mc-thumbnail-max-height: 150px;
+	margin-top: 10px;
+	width: auto;
+}
+
+img.WMF	/*Figura: per  disegni con paline salvati come WMF; per web dim 30% salvataggio 600px*/
+{
+	mc-float: none;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 1px;
+	height: 30%;
+	width: 30%;
+	max-width: 600px;
+}
+
+img.ImmCopertinaWeb	/*NUOVO-Per IMMAGINE COPERTINA web 2016*/
+{
+	border-color: #ffffff;
+	mc-thumbnail-max-height: auto;
+	float: left;
+	width: auto;
+	padding-right: 20px;
+	height: 250px;
+}
+
+object
+{
+	display: block;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	float: none;
+	width: 500px;
+	height: 300px;
+}
+
+object.AVI_500x400	/*VIDEO*/
+{
+	mc-float: none;
+	float: none;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-left: 50px;
+	height: 400px;
+}
+
+object.MP4
+{
+	mc-float: none;
+	float: none;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-left: 36px;
+	width: 740px;
+	height: auto;
+}
+
+/*stili TABELLA- RIGHE*/
+
+table.Default
+{
+	margin-left: 0pt;
+	margin-right: 0pt;
+	border-spacing-x: 0;
+	border-spacing-y: 0;
+	border-collapse: collapse;
+	border-color: black;
+	border-top-style: none;
+	border-bottom-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border: solid 1pt #000000;
+	margin-bottom: 8pt;
+	margin-top: 8pt;
+}
+
+table.PerMasterWeb	/*07-2017:per la tabella con la lingua inserita nella master web */
+{
+	background-color: #272727;
+	margin-top: 10pt;
+	margin-bottom: 10pt;
+	padding-left: 0px;
+	margin-left: 0;
+	padding-top: 0;
+}
+
+td
+{
+	caption-side: top;
+	color: #000000;
+	font-family: Arial;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 12pt;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+td.PerMasterweb	/*07-2017:per le celle della tabella con la lingua inserita nella master web */
+{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #e8faff;
+	padding-left: 4px;
+}
+
+hr.RIGAINIZIALE	/*03-febb:riga inizio-fine blocco iniziale*/
+{
+	border-left-style: solid;
+	border-right-style: solid;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-left-width: 2px;
+	border-bottom-width: 2px;
+	border-bottom-style: none;
+	border: solid 1px #b9e1df;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+hr.SottoFigura	/*sotto la figura quando si descrivono i campi dentro un toggler*/
+{
+	height: 1px;
+	border: solid 1px transparent;
+	border-top: solid 1px #037f7b;
+}
+
+/*NOTE: LISTA STILI MADCAP- LINK - CROSS DROP -FOOTNOTE - SLIDE - VARIABILI*/
+
+MadCap|xref	/*LINK Cross ref da usare nelle liste a inizio capitolo: settaggio di def; textdecoration incide sui toggler e non sui cross; NON MODIFICARLO*/
+{
+	mc-popup-height: 500px;
+	color: #037f7b;
+	text-decoration: none;
+	mc-popup-width: 700px;
+	font-style: normal;
+	mc-format: '{default}{paratext}';
+}
+
+MadCap|xref:hover
+{
+	color: #037f7b;
+	font-style: italic;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+MadCap|xref:focus
+{
+	text-transform: none;
+	color: #037f7b;
+}
+
+MadCap|xref.RIM_al_num	/*LINK Cross ref: al numerino o letterina*/
+{
+	mc-format: '{paranumonly}';
+	font-weight: bold;
+}
+
+MadCap|xref.RIM_al_num_e_testo_paragrafo	/*LINK Cross ref: al numerino e letterina più il testo*/
+{
+	mc-format: '{paranumonly}.  "{paratext}"';
+}
+
+MadCap|xref.RIM_al_riferimento	/*LINK Cross ref: al testo*/
+{
+	mc-format: '"{default}{paratext}"';
+}
+
+MadCap|xref.RIM_H2_testo	/*LINK Cross ref: al titolo H2*/
+{
+	mc-format: '"{h2}"';
+}
+
+MadCap|breadcrumbsProxy	/*breadcrump del web help con lista argomenti; MODIF 02-2016 per nuova masterWeb*/
+{
+	mc-breadcrumbs-divider: ' > ';
+	text-align: left;
+	mc-breadcrumbs-prefix: ' ';
+	outline-color: #ff00ff;
+	mc-heading-level: 1;
+	speak-header: once;
+	mc-feader-type: first;
+	margin-left: 0px;
+	font-family: Arial;
+	font-size: 9pt;
+	padding-left: 4px;
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+	color: #e8faff;
+	background-color: #272727;
+	mc-breadcrumbs-count: 2;
+}
+
+MadCap|bodyProxy
+{
+	mc-page-type: all;
+}
+
+MadCap|indexProxy	/*Indice analitico: box che contiene i testi indice ana per PDF*/
+{
+	border-top-color: #000000;
+	font-family: Arial;
+	font-size: 10pt;
+	color: #134042;
+	border-top-style: none;
+}
+
+a.Popup	/*Stile di default: SETTA dimensioni dei POPUP per gli hyperlink*/
+{
+	text-decoration: none;
+	mc-popup-height: 500px;
+	mc-popup-width: 700px;
+}
+
+a.Popup:link
+{
+	text-decoration: none;
+}
+
+a.Popup:visited
+{
+	text-decoration: none;
+}
+
+a.MCBreadcrumbsLink:link	/*breadcrump: Set link del breadcrump del web*/
+{
+	color: #b9e1df;
+}
+
+a.MCBreadcrumbsLink:visited	/*breadcrump: Set link del breadcrump del web*/
+{
+	color: #b9e1df;
+}
+
+a.GlossaryPageTerm:link	/*Glossario Web: per modificare colore del Lemma*/
+{
+	text-decoration: none;
+	background-color: transparent;
+	color: #b9e1df;
+}
+
+a.GlossaryPageTerm:visited
+{
+	text-decoration: none;
+	background-color: transparent;
+	color: #037f7b;
+}
+
+a.GlossaryPageTerm:focus
+{
+	background-color: transparent;
+	color: #037f7b;
+}
+
+a.GlossaryPageTerm:hover
+{
+	text-decoration: none;
+	background-color: transparent;
+	color: #037f7b;
+}
+
+a.GlossaryPageTerm:active
+{
+	background-color: transparent;
+	color: #037f7b;
+}
+
+a:link	/*Set TUTTI Link: se non si definisce stile per Gloss; Hyper, Cross o Popup, vengono prese questi set per tutti i link. Lo usa anche nel WebHelp per il lemma che è un iperlink*/
+{
+	color: #037f7b;
+	text-decoration: none;
+}
+
+a:visited	/*Set Link per Hyperlink*/
+{
+	text-decoration: none;
+	color: #037f7b;
+}
+
+a:focus	/*Set Link per Hyperlink*/
+{
+	color: #037f7b;
+}
+
+a:hover	/*Set Link per Hyperlink*/
+{
+	color: #037f7b;
+	font-style: italic;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+a:active	/*Set Link per Hyperlink*/
+{
+	color: #037f7b;
+}
+
+MadCap|conceptLink:focus
+{
+	font-weight: normal;
+	font-style: italic;
+}
+
+MadCap|conceptLink:hover
+{
+	font-weight: bold;
+	font-style: normal;
+}
+
+MadCap|helpControlMenu	/*RelatedTopic: SOLO colore Box del popup;*/
+{
+	background-color: #b9e1df;
+}
+
+MadCap|toggler	/*Testo per i toggler*/
+{
+	mc-open-image: url('../Images/MODELLI/Imm-css/TogglerOpen.png');
+	mc-closed-image: url('../Images/MODELLI/Imm-css/TogglerClose.png');
+	mc-image-position: right;
+	color: #037f7b;
+	font-style: normal;
+	mc-disable-glossary-terms: true;
+}
+
+MadCap|tocProxy	/*TOC PDF: set box che contiene i testi del TOC */
+{
+	font-family: Arial;
+	font-size: 10pt;
+	color: #000000;
+	border-top-style: none;
+}
+
+MadCap|glossaryProxy	/*GLOSSARIO PDF: set proxy*/
+{
+	font-family: Arial;
+	font-size: 10pt;
+	color: #134042;
+	border-top-style: none;
+	border-top-color: #000000;
+	mc-index-headings: true;
+}
+
+MadCap|variable.VarHeaderLayout	/*per page layout*/
+{
+	color: #01514e;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 9pt;
+}
+
+a.GlossaryPageTerm	/*Stile di Default solo per Glossario WebHelp (no HTML 5) quello della barra laterale */
+{
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 13px;
+}
+
+a.HyperIMAGE	/*Mio sitle:set se si fa un link sopra una ICONA*/
+{
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #ffffff;
+}
+
+a.HyperIMAGE:link
+{
+	color: #ffffff;
+}
+
+a.HyperIMAGE:visited
+{
+	color: #ffffff;
+}
+
+a.HyperIMAGE:hover
+{
+	color: #ffffff;
+}
+
+MadCap|miniTocProxy	/*formato standard settato con tutti i titoli fioìno al 7 dei parametri*/
+{
+	color: #037f7b;
+	font-family: Arial;
+	mc-output-support: all;
+	border-top-style: none;
+	border-top-width: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+MadCap|conceptLink	/*NON USATO*/
+{
+	color: #037f7b;
+	mc-image-alt-text: Vedere anche;
+	mc-output-support: all;
+}
+
+MadCap|relatedTopics	/*RelatedTopic: immagine di apertura-testo*/
+{
+	mc-image: url('../Images/MODELLI/Imm-css/RelatedTopics.gif');
+	mc-popup-width: 700px;
+	mc-popup-height: 500px;
+	mc-output-support: all;
+	color: #037f7b;
+	mc-image-alt-text: link;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 13pt;
+	font-family: 'Arial Narrow';
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding: 0px;
+	padding-bottom: 0px;
+	padding-top: 0pt;
+	margin-top: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	mc-label: '.........';
+	min-height: 800px;
+	min-width: 800px;
+}
+
+MadCap|relatedTopics.ImmagineSolo	/*RelatedTopic: SOLO immagine senza testo*/
+{
+	text-decoration: none;
+	text-transform: none;
+	font-weight: bold;
+	mc-output-support: all;
+	mc-image-alt-text: Link;
+	mc-image: url('../Images/MODELLI/Imm-css/RelatedOnlyImage.gif');
+	color: #ffffff;
+	mc-popup-height: 500px;
+	mc-label: '  ';
+	margin-left: 3px;
+	mc-image-spacing: 3px;
+	margin-right: 1px;
+}
+
+MadCap|dropDownHotspot.NotaPericolo	/*NOTE pericolo*/
+{
+	text-align: left;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 17pt;
+	font-weight: bold;
+	font-style: italic;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	text-indent: 0px;
+	line-height: 14pt;
+	margin-bottom: 14pt;
+	font-size: 10.5pt;
+	text-decoration: none;
+	font-family: Arial;
+	color: #db0000;
+}
+
+MadCap|dropDownBody.NotaPericoloBody	/*NOTE: BOX TESTO*/
+{
+	border: solid 1px;
+	border-bottom-color: #db0000;
+	border-color: #db0000;
+	background-color: #fbefee;
+	margin-left: 28px;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	padding-right: 5px;
+}
+
+MadCap|dropDownBody.NotaInfoBody	/*NOTE: BOX TESTO*/
+{
+	border: solid 1px;
+	border-bottom-color: #037f7b;
+	border-color: #037f7b;
+	background-color: #d1f6f4;
+	margin-left: 28px;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	padding-right: 5px;
+}
+
+MadCap|dropDownBody.NotaAttenzioneBody	/*NOTE: BOX TESTO*/
+{
+	border: solid 1px;
+	background-color: #b9e1df;
+	border-bottom-color: #037f7b;
+	border-color: #037f7b;
+	margin-left: 28px;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	padding-right: 5px;
+}
+
+MadCap|dropDownHotspot.NotaInfo	/*NOTE informazioni*/
+{
+	text-align: left;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	font-weight: bold;
+	font-style: italic;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	text-indent: 0px;
+	line-height: 14pt;
+	font-size: 10.5pt;
+	text-decoration: none;
+	font-family: Arial;
+	color: #134042;
+	margin-bottom: 14pt;
+	margin-top: 40pt;
+}
+
+MadCap|dropDownHotspot.NotaAttenzione	/*NOTE attenzione*/
+{
+	text-align: left;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	font-weight: bold;
+	font-style: italic;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	text-indent: 0px;
+	line-height: 14pt;
+	margin-bottom: 14pt;
+	font-size: 10.5pt;
+	text-decoration: none;
+	font-family: Arial;
+	color: #134042;
+	margin-top: 17pt;
+}
+
+MadCap|relatedTopics.ArgomentiCorrelati	/*RelatedTopic: con testo*/
+{
+	color: #037f7b;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 13pt;
+	mc-output-support: all;
+	font-family: 'Arial Narrow';
+	mc-image-alt-text: ;
+	mc-popup-height: 500px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	mc-label: 'Argomenti correlati         ';
+	padding: 0px;
+	padding-bottom: 0px;
+	padding-top: 0pt;
+	margin-top: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+}
+
+MadCap|helpControlList
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 11pt;
+	color: #134042;
+}
+
+MadCap|helpControlMenuItem.Highlighted	/*RelatedTopic: link del popup passando sopra con il mouse*/
+{
+	font-family: Arial;
+	background-color: transparent;
+	color: #037f7b;
+}
+
+MadCap|helpControlMenuItem	/*RelatedTopic: link del popup*/
+{
+	font-family: Arial;
+	font-size: 10pt;
+	font-style: italic;
+	color: #037f7b;
+}
+
+MadCap|dropDown	/*box: drop di def-margini T B: 8pt (come tes)*/
+{
+	mc-closed-image: url('../Images/MODELLI/Imm-css/DropDownClosed.gif');
+	mc-open-image: url('../Images/MODELLI/Imm-css/DropDownOpen.gif');
+	margin-top: 8pt;
+	font-style: inherit;
+	font-weight: inherit;
+	margin-bottom: 8pt;
+}
+
+MadCap|keywordLink
+{
+	color: #037f7b;
+	mc-image: url('../Images/MODELLI/Imm-css/KeywordLink.gif');
+	mc-label: 'Indice';
+	mc-output-support: all;
+	mc-image-alt-text: Link;
+}
+
+MadCap|snippetBlock	/*Snippet intero; solo per FLARE*/
+{
+	color: #0000ff;
+	background-color: #e0ffff;
+}
+
+MadCap|variable	/*Colore delle variabili solo in FLARE*/
+{
+	color: #0000ff;
+	mc-output-support: all;
+}
+
+MadCap|snippetText	/*Snippet in una frase; solo per FLARE*/
+{
+	color: #b22222;
+	background-color: #ffe4e1;
+}
+
+MadCap|relationshipsHeading.concept
+{
+	font-weight: bold;
+}
+
+MadCap|expandingHead	/*Testo Espanso: settare Titolo da espandere creato come expanding*/
+{
+	mc-image-position: left;
+	mc-image-spacing: 5px;
+	background-color: transparent;
+	color: #037f7b;
+	font-style: italic;
+}
+
+MadCap|shortcut
+{
+	color: #000000;
+}
+
+MadCap|variable.VarNumLayout	/*per page layout*/
+{
+	color: #01514e;
+	font-weight: bold;
+	font-size: 10pt;
+	font-style: normal;
+}
+
+MadCap|variable.VarDateLayout	/*per page layout*/
+{
+	color: #01514e;
+	font-size: 8pt;
+	font-weight: normal;
+	font-style: normal;
+}
+
+MadCap|relationshipsHeading	/*NON USATO: per le tabelle delle relazioni*/
+{
+	mc-label: 'NON USATO';
+}
+
+MadCap|dropDownHead.NOTE	/*NOTE*/
+{
+	text-align: left;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 17pt;
+	font-weight: bold;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	text-indent: 0px;
+	line-height: 14pt;
+	text-decoration: none;
+	margin-bottom: 14pt;
+}
+
+MadCap|dropDownBody	/*box testo drop*/
+{
+	margin-left: 20px;
+}
+
+MadCap|expanding	/*Testo Espanso: set icone per aprire o chiudere testo espanso*/
+{
+	mc-closed-image: url('../Images/MODELLI/Imm-css/Expanding-text-close.png');
+	mc-open-image: url('../Images/MODELLI/Imm-css/Expanding-text-open.png');
+	background-color: transparent;
+	mc-footnote-style: footnote;
+	mc-footnote-comment-format: '{a} ';
+	mc-footnote-position: page;
+	mc-footnote-number: page;
+	mc-footnote-format: '({a})';
+}
+
+MadCap|expandingBody	/*Testo Espanso:default delle desc espanse. La desc del  Lemma del gloss settato come espanso prende queste caratteristiche*/
+{
+	font-family: Arial;
+	font-style: italic;
+	margin-left: 10px;
+	margin-right: 5px;
+	color: #134042;
+	background-color: #e8faff;
+	font-size: 9pt;
+}
+
+MadCap|popup	/*da settare sia per web che pdf; inserito lo stile SPAN per il numerino del PDF quando si fa un text popup*/
+{
+	mc-footnote-number: page;
+	mc-footnote-style: footnote;
+	mc-footnote-position: page;
+	mc-footnote-comment-format: '{a} ';
+	mc-footnote-format: '({a})';
+}
+
+MadCap|popupHead	/*POPUP: Set del testo che apre i popup per: numerino Footnote; Testo del Text popup*/
+{
+	font-style: italic;
+	text-transform: none;
+	font-family: Arial;
+	font-size: 10pt;
+	font-variant: normal;
+	mc-image-position: left;
+	mc-image-spacing: 5px;
+	color: #037f7b;
+	text-decoration: none;
+}
+
+MadCap|popupBody	/*POPUP: Set del testo DENTRO il popup per: footnote, Text popup; glossario come popup*/
+{
+	font-family: Arial;
+	font-size: 10pt;
+	background-color: #b9e1df;
+	border: solid 1px #037f7b;
+	mc-popup-height: auto;
+	min-width: 200px;
+	mc-popup-width: auto;
+	height: auto;
+	padding: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #037f7b;
+	font-style: italic;
+	vertical-align: middle;
+	width: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: 500px;
+	text-align: justify;
+	Text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+MadCap|dropDownHead	/*Testo che apre il drop- Set solo margine TOP*/
+{
+	margin-top: 10pt;
+}
+
+MadCap|dropDown.Box_rientrato	/*box rientrato di 30 px normale; margin top:15*/
+{
+	margin-left: 30px;
+	margin-top: 15pt;
+}
+
+MadCap|dropDownHotspot.TIT-Proc	/*Titolino drop per link argomenti-settare come p.TIT-Argomenti-Proc*/
+{
+	text-align: left;
+	font-family: 'Arial Narrow';
+	font-weight: bold;
+	font-style: italic;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	text-indent: 0px;
+	text-decoration: none;
+	font-size: 12.5pt;
+	color: #666666;
+	line-height: 17pt;
+}
+
+MadCap|dropDownHotspot.TITVedereProcAss	/*Titolino drop per link Vedere e Procedure nel testo;per pdf settato colore e altezza font*/
+{
+	text-align: left;
+	font-weight: bold;
+	font-style: italic;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 10pt;
+	font-family: Arial;
+	text-decoration: none;
+	color: #037f7b;
+	font-size: 10pt;
+}
+
+MadCap|expandingHead:hover
+{
+	text-decoration: none;
+}
+
+MadCap|xref.RIM_al_num_e_testo_paragrafo:hover
+{
+	font-style: italic;
+}
+
+MadCap|xref.RIM_H2_testo:hover
+{
+	font-style: italic;
+}
+
+MadCap|relatedTopicsControlList	/*RelatedTopic: quando vengono visualizzati in un elenco, piuttosto che in un popup.*/
+{
+	margin-top: 0pt;
+}
+
+MadCap|variable.Var_Parti
+{
+	color: #e8faff;
+}
+
+MadCap|variable.Var_Capitoli
+{
+	color: #134042;
+}
+
+MadCap|expandingHead.Testo	/*TITOLO espanso: titolino dei testi nascosti; lo stile tel p che lo contiene deve essere "tit-argomenti-proc".*/
+{
+	color: #666666;
+	font-family: 'Arial Narrow';
+	font-style: italic;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 12.5pt;
+}
+
+MadCap|expandingHead.Testo:hover
+{
+	text-decoration: none;
+	font-variant: normal;
+	text-transform: none;
+	font-family: 'Arial Narrow';
+	font-weight: bold;
+	font-style: italic;
+}
+
+MadCap|expandingBody.Testo	/*Testo Nascosto: usato per il testo nascosto*/
+{
+	background-color: #ffffff;
+	padding-left: 5px;
+	text-decoration: none;
+	font-variant: normal;
+	text-transform: none;
+	font-family: 'Arial Narrow';
+	font-weight: bold;
+	font-style: italic;
+	font-size: 12.5pt;
+	color: #666666;
+}
+
+MadCap|xref.RIMxDropDown	/*LINK Cross ref: controllare perchè non usato*/
+{
+	mc-format: '{default}{paratext}';
+}
+
+MadCap|slide
+{
+	
+}
+
+MadCap|dropDown.OpzioniBoxRientro	/*box rientrato di 12 px per drop del titolo delle Opzioni*/
+{
+	margin-left: 12px;
+}
+
+MadCap|dropDownHotspot.NotaPericolo:hover
+{
+	color: #db0000;
+}
+
+MadCap|dropDownHotspot.NotaAttenzione:hover
+{
+	color: #134042;
+}
+
+MadCap|dropDownHotspot.NotaInfo:hover
+{
+	color: #134042;
+}
+
+blockquote
+{
+	margin-left: 62px;
+}
+
+MadCap|dropDownHotspot.TIT-Proc:hover
+{
+	color: #666666;
+}
+
+MadCap|dropDownHotspot.TIT-Proc:active
+{
+	color: #666666;
+}
+
+MadCap|dropDownHotspot.TIT-Proc:focus
+{
+	color: #666666;
+}
+
+MadCap|dropDownHotspot.TIT-Proc:link
+{
+	color: #666666;
+}
+
+MadCap|dropDownHotspot.TIT-Proc:visited
+{
+	color: #666666;
+}
+
+MadCap|dropDownHotspot.TITVedereProcAss:active
+{
+	color: #037f7b;
+}
+
+MadCap|dropDownHotspot.TITVedereProcAss:focus
+{
+	color: #037f7b;
+}
+
+MadCap|dropDownHotspot.TITVedereProcAss:hover
+{
+	color: #037f7b;
+}
+
+MadCap|dropDownHotspot.TITVedereProcAss:link
+{
+	color: #037f7b;
+}
+
+MadCap|dropDownHotspot.TITVedereProcAss:visited
+{
+	color: #037f7b;
+}
+
+MadCap|dropDownHotspot:active
+{
+	color: #01514e;
+	background-color: #ffffff;
+}
+
+MadCap|dropDownHotspot:focus
+{
+	color: #01514e;
+}
+
+MadCap|dropDownHotspot:hover
+{
+	color: #01514e;
+}
+
+MadCap|dropDownHotspot:link
+{
+	color: #01514e;
+}
+
+MadCap|dropDownHotspot:visited
+{
+	color: #01514e;
+}
+
+MadCap|xref.RIMxDropDown:hover
+{
+	
+}
+
+MadCap|dropDown.ListaPulsanti	/*box per drop "ListaPulsanti" di una lista di strumenti con Icona*/
+{
+	color: #037f7b;
+	mc-image-position: right;
+	mc-open-image: none;
+	mc-closed-image: none;
+}
+
+MadCap|dropDownHotspot.ListaPulsanti:active
+{
+	color: #037f7b;
+}
+
+MadCap|dropDownHotspot.ListaPulsanti:focus
+{
+	color: #037f7b;
+}
+
+MadCap|dropDownHotspot.ListaPulsanti:hover
+{
+	color: #037f7b;
+}
+
+MadCap|dropDownHotspot.ListaPulsanti:link
+{
+	color: #037f7b;
+}
+
+MadCap|dropDownHotspot.ListaPulsanti:visited
+{
+	color: #037f7b;
+}
+
+MadCap|footnote	/*set footnote: numerino nel testo e testo  in fondo a pag per pdf*/
+{
+	mc-footnote-position: page;
+	mc-footnote-number: page;
+	mc-footnote-comment-format: '{a}  ';
+	mc-footnote-style: footnote;
+	vertical-align: super;
+	color: #696969;
+	mc-footnote-format: '({a})';
+}
+
+MadCap|footnoteBlock	/*set footnote:stile singola nota foot a pè pag per PDF*/
+{
+	text-align: left;
+	text-indent: -22px;
+	margin-left: 30px;
+	padding-top: 8px;
+	margin-bottom: 8pt;
+	margin-right: 0pt;
+	font-family: Arial;
+	mc-hyphenate: never;
+	text-decoration: none;
+	font-size: 9pt;
+	font-weight: normal;
+	font-style: italic;
+	margin-top: 4pt;
+	line-height: 10.5pt;
+}
+
+MadCap|footnotesBlock	/*set footnote:contenitore (o blocco) delle note a pie pagina per note e gloss PDF*/
+{
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-color: #696969;
+	border-top-length: 50%;
+	border-top-align: left;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	margin-left: 0px;
+	font-weight: normal;
+	font-style: italic;
+	font-family: Arial;
+	font-size: 9pt;
+	text-align: left;
+}
+
+MadCap|dropDown.BoxMarginSuGiu	/*box con margine sopra 20 e sotto 25 per allontanare il drop se prima o dopo vi è un testo e non un TIT*/
+{
+	margin-bottom: 25pt;
+	margin-top: 20pt;
+}
+
+MadCap|toggler:hover
+{
+	color: #037f7b;
+	font-style: normal;
+}
+
+MadCap|dropDownHead.TITParametri	/*H5:come h5.TIT-Parametri; per inseirire un margine sopra uguale a h5  parametri*/
+{
+	font-weight: bold;
+	font-style: italic;
+	font-family: sans-serif;
+	font-size: 12pt;
+	line-height: 14pt;
+	margin-top: 17pt;
+}
+
+MadCap|slideshow
+{
+	border-radius: 3px;
+	background-color: transparent;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: groove 5px #b9e1df;
+	border-width: 3px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom-color: #b9e1df;
+	border-color: #b9e1df;
+}
+
+MadCap|slideThumbnail
+{
+	background-color: transparent;
+	border: ridge 1px #134042;
+	border-color: #134042;
+}
+
+MadCap|slideThumbnail.active
+{
+	border: solid 1px #b9e1df;
+	border-color: #b9e1df;
+	background-color: transparent;
+}
+
+MadCap|slideThumbnail.active:hover
+{
+	border: none 1px #ffffff;
+	border-bottom-color: #ffffff;
+	border-left-color: #ffffff;
+	border-right-color: #ffffff;
+	border-top-color: #ffffff;
+}
+
+MadCap|slideThumbnail:hover
+{
+	border: none 1px #b9e1df;
+	border-bottom-color: #ffffff;
+	border-left-color: #ffffff;
+	border-right-color: #ffffff;
+	border-top-color: #ffffff;
+	border-color: #ffffff;
+	background-color: transparent;
+}
+
+MadCap|slideshowCaption
+{
+	font-size: 10pt;
+	background-color: #b9e1df;
+	color: #037f7b;
+	text-align: center;
+}
+
+MadCap|slideshowBullet
+{
+	background-color: #134042;
+	border-color: #B9E1DF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+MadCap|slideshowBullet.active:hover
+{
+	background-color: #037F7B;
+}
+
+MadCap|slideshowBullet.active
+{
+	background-color: #037F7B;
+}
+
+MadCap|slideshowBullet:hover
+{
+	background-color: #037F7B;
+}
+
+MadCap|dropDownHotspot._Normale	/*Per Frase normale che racchiude delle descrizioni.*/
+{
+	font-weight: normal;
+	line-height: normal;
+	font-variant: normal;
+	color: #000000;
+	font-style: normal;
+}
+
+MadCap|dropDownHotspot._Normale:hover
+{
+	color: #134042;
+	font-weight: bold;
+}
+
+a.PopupNote	/*Mio sitle:per notine (a) che saltano a un file(set del pdf deve essere uguale a quello di MadCap-footnote)*/
+{
+	color: #037f7b;
+	font-family: Arial;
+	font-size: 9pt;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: none;
+	vertical-align: super;
+	mc-popup-width: 400px;
+	mc-popup-height: 200px;
+}
+
+MadCap|toggler:focus
+{
+	color: #037f7b;
+}
+
+a	/*definire le dimensioni di default per il popup degli hyperlink (incide anche nel lemma hyperlink del glossario webHelp)*/
+{
+	mc-popup-height: 500px;
+	mc-popup-width: 700px;
+}
+
+a.PopupImmagini	/*Mio stile:per LINK che puntano a una IMMAGINE;lunghezza automatica*/
+{
+	text-decoration: none;
+	mc-help-control-display: popup;
+	color: #037f7b;
+	mc-popup-height: auto;
+	mc-popup-width: 700px;
+}
+
+a.PopupImmagini:focus
+{
+	font-weight: normal;
+}
+
+a.PopupImmagini:hover
+{
+	text-decoration: underline;
+}
+
+MadCap|toggler.TIT-ArgoProc	/*02-feb:toggler per lista link a procedure e argo (non usato per ora)*/
+{
+	mc-open-image: url('../Images/MODELLI/Imm-css/KeywordLink.gif');
+	mc-closed-image: url('../Images/MODELLI/Imm-css/KeywordLink.gif');
+	color: #696969;
+	mc-image-position: left;
+}
+
+MadCap|toggler.TIT-ArgoProc:hover	/*02-feb*/
+{
+	color: #696969;
+}
+
+MadCap|toggler.TIT-ArgoProc:focus	/*02-feb*/
+{
+	color: #696969;
+}
+
+a.MCBreadcrumbsLink	/*stile di default per breadcrumb*/
+{
+	color: #b9e1df;
+}
+
+MadCap|dropDown.ICONALinkArgo	/*02-feb:Set solo icona per drop con link*/
+{
+	mc-open-image: url('../Images/MODELLI/Imm-css/KeywordLink.gif');
+	mc-closed-image: url('../Images/MODELLI/Imm-css/KeywordLink.gif');
+	margin-bottom: 12pt;
+	margin-top: 12pt;
+}
+
+MadCap|relationshipsProxy.ArgomentiCorrelati	/*03-febb: lista dentro il drop argomenti correlati*/
+{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+MadCap|relationshipsItem	/*03-febb:Lista dei link della TabellaRelazioni*/
+{
+	font-size: 10pt;
+	display: list-item;
+	font-style: normal;
+	font-family: Arial;
+	mc-leader-indent: 10px;
+	margin-right: 0px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 11pt;
+	mc-help-control-display: popup;
+	mc-popup-height: 500px;
+	mc-popup-width: 700px;
+	color: #000000;
+	margin-bottom: 5pt;
+	margin-top: 5pt;
+	font-weight: normal;
+	text-decoration: none;
+	margin-left: 15px;
+}
+
+MadCap|relationshipsProxy	/*03-febb:proxy per collegamenti automatici della TabellaRelazioni*/
+{
+	padding-top: 0px;
+	margin-top: 0px;
+	border-top-width: 0px;
+	border-top: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	border-top-color: #ffffff;
+	mc-help-control-display: popup;
+}
+
+MadCap|relationshipsHeading	/*03-febb:Per Titolo dei link delle TabellaRelazioni; Tolto;il titolo lo metto a mano sopra la proxy*/
+{
+	mc-label: ' ';
+	font-size: 0pt;
+	font-weight: normal;
+	display: none;
+}
+
+MadCap|relationshipsHeading.concept	/*03-febb*/
+{
+	display: none;
+}
+
+MadCap|relationshipsHeading.reference	/*03-febb*/
+{
+	display: none;
+}
+
+MadCap|relationshipsHeading.task	/*03-febb*/
+{
+	display: none;
+}
+
+a.HyperMaster	/*mio stile-NUOVO:per link indirizzo costruttore Heder Master web*/
+{
+	color: #e8faff;
+}
+
+a.HyperMaster:link
+{
+	color: #e8faff;
+}
+
+a.HyperMaster:visited
+{
+	color: #e8faff;
+}
+
+a.HyperMaster:focus
+{
+	color: #e8faff;
+}
+
+a.HyperMaster:hover
+{
+	color: #037f7b;
+}
+
+a.HyperMaster:active
+{
+	color: #e8faff;
+}
+
+MadCap|slide.boximmage	/*NON USATO PER ORA-SETTARE SLIDE NEL FILE DI FLARE*/
+{
+	padding-bottom: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 40px;
+}
+
+MadCap|toggler.TogBold
+{
+	font-weight: bold;
+}
+
+/*BACO testi glossario: MODIFICHE COLORI RISPETTO CSS 13-10 (in futuro risistemare gli stili posti sotto se si vuole mettere una immagine)*/
+
+MadCap|glossaryTerm	/*Glossario html: Lemma nelle pagine html;Se non si settano qelli sotto, di def il colore del lemma lo prende dai set a.psuedoclass*/
+{
+	mc-closed-image: none;
+	mc-open-image: none;
+	color: #01514e;
+	mc-term-display: popup;
+	font-weight: normal;
+}
+
+MadCap|glossaryTerm:hover
+{
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+MadCap|glossaryTerm.Expanding	/*Glossario Web (Lemma e desc):per lemmi settati nel glossario come "Expanding"-set anche icone di apertura/chiusura testo espanso*/
+{
+	mc-closed-image: url('../Images/MODELLI/Imm-css/Expanding-text-close.png');
+	mc-open-image: url('../Images/MODELLI/Imm-css/Expanding-text-open.png');
+	color: #037f7b;
+}
+
+MadCap|glossaryTerm.Expanding:hover
+{
+	background-color: #ffffff;
+	font-style: italic;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+MadCap|glossaryTerm.Popup	/*Glossario Web (Lemma e desc):per lemmi settati nel glossario come "popup"*/
+{
+	mc-image-position: left;
+	text-decoration: underline;
+	color: #01514e;
+}
+
+MadCap|glossaryTerm.Popup:hover
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+MadCap|glossaryTerm.Hyperlink	/*Glossario Web (Lemma e desc):per lemmi settati nel glossario come "Iperlink";se non viene settato e nel glossario si usa Iperlink, prende le impostaz di def di metermdispaly definito nella radice*/
+{
+	color: #037f7b;
+}
+
+MadCap|glossaryTerm.Hyperlink:hover
+{
+	text-decoration: underline;
+	font-style: italic;
+	font-weight: normal;
+}
+
+@media non-print
+{
+	p._03-Parametro-Cod
+	{
+		background-color: #fffacd;
+		mc-heading-level: none;
+	}
+
+	p
+	{
+		color: #000082;
+	}
+
+	p.TES
+	{
+		color: #DB0000;
+	}
+
+	p.TES_Desc-Opzioni
+	{
+		color: #7b68ee;
+	}
+
+	p.TES_Desc-Campi
+	{
+		color: #8b0000;
+	}
+
+	p.TEScon-rientro
+	{
+		color: #227680;
+	}
+
+	div.BoxRientrato32
+	{
+		border: solid 2px #b22222;
+	}
+
+	h4
+	{
+		color: #FFA114;
+	}
+
+	h3	/*INIZIO CAPITOLO PER PDF*/
+	{
+		color: #ffffff;
+		background-color: #DB0000;
+	}
+
+	h3.TIT-livello2
+	{
+		color: #ffffff;
+		background-color: #666666;
+	}
+
+	MadCap|toggler
+	{
+		
+	}
+
+	div.BoxNoRientro
+	{
+		border: solid 2px #bc8f8f;
+	}
+
+	div.BoxRientrato6X
+	{
+		border: solid 2px #dda0dd;
+	}
+
+	h1
+	{
+		background-color: #666666;
+	}
+
+	h2
+	{
+		background-color: #b9e1df;
+	}
+
+	td
+	{
+		color: #ff6347;
+	}
+
+	p.TES_puntatoreGrande	/*mc-headingLevel, da usare per fare i cross*/
+	{
+		mc-heading-level: 8;
+	}
+
+	p.TES_puntatorePiccolo	/*mc-headingLevel, da usare per fare i cross*/
+	{
+		mc-heading-level: 8;
+	}
+
+	p.TES_puntatore-sub	/*mc-headingLevel, da usare per fare i cross*/
+	{
+		mc-heading-level: 8;
+	}
+
+	MadCap|dropDownHotspot.TIT-H4
+	{
+		color: #FFA114;
+	}
+
+	MadCap|dropDownHotspot.3_Parametri
+	{
+		color: #8b0000;
+	}
+
+	MadCap|dropDownHotspot.ListaPulsanti
+	{
+		color: #8b0000;
+	}
+
+	MadCap|xref
+	{
+		color: #3951FF;
+	}
+
+	MadCap|xref.RIM_al_riferimento
+	{
+		color: #25BAFF;
+	}
+
+	p.XMasterLingua
+	{
+		color: #000000;
+	}
+}
+
+@media print
+{
+	caption.TIT-H4
+	{
+		mc-heading-level: 5;
+		font-size: 18pt;
+		line-height: 22pt;
+		color: #464646;
+	}
+
+	caption.TITLivelloS
+	{
+		mc-heading-level: 6;
+		color: #464646;
+		line-height: 20pt;
+		font-size: 15pt;
+	}
+
+	h1	/*set solo le differenze dal default*/
+	{
+		mc-heading-level: 2;
+		margin-bottom: 0pt;
+		line-height: 45pt;
+		margin-top: 150pt;
+		text-align: center;
+		font-size: 35pt;
+	}
+
+	h2	/*set solo le differenze dal default*/
+	{
+		mc-heading-level: 3;
+		mc-next-tag: p;
+		mc-next-class: TIT-Argomenti-Proc;
+		margin-bottom: 80pt;
+		margin-top: 0pt;
+		line-height: 34pt;
+		color: #272727;
+		border-bottom: double 1px;
+		border-bottom-color: #272727;
+		background-color: #ffffff;
+		font-size: 27pt;
+	}
+
+	h3	/*set solo le differenze dal default*/
+	{
+		mc-heading-level: 4;
+		mc-next-tag: p;
+		text-transform: none;
+		margin-bottom: 35pt;
+		margin-top: 40pt;
+		line-height: 29pt;
+		background-color: #ffffff;
+		color: #272727;
+		font-size: 24pt;
+	}
+
+	h3.TIT-livello2	/*set solo le differenze dal default*/
+	{
+		margin-top: 0pt;
+	}
+
+	h4	/*set solo le differenze dal default*/
+	{
+		mc-heading-level: 5;
+		font-style: normal;
+		font-family: Helvetica;
+		font-weight: normal;
+		text-align: left;
+		text-decoration: none;
+		margin-top: 35pt;
+		margin-bottom: 25pt;
+		mc-hyphenate: never;
+		mc-next-tag: p;
+		line-height: 22pt;
+		font-size: 18pt;
+		color: #464646;
+		border-bottom: none 0px #ffffff;
+		border-top-style: none;
+		border-top-width: 0px;
+		border-top-color: #ffffff;
+	}
+
+	h4.TIT-livelloS	/*set solo le differenze dal default*/
+	{
+		mc-heading-level: 6;
+		color: #464646;
+		font-style: italic;
+		font-family: Helvetica;
+		font-weight: normal;
+		line-height: 20pt;
+		margin-top: 20pt;
+		margin-bottom: 15pt;
+		border: none;
+		text-decoration: none;
+		font-size: 15pt;
+	}
+
+	h5	/*set comuni per stili h5;campi, sez, e altro*/
+	{
+		mc-heading-level: none;
+		margin-top: 17pt;
+		margin-bottom: 10pt;
+		color: #464646;
+		font-size: 12pt;
+	}
+
+	h5.TitolinoDiv32
+	{
+		mc-heading-level: 7;
+	}
+
+	h5.TIT-Parametri-conCod	/*set solo le differenze dal default*/
+	{
+		margin-top: 17pt;
+		color: #464646;
+	}
+
+	h5.TIT-Parametri	/*set solo le differenze dal default*/
+	{
+		margin-top: 17pt;
+		margin-bottom: 10pt;
+		color: #464646;
+	}
+
+	h6	/*PT10*/
+	{
+		mc-heading-level: none;
+		margin-top: 12pt;
+		margin-bottom: 6pt;
+		font-size: 10pt;
+		color: #464646;
+	}
+
+	MadCap|toggler.TitCampi
+	{
+		mc-heading-level: none;
+	}
+
+	p.TIT-Para-TAB
+	{
+		mc-heading-level: 7;
+		font-size: 12pt;
+		color: #464646;
+	}
+
+	p.TIT-Opz-TAB
+	{
+		mc-heading-level: none;
+	}
+
+	p.TIT-ListaPulsanti
+	{
+		mc-heading-level: none;
+		font-size: 12pt;
+		color: #464646;
+	}
+
+	MadCap|dropDownHotspot.TIT-H4
+	{
+		mc-heading-level: 5;
+		page-break-after: avoid;
+		page-break-inside: inherit;
+		column-break-after: avoid;
+		column-break-before: avoid;
+		page-break-before: auto;
+		orphans: 3;
+		color: #464646;
+		font-size: 20pt;
+		font-family: 'Arial Narrow';
+		line-height: 24pt;
+	}
+
+	MadCap|dropDownHotspot.TIT-LivelloS
+	{
+		mc-heading-level: 6;
+		column-break-after: avoid;
+		column-break-before: avoid;
+		page-break-inside: inherit;
+		page-break-after: avoid;
+		page-break-before: auto;
+		orphans: 3;
+		color: #464646;
+		text-decoration: none;
+		line-height: 20pt;
+		font-size: 16pt;
+	}
+
+	MadCap|dropDownHotspot.3_Parametri
+	{
+		mc-heading-level: none;
+		font-size: 12pt;
+		color: #464646;
+	}
+
+	MadCap|dropDownHotspot.4_Opzioni
+	{
+		mc-heading-level: none;
+		font-size: 10pt;
+		color: #464646;
+	}
+
+	MadCap|dropDownHotspot.TITVedereProcAss
+	{
+		mc-heading-level: none;
+		color: #666666;
+		line-height: 12pt;
+	}
+
+	MadCap|dropDownHotspot.ListaPulsanti
+	{
+		mc-heading-level: none;
+		font-size: 12pt;
+		color: #464646;
+	}
+
+	MadCap|dropDownHotspot.TIT-Proc
+	{
+		mc-heading-level: none;
+		orphans: 3;
+		font-size: 13pt;
+	}
+
+	MadCap|dropDownHead.TIT-H4
+	{
+		margin-bottom: 20pt;
+		margin-top: 30pt;
+		border-top-style: none;
+		border-top-width: 0px;
+		border-top-color: #ffffff;
+	}
+
+	MadCap|dropDownHead.TIT_LivelloS
+	{
+		margin-bottom: 14pt;
+		margin-top: 20pt;
+		line-height: 20pt;
+	}
+
+	p	/*per print allinearlo a sx altrimenti il toc viene a destra*/
+	{
+		page-break-inside: avoid;
+		page-break-before: avoid;
+		widows: 1;
+		orphans: 2;
+		text-align: left;
+	}
+
+	p.TITper_FIGita
+	{
+		mc-heading-level: none;
+		orphans: 3;
+	}
+
+	p._03-Parametro-Cod
+	{
+		mc-heading-level: none;
+		margin-bottom: 10pt;
+	}
+
+	p.TES
+	{
+		orphans: 0;
+		margin-top: 6pt;
+	}
+
+	p.TES_Desc-Campi
+	{
+		margin-top: 6pt;
+	}
+
+	p.TOC2
+	{
+		font-family: Arial;
+		mc-leader-format: 'none';
+		mc-auto-number-position: none;
+		mc-pagenum-display: none;
+		display: inline-block;
+		page-break-after: avoid;
+		text-align: left;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		font-size: 12pt;
+		font-weight: bold;
+		font-style: italic;
+		text-transform: uppercase;
+		color: #134042;
+		margin-top: 25pt;
+		margin-bottom: 17pt;
+	}
+
+	p.TOC1
+	{
+		font-weight: bold;
+		font-style: italic;
+		font-family: Arial;
+		mc-leader-format: 'none';
+		mc-auto-number-position: none;
+		mc-pagenum-display: none;
+		color: #134042;
+		font-size: 13pt;
+		text-align: center;
+		mc-leader-align: center;
+		border-top: solid 1px;
+		margin-bottom: 20pt;
+		margin-top: 35pt;
+		text-transform: uppercase;
+		padding-top: 8pt;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-top-color: #134042;
+	}
+
+	MadCap|xref.TOCPageNumber	/*TOC PDF: numerino del link alla pagina */
+	{
+		font-weight: normal;
+		font-style: italic;
+		color: #134042;
+	}
+
+	img.Icona_TAB_100a48px
+	{
+		mc-float: center;
+		padding-right: 2px;
+		padding-left: 2px;
+	}
+
+	img.icona_32a24px
+	{
+		padding-left: 2px;
+		padding-right: 2px;
+		padding-bottom: 0px;
+		height: 24px;
+		width: auto;
+		padding-top: 2px;
+		vertical-align: middle;
+	}
+
+	img.icona_32a32pxBase
+	{
+		padding-left: 3px;
+		padding-right: 3px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	img.icona_32a32pxCentrata
+	{
+		vertical-align: middle;
+		padding-left: 4px;
+		padding-right: 4px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	div.GlossaryPageDefinition	/*Box: per Print - Desc del lemma gloss*/
+	{
+		color: #000000;
+		font-family: Arial;
+		font-size: 10pt;
+		margin-left: 15pt;
+		margin-top: 3pt;
+		padding-bottom: 0pt;
+		font-weight: normal;
+	}
+
+	div.GlossaryPageTerm	/*Box: per Print - Lemma gloss*/
+	{
+		color: #134042;
+		font-family: Arial;
+		font-size: 11pt;
+		margin-top: 18pt;
+	}
+
+	div.GlossaryPageHeading	/*Box: per Print - Letterina gloss*/
+	{
+		color: #134042;
+		background-color: transparent;
+		font-size: 14pt;
+		font-family: Arial;
+		font-style: italic;
+		text-align: left;
+		margin-bottom: 20pt;
+		margin-left: 0px;
+		margin-top: 25pt;
+		border-bottom-color: #134042;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+	}
+
+	MadCap|dropDown
+	{
+		orphans: 1;
+		margin-top: 10pt;
+		margin-bottom: 10pt;
+	}
+
+	MadCap|variable
+	{
+		color: #000000;
+	}
+
+	MadCap|snippetBlock
+	{
+		color: #000000;
+		background-color: #ffffff;
+	}
+
+	MadCap|snippetText
+	{
+		color: #000000;
+		background-color: #ffffff;
+	}
+
+	MadCap|dropDownBody.NotaAttenzioneBody
+	{
+		background-color: #ffffff;
+	}
+
+	MadCap|dropDownBody.NotaInfoBody
+	{
+		background-color: #ffffff;
+	}
+
+	MadCap|dropDownBody.NotaPericoloBody
+	{
+		background-color: #ffffff;
+	}
+
+	MadCap|glossaryTerm	/*Glossario PDF: per Lemma nel testo (normale sottolineato)*/
+	{
+		font-weight: normal;
+		text-decoration: underline;
+		color: #000000;
+		mc-footnote-comment-format: '{a}  ';
+		mc-footnote-position: page;
+		mc-footnote-number: page;
+		mc-footnote-format: '({a})';
+	}
+
+	img.icona_32DropA32
+	{
+		padding-bottom: 2px;
+		padding-left: 3px;
+		padding-right: 3px;
+		padding-top: 2px;
+	}
+
+	img.Icona_TAB_32px
+	{
+		mc-float: center;
+		padding-right: 2px;
+		padding-left: 2px;
+	}
+
+	p.TEScon-num_A
+	{
+		mc-heading-level: none;
+		font-style: italic;
+	}
+
+	p.TEScon-num_A_
+	{
+		mc-heading-level: none;
+		font-style: italic;
+	}
+
+	p.TEScon-num_1
+	{
+		mc-heading-level: none;
+		margin-top: 6pt;
+	}
+
+	p.TEScon-num_1_
+	{
+		mc-heading-level: none;
+		margin-top: 6pt;
+	}
+
+	p.TES_puntatoreGrande
+	{
+		mc-heading-level: none;
+		margin-bottom: 8pt;
+	}
+
+	p.TES_puntatorePiccolo
+	{
+		mc-heading-level: none;
+		margin-bottom: 3pt;
+		margin-top: 3pt;
+	}
+
+	p.Hyperlink-Video
+	{
+		mc-heading-level: none;
+	}
+
+	MadCap|dropDownHotspot:hover
+	{
+		font-weight: bold;
+	}
+
+	MadCap|dropDownHotspot.NotaInfo
+	{
+		mc-heading-level: none;
+	}
+
+	MadCap|dropDownHotspot.NotaAttenzione
+	{
+		mc-heading-level: none;
+	}
+
+	MadCap|dropDownHotspot.NotaPericolo
+	{
+		mc-heading-level: none;
+	}
+
+	MadCap|dropDownBody
+	{
+		margin-left: 0px;
+	}
+
+	MadCap|dropDownHotspot
+	{
+		color: #000000;
+	}
+
+	MadCap|dropDown.OpzioniBoxRientro
+	{
+		margin-left: 32px;
+	}
+
+	img.IconeListaMedie
+	{
+		padding-bottom: 2px;
+		padding-left: 3px;
+		padding-right: 3px;
+		padding-top: 2px;
+		height: 40px;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	img.IconeListaPiccole
+	{
+		float: left;
+		padding-left: 3px;
+		padding-right: 3px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		border-left-style: solid;
+		border-left-width: 2px;
+		border-left-color: #ffffff;
+		border-right-style: solid;
+		border-right-width: 42px;
+		border-right-color: #ffffff;
+		border-top-style: solid;
+		border-top-width: 4px;
+		border-top-color: #ffffff;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-bottom-color: #ffffff;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	div.BoxListaPulsanti
+	{
+		margin-left: 84px;
+	}
+
+	MadCap|dropDown.BoxMarginSuGiu
+	{
+		margin-bottom: 15pt;
+	}
+
+	p.TOC3
+	{
+		margin-top: 17pt;
+		margin-bottom: 1.12em;
+	}
+
+	p.CopertinaTIT-Trad-Lingue
+	{
+		font-size: 12pt;
+		color: #464646;
+	}
+
+	p.CopertinaTIT-01
+	{
+		color: #464646;
+		margin-bottom: 20pt;
+		margin-top: 50pt;
+		Margin-left: 0pt;
+		margin-right: 0pt;
+		font-family: Arial;
+		font-weight: bold;
+		font-style: normal;
+		mc-hyphenate: never;
+		text-indent: 0px;
+		text-decoration: none;
+		text-align: left;
+		line-height: 36.5pt;
+		font-size: 35pt;
+	}
+
+	p.CopertinaTIT04Istruzioni
+	{
+		color: #464646;
+		margin-top: 30pt;
+		text-align: left;
+		margin-left: 0pt;
+		margin-right: 0pt;
+		margin-bottom: 0pt;
+		font-family: Arial;
+		font-weight: bold;
+		font-style: normal;
+		font-size: 24pt;
+		letter-spacing: 0em;
+		mc-hyphenate: never;
+		mc-auto-number-position: inside-head;
+		mc-auto-number-offset: 0px;
+		text-indent: 0px;
+		line-height: 25pt;
+		text-decoration: none;
+	}
+
+	p.CopertinaTIT-Codice
+	{
+		color: #464646;
+		page-break-after: avoid;
+		page-break-before: left;
+		page-break-inside: avoid;
+	}
+
+	p.CopertinaTIT03Biesse
+	{
+		color: #464646;
+	}
+
+	p.Cop-TIT-InfoIndiriz
+	{
+		color: #464646;
+	}
+
+	MadCap|dropDownHead.TITParametri
+	{
+		margin-top: 17pt;
+		font-size: 12pt;
+		margin-bottom: 10pt;
+		color: #464646;
+	}
+
+	p.TIT-Sommario	/*Tit Sommario come P non H-non visibile nel toc; solo per PDF*/
+	{
+		font-family: 'Arial Narrow';
+		font-style: normal;
+		background-color: #ffffff;
+		text-decoration: none;
+		margin-bottom: 80pt;
+		margin-top: 0pt;
+		page-break-before: left;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		font-size: 38pt;
+		color: #464646;
+		font-weight: bold;
+		line-height: 46pt;
+		text-align: right;
+	}
+
+	p.TIT-Argomenti-Proc
+	{
+		font-size: 13pt;
+		margin-bottom: 7pt;
+	}
+
+	p.TITper-cella
+	{
+		font-size: 13pt;
+	}
+
+	p.CopertinaSezioni	/*01-2018:tolta farzatura a pagina sinisgtra perchè con icona non veniva, messa forzatura nellicona*/
+	{
+		text-align: right;
+		orphans: 0;
+		margin-top: 0pt;
+		margin-bottom: 15pt;
+		font-size: 38pt;
+		line-height: 45pt;
+		page-break-after: avoid;
+		page-break-before: avoid;
+		page-break-inside: avoid;
+	}
+
+	img.Imm_Sez_300
+	{
+		float: left;
+		vertical-align: bottom;
+		margin-left: -10px;
+		margin-right: 20px;
+	}
+
+	MadCap|toggler
+	{
+		color: #000000;
+	}
+
+	a.PopupNote
+	{
+		color: #666666;
+		font-family: monospace;
+	}
+
+	MadCap|popup
+	{
+		mc-footnote-position: page;
+		mc-footnote-comment-format: '{a}  ';
+		mc-footnote-format: '({a})';
+	}
+
+	MadCap|popupHead
+	{
+		text-align: left;
+		font-family: Arial;
+		font-size: 10pt;
+		color: #000000;
+		text-decoration: none;
+		font-style: normal;
+	}
+
+	MadCap|popupBody	/*modifica stili SOLO numerino della footnote;solo il colore viene usato anche per il testo */
+	{
+		text-align: left;
+		color: #696969;
+		font-family: monospace;
+		font-style: oblique;
+		font-weight: bold;
+		text-decoration: none;
+		margin: 0px;
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 0px;
+	}
+
+	div.BoxRientrato4X
+	{
+		border-top-style: double;
+		border-top: solid 1px #037f7b;
+		border-top-color: #000000;
+		border-color: #000000;
+		margin-bottom: 25pt;
+		margin-top: 18pt;
+		padding-bottom: 4pt;
+		padding-left: 4pt;
+		padding-top: 12px;
+	}
+
+	hr.RIGAINIZIALE
+	{
+		margin-top: 16pt;
+		border-color: #ffffff;
+	}
+
+	img.Vid_GR_550_sx	/*Figura: per videate normali, sneza paline (14cm)*/
+	{
+		height: auto;
+		width: 14cm;
+	}
+
+	img.VidPor01	/*Figura:videate normali -  9cm*/
+	{
+		width: 8cm;
+	}
+
+	img.VidPor02	/*Figura: per videate medie; larghe 6,5cm*/
+	{
+		width: 6.50cm;
+	}
+
+	img.VidPor03	/*5-feb-Figura nuova: per videate piccole; larghe 4 cm*/
+	{
+		width: 4cm;
+	}
+
+	p.NOTE_Pericolo
+	{
+		background-image: url('../Images/MODELLI/Imm-css/PerPDF/pericolo160.png');
+	}
+
+	p.NOTE_Cautela
+	{
+		background-image: url('../Images/MODELLI/Imm-css/PerPDF/cautela160.png');
+	}
+
+	p.NOTE_Info
+	{
+		background-image: url('../Images/MODELLI/Imm-css/PerPDF/inforrmazione160.png');
+	}
+
+	p.NOTE_Tecnico
+	{
+		background-image: url('../Images/MODELLI/Imm-css/PerPDF/tecnico160.png');
+	}
+
+	MadCap|footnote
+	{
+		
+	}
+
+	MadCap|expanding
+	{
+		
+	}
+
+	div.BoxDentroTAB
+	{
+		margin-left: 16px;
+	}
+
+	img.WMF
+	{
+		height: auto;
+		width: auto;
+	}
+
+	img.Vid_GR_Autom	/*PDF: messa dimensione massima 16cm  per quelle immagini non ricampionate*/
+	{
+		height: auto;
+		width: auto;
+		max-width: 15cm;
+	}
+
+	span.footnote
+	{
+		color: #696969;
+	}
+
+	p.TES_LegendaFigure
+	{
+		font-style: italic;
+	}
+
+	img.Animazioni
+	{
+		height: auto;
+		width: auto;
+		max-width: 9cm;
+	}
+
+	table.Default
+	{
+		border: solid 1px #000000;
+	}
+
+	/*NOTE: aggiunti 01-2018 per pmenu proxy e sezioni*/
+
+	div.scuroSezione	/*nei topic della SEZIONE che sotto hanno proxy menu; per dof è bianco*/
+	{
+		background-color: #ffffff;
+	}
+
+	span.chiaroSezione	/*per testi dentro DIV delle sezioni con sotto MenuProxy; per pdf è nero*/
+	{
+		color: #000000;
+		background-color: #ffffff;
+	}
+
+	img.iconaSezione	/*per PDF*/
+	{
+		float: left;
+		width: 140px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		border-right-width: 0px;
+		border-right-color: #ffffff;
+		border-left-width: 0px;
+		border-left-color: #ffffff;
+		border-bottom-width: 0px;
+		border-bottom-color: #ffffff;
+		border-top-width: 0px;
+		border-top-color: #ffffff;
+		page-break-after: avoid;
+		page-break-before: left;
+		page-break-inside: avoid;
+	}
+
+	img.VidAltez01
+	{
+		height: 8cm;
+	}
+
+	img.VidAltez02
+	{
+		height: 6cm;
+	}
+
+	img.VidAltez03
+	{
+		height: 4cm;
+	}
+}
+
+/*NOTE: aggiunti 01-2018 - lista stili per MENUPROXY da inserire nelle parti/sezioni in cui caricare un TOC*/
+
+div.scuroSezione	/*da usare nei topic della SEZIONE che sotto hanno proxy menu con per SOMMARIO*/
+{
+	height: auto;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	margin-top: 18px;
+	color: #ffffff;
+	background-color: #272727;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border-left-style: none;
+	border-left-width: 1px;
+	border-right-style: none;
+	border-right-width: 1px;
+	border-top-style: none;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-bottom-width: 2px;
+	border-bottom-color: #272727;
+}
+
+div.ProxyMenuTOC	/*per inserire MenuProxy usati come sommari dei topic delle sezioni/parti*/
+{
+	color: #ffffff;
+	background-repeat: no-repeat;
+	background-color: #272727;
+	background-position-x: center;
+	padding-left: 0px;
+	padding-right: 6px;
+	padding-top: 6px;
+	padding-bottom: 0px;
+	border-bottom: solid 2px #01514e;
+	border-left: solid 2px #01514e;
+	border-right: solid 2px #01514e;
+	border-top: solid 2px #01514e;
+	overflow: hidden;
+}
+
+span.TitProxyMenuTOC	/*per menuproxy*/
+{
+	font-family: 'Arial Narrow';
+	font-weight: bold;
+	font-style: italic;
+	font-size: 13pt;
+	line-height: 17pt;
+	text-decoration: none;
+	color: #B9E1DF;
+	background-color: #272727;
+	vertical-align: middle;
+}
+
+img.iconaProxyMenuTOC	/*per icona titolo menuproxy*/
+{
+	margin-left: 0, 1023307px;
+	margin-top: 0, 1023307px;
+	margin-right: 0, 1023297px;
+	margin-bottom: 0, 1023297px;
+	height: 24px;
+	width: 24px;
+	mc-float: none;
+	mc-thumbnail-max-height: 24px;
+	vertical-align: middle;
+	border-right-style: solid;
+	border-right-width: 15px;
+	border-right-color: #272727;
+}
+
+MadCap|dropDownBody.ProxyMenuTOC	/*se si vuole fare un drop del sommario con BOX rientrato in cui inserire il Menuproxy*/
+{
+	margin: 5px;
+	padding-bottom: 3px;
+	padding-top: 9px;
+	margin-bottom: 4px;
+	margin-top: 4px;
+	padding-left: -20px;
+	margin-right: 10px;
+	background-color: transparent;
+	border-bottom-color: transparent;
+	border-color: transparent;
+	border: none 1px transparent;
+	margin-left: 45px;
+}
+
+img.iconaSezione	/*icona a destra delle sezioni*/
+{
+	float: right;
+	height: auto;
+	width: 120px;
+	mc-thumbnail-max-width: 120px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	border-right-style: solid;
+	border-right-width: 10px;
+	border-right-color: #272727;
+	border-left-style: solid;
+	border-left-width: 10px;
+	border-left-color: #272727;
+	border-bottom-style: solid;
+	border-bottom-width: 10px;
+	border-bottom-color: #272727;
+	border-top-style: solid;
+	border-top-width: 10px;
+	border-top-color: #272727;
+}
+
+span.chiaroSezione	/*per testi dentro DIV delle sezioni con sotto MenuProxy; per pdf è nero*/
+{
+	color: #e8faff;
+	background-color: #272727;
+}
+
+/*NOTE: aggiunti 02-2028 note per TFS*/
+
+p._TFS
+{
+	text-decoration: none;
+	mc-hyphenate: never;
+	mc-next-tag: p;
+	mc-disable-glossary-terms: true;
+	line-height: 14pt;
+	mc-heading-level: none;
+	color: #ff00ff;
+	mc-auto-number-format: 'TFS: ';
+	font-weight: bold;
+	font-style: normal;
+	font-family: Arial;
+	font-size: 12pt;
+	text-align: right;
+	margin-bottom: 12pt;
+	margin-top: 12pt;
+	mc-conditions: 'Modifiche.X_TFS';
+}
+
+/*stile per liste menu proxy da usare come Argomenti a inizio capitolo o sezione; in tal caso è uguale come lo stile puntatore*/
+
+MadCap|menuProxy
+{
+	overflow: inherit;
+}
+
+MadCap|menuProxy.ProxyLista	/*da applicare a proxy inizio capitolo*/
+{
+	display: list-item;
+	text-align: left;
+	list-style-type: disc;
+	overflow: inherit;
+}
+
+/*stile del box per contenere i LI punati; modificato stile di default per fare in modo che le liste dei menuProxy siano uguali a quelle dei puntatori*/
+
+ul
+{
+	padding-left: 15px;
+}
+
+/*stile per colore testi ricercati help per baco*/
+
+span.SearchHighlight
+{
+	background-color: yellow;
+}
+
+span.NUMFIGURA	/*Stili Caratteri: da applicare al numero delle figure*/
+{
+	font-weight: bold;
+	color: #01514e;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/*stili per nuove note*/
+
+img.icona_NOTE	/*icone delle note nel titolo del drop*/
+{
+	mc-printer-page-custom-width: 24px;
+	mc-thumbnail-max-height: 24px;
+	height: 24px;
+	width: 24px;
+	vertical-align: baseline;
+	border-color: #ffffff;
+	margin-right: 4px;
+	margin-bottom: 0px;
+	margin-right: 8px;
+}
+
+MadCap|dropDown.NOTE	/*box per drop nuove note senza icona di apertura*/
+{
+	mc-closed-image: url('../Images/MODELLI/Imm-css/DropIconClose.png');
+	mc-open-image: url('../Images/MODELLI/Imm-css/DropIconOpen.png');
+	mc-image-position: right;
+}
+
+p.GlossaryTerm	/* come div.GlossaryPageTerm per il glossario del PDF*/
+{
+	font-family: Arial;
+	color: #134042;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 13pt;
+	text-align: left;
+	margin-left: 15pt;
+	line-height: 13pt;
+	margin-top: 18pt;
+	margin-bottom: 2pt;
+	display: block;
+	mc-disable-glossary-terms: true;
+	mc-next-tag: div;
+	mc-next-class: Box-GlossaryDefinition;
+	mc-heading-level: 5;
+}
+
+div.Box-GlossaryDefinition	/*Box: per Print - Desc del lemma gloss*/
+{
+	margin-left: 30pt;
+	margin-top: 3pt;
+	padding-bottom: 0pt;
+}
+
+hr.DatiInBox	/*per inserire una riga dento il box con la lista di dati*/
+{
+	height: 1px;
+	border: solid 1px transparent;
+	border-top: solid 1px #037f7b;
+	margin-top: 25px;
+	padding-top: 25px;
+}
+
+span.PT_12
+{
+	font-size: 12pt;
+}
+

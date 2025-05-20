@@ -1,0 +1,181 @@
+{
+  "id": "01cce717-c2e4-4e49-98a5-6712eea6ed92",
+  "title": "be found.ってなっているところを探して",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "be found.ってなっているところを探して",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nbe found.ってなっているところを探して\n\n"
+        }
+      ],
+      "id": "1e5c8138-00f6-487b-bba4-cc036e362d44",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "docs/02-CADCAM/07-Parametric/02-07-04_equations.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "申し訳ありませんが、要求されたフレーズ \"be found\" は、提供されたファイルには存在しません。",
+      "id": "c669e5be-02ff-4489-b1c9-e591e8e0e512",
+      "metadata": {
+        "model": {
+          "providerType": "gemini",
+          "providerId": "gemini",
+          "id": "gemini-2.0-flash",
+          "model": "gemini-2.0-flash"
+        },
+        "usage": {
+          "prompt_tokens": 2128,
+          "completion_tokens": 22,
+          "total_tokens": 2150
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "あれ？そしたら画像が見つからない箇所を教えて",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nあれ？そしたら画像が見つからない箇所を教えて\n\n"
+        }
+      ],
+      "id": "0651369a-9f00-465c-87a1-9ecbe1c2f4eb",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "docs/02-CADCAM/07-Parametric/02-07-04_equations.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "このファイルには、いくつかの画像へのリンク切れがあります。以下に、それらの画像が使用されている箇所をリストします。\n\n*   `![方程式アイコン](../../../FIGURE/15-icone/b15b0001/Equations.png)`\n*   `![基本的な方程式アイコン](../../../FIGURE/15-icone/b15b0001/BasicEquation.png)`\n*   `![基本的な方程式アイコン](../../../FIGURE/15-icone/b15b0001/BasicEquation.png)`\n*   `![条件式アイコン](../../../FIGURE/15-icone/b15b0001/ConditionalEquation.png)`\n*   `![条件式アイコン](../../../FIGURE/15-icone/b15b0001/ConditionalEquation.png)`\n*   `![関数式アイコン](../../../FIGURE/15-icone/b15b0001/FunctionEquation.png)`\n*   `![関数式アイコン](../../../FIGURE/15-icone/b15b0001/FunctionEquation.png)`\n*   `![基本的な方程式の例](../../../FIGURE/10-videateComplete/arte4/b10b0821.gif)`\n*   `![条件式の例](../../../FIGURE/10-videateComplete/arte4/b10b0822.gif)`\n*   `![関数式の例](../../../FIGURE/10-videateComplete/arte4/b10b0823.gif)`\n*   `![方程式エディタの例](../../../FIGURE/10-videateComplete/arte4/b10b0824.gif)`\n*   `![方程式の検証例](../../../FIGURE/10-videateComplete/arte4/b10b0825.gif)`\n*   `![方程式の優先順位設定例](../../../FIGURE/10-videateComplete/arte4/b10b0826.gif)`\n\n",
+      "id": "c07b6b51-43fd-4ba8-95f1-19d37ff20b67",
+      "metadata": {
+        "model": {
+          "providerType": "gemini",
+          "providerId": "gemini",
+          "id": "gemini-2.0-flash",
+          "model": "gemini-2.0-flash"
+        },
+        "usage": {
+          "prompt_tokens": 2161,
+          "completion_tokens": 463,
+          "total_tokens": 2624
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Vault Chatってなに？",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": null,
+      "id": "a08798f2-4096-49c0-8810-003f3ad51152",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "docs/02-CADCAM/07-Parametric/02-07-04_equations.md"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1747631770943,
+  "updatedAt": 1747631840259,
+  "schemaVersion": 1
+}

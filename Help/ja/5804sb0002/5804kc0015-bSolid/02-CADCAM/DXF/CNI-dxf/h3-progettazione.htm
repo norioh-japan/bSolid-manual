@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ja" xml:lang="ja" data-mc-search-type="NGram" data-mc-help-system-file-name="5804sb0002.xml" data-mc-path-to-help-system="../../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="bSolid|[%=COMUNI/Stringhe/Ambienti.Amb_CadCam%]|[%=TITOLI/CONTAINER-TOC.progettdxf%]|[%=System.LinkedTitle%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>レイヤーのプロファイルと構文の設計</title>&#160;<link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" /><link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" /><link href="../../../../Resources/Stylesheets/KC-HTML5.css" rel="stylesheet" /><script src="../../../../Resources/Scripts/custom.modernizr.js"></script><script src="../../../../Resources/Scripts/jquery.min.js"></script><script src="../../../../Resources/Scripts/require.min.js"></script><script src="../../../../Resources/Scripts/require.config.js"></script><script src="../../../../Resources/Scripts/foundation.min.js"></script><script src="../../../../Resources/Scripts/plugins.min.js"></script><script src="../../../../Resources/Scripts/MadCapAll.js"></script></head>
+    <body>
+        <div style="background-repeat: no-repeat;background-color: #272727;background-position-x: center;padding-left: 0px;padding-right: 6px;padding-top: 6px;padding-bottom: 0px;border-left-style: none;border-left-width: 1px;border-right-style: none;border-right-width: 1px;border-top-style: none;border-top-width: 1px;border-bottom-style: none;border-bottom-width: 2px;border-bottom-color: #272727;">
+            <p class="XMasterDX"> <a href="../../../../MODELLI-Snippet-sinc/MODELLI-COPERTINE/IndirizzoCostruttore.htm" class="MCTopicPopup MCTopicPopupHotSpot a aHyperMaster" title="製造業者の住所" data-mc-width="700px" data-mc-height="500px">BIESSE S.p.A.</a> © - <span class="SystemShortDate">2019/05/07</span></p>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="2" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                </div>
+            </div>
+        </div>
+        <h3 class="TIT-livello2"><a name="Progetta"></a>レイヤーのプロファイルと構文の設計</h3>
+        <hr class="RIGAINIZIALE" width="100%" size="0" align="center" />
+        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-Proc MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />トピックの説明</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>次のトピックでは、<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">インポート<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>オープンドキュメント（ファイル）に、別のプログラムで作成された情報を、現在使用されているものとは別の形式で挿入すること。</span></a>されるCNXの<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">DXF<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>「Drawing Interchange Format」の略語。各種CADシステムの間で画像データ交換形式として使用される、二次元ベクター画像ファイルのタイプ。</span></a>ファイルを設計する方法を説明しています。</p>
+                <p>DXFファイルおよび関連<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">レイヤー<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>描画を行うために作成されたドキュメントのレベル。</span></a>の構文の設計は、<a href="../../../../_GlossaryDiProgetto/SW-generale/finestraDialogo.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ダイアログボックス</a><span class="_IMPOSTAZIONI/stringhefin_Definizione_DXF">DXF定義</span>の<a href="../../../../_GlossaryDiProgetto/infissi/H-tronchetto.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">セクション</a><a href="../01_definizioneDXF.htm#03_definizionedxf_696312914_1174663" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref xrefRIM_al_riferimento" data-mc-width="700px" data-mc-height="500px">"レイヤーパラメーター"</a>の関連テーブルで示されたデフォルトキーを考慮する必要があります。</p>
+            </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown dropDownICONALinkArgo"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-Proc MCDropDownHotSpot_ MCDropDownHotSpot_ICONALinkArgo MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />関連項目</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="AutoNumber_p_TES_puntatorePiccolo" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top"><span class="NERO">•</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatorePiccolo" valign="top" data-mc-autonum="•"><a href="../01Gestione-DXF.htm#Struttur" class="MCTopicPopup MCTopicPopupHotSpot MCXref xref" data-mc-width="700px" data-mc-height="500px">インポートされるDXF ファイルの構造</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr class="RIGAINIZIALE" width="100%" size="0" align="center" />
+        <h4>ピースの作成</h4>
+        <p>ピースは、閉じたポリゴン、線分、ポリラインを生成させるための<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">コマンド<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>特定の機能/作業を実施するために設計されたツール。たとえば、「Print」コマンドではドキュメントを印刷できます。</span></a>を使用しながら、形状的には閉じた長方形によって表示されます。</p>
+        <p>X軸とY軸に沿ったピースの長さに関連する寸法は形状によって直接に与えられますが、その一方で厚さは、長方形に関連するレイヤーに記入される必要があります。 </p>
+        <p>深さが指定されないときは、ゼロとみなされます。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />例： </a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>1000 x 300 x 30.20（mm）の寸法でピースを作図するためには、<b>PANNELLO30K20</b>のレイヤーで1000mmの横幅と300mmの高さの長方形を関連付ける必要があります：</p>
+            </div>
+        </div>
+        <h4>一般的フェイスの作成</h4>
+        <p>DFXファイルを作成するこの方法を使用する場合には、「一般的なフェイス」という概念は存在しません。</p>
+        <h4><a name="Creare"></a>標準ボアリングの作成</h4>
+        <p>ボアは2つの異なる方法で表示されることができます：</p>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">ピースのフェイス0またはフェイス5の上に加工されるべき、垂直方向のボアを表示する円によって、</td>
+            </tr>
+        </table>
+        <div class="BoxRientrato32" style="background-repeat: repeat;">
+            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />垂直方向のボアリング加工は円によって表されます。</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>ピースのフェイス0またはフェイス5の上に加工されるべき垂直方向のボアは円によって表される必要があり、必要とされるフェイスを表す長方形の中に作図される必要があります。</p>
+                    <p>ボアの直径は、円の直径によって与えられる一方で、深さはレイヤーで特定される必要があります。深さが指定されないときは、ゼロとみなされます。</p>
+                    <p>ボアの<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">アプリケーション<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>"プログラム"の同義語であり、データ、画像などを管理する特定のタスクを持つソフトウェアです。</span></a>ポイントは円の中心と一致します。</p>
+                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />例： </a></span>
+                        <div class="MCDropDownBody dropDownBody">
+                            <p>ピースのフェイスの上に15 mmの深さで垂直方向のボアを作成するため、レイヤー<b>VERTICA15</b>をボアの作図と関連させてください。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">フェイス0に作図される長方形または閉じた折れ線によって、ピースのサイドフェイスに水平方向のスピンドルで加工されるべきボアを表わすのに使用します。 </td>
+            </tr>
+        </table>
+        <div class="BoxRientrato32" style="background-repeat: repeat;">
+            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />長方形によって表わされた水平方向のボアリング加工</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>ボアが長方形を用いて作成されるときは、その直径と深さは形状から与えられます。</p>
+                    <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">直径はセグメント<b>C</b>C（図<a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170779">1</a>）の上に実行されるセグメント<b>A</b>（図<a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170779">1</a>）の長さによって示され、ボアが作成されるフェイス1を表しています。</td>
+                        </tr>
+                    </table>
+                    <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">深さはセグメント<b>B</b>（図<a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170779">1</a>）の長さによって示されます。</td>
+                        </tr>
+                    </table>
+                    <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                            </td>
+                            <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">アプリケーションポイントは、そのセグメントの平均点であり、ボアの直径を表示しています。</td>
+                        </tr>
+                    </table>
+                    <p>図 <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#progettazionefiledxffm_2927705210_1170779">1</a> はピースのサイド0の上に作図された長方形を示しており、ピースのサイド1の上に作成されるボアと認識されます。</p>
+                    <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">339.</span>
+                            </td>
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="1."><a name="progettazionefiledxffm_2927705210_1170779"></a>
+                                <br />
+                                <img src="../../../../FIGURE/08/arte4-D/d08b0074.png" class="Vid_GR_Autom" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p> 図 <a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#Esempio2">2</a> はこのボアがどのように読み取られるかを示しています。</p>
+                    <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">340.</span>
+                            </td>
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="2."><a name="Esempio2"></a>フェイス0の上に作成された長方形がどのように読み取られるかを示した例。</td>
+                        </tr>
+                    </table>
+                    <p class="TES_LegendaFigure"><b>A</b>： ボア、<br /><b>B</b>： フェイス 1; <br /><b>20mm</b>： フェイスの<a href="../../../../_GlossaryDiProgetto/infissi/H-latiPezzi.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">上面</a>からのボアの距離。 <br /><img src="../../../../FIGURE/08/arte4-D/d08b0075.png" class="Vid_GR_Autom" /></p>
+                    <p>ボアが適用されるポイントを示すために、ボア長方形に関連するレイヤーのストリングでボアとフェイスの上サイドの間の距離の<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">値<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>事前定義/プリセット。要求された情報が入力されていない場合、制御に便利な標準的な情報。</span></a>を書きます。この値が設定されない場合には、ボアはデフォルトによってピースの厚みの半分まで（の深さ）とみなされます。</p>
+                    <p>ピースにくぼみを適用し、くぼみの中にボアを作成したいときは、ボアのアプリケーションポイントとフェイス0（図<a class="RIM_al_num MCXref xref xrefRIM_al_num" href="#Esempio">3</a>）のサイド 1<b>B</b>の間の距離  <b>A</b> によって表示されます。</p>
+                    <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                        <col style="width: 0px;" />
+                        <col style="width: 32px;" />
+                        <col style="width: auto;" />
+                        <tr>
+                            <td valign="top" />
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">341.</span>
+                            </td>
+                            <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="3."><a name="Esempio"></a>くぼみの例<br /><img src="../../../../FIGURE/08/arte4-D/d08b0076.png" class="Vid_GR_Autom" /></td>
+                        </tr>
+                    </table>
+                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTITVedereProcAss MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />例：</a></span>
+                        <div class="MCDropDownBody dropDownBody">
+                            <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                <col style="width: 0px;" />
+                                <col style="width: 32px;" />
+                                <col style="width: auto;" />
+                                <tr>
+                                    <td valign="top" />
+                                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                                    </td>
+                                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">ピースのフェイス1の上に水平方向のボアを表す長方形を、角1から20mmの距離で作図するために、レイヤー<b>LATOA20 </b>をその長方形に関連付けます。</td>
+                                </tr>
+                            </table>
+                            <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                <col style="width: 0px;" />
+                                <col style="width: 32px;" />
+                                <col style="width: auto;" />
+                                <tr>
+                                    <td valign="top" />
+                                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                                    </td>
+                                    <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">ピースのフェイス1の上に水平方向のボアを表す長方形を、ピースの厚みの半分のところに作図するために、レイヤー<b>LATOA</b>をその長方形に関連付けます。</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4>傾いたボアリングの作成</h4>
+        <p>DXFファイルを作成するこの方法では、X-Y軸上のスピンドル軸の"AR"回転のみが管理され<i>xy</i> 平<a href="../../../../_GlossaryDiProgetto/infissi/H-latiPezzi.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">面</a>に対する“AZ” スピンドル回転軸の傾きは管理されません（すなわち、空中のスピンドルの傾き）。</p>
+        <p>したがって、<i>xy</i>平面でスピンドルの軸の回転によって、サイドフェイスにボアを作成することは可能です（参照<b>A</b>、下図）。 </p>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">342.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="4.">
+                    <br />
+                    <img src="../../../../FIGURE/08/arte4-D/d08t0217.png" class="Vid_GR_Autom" />
+                </td>
+            </tr>
+        </table>
+        <p>この場合に、ボアの直径は第1サイドの長さによって与えられます - 頂点1と2の間のもの（参照 <b>A</b> 下図）、深さは第2サイドの長さによって与えられます - 頂点2と3にあいだのもの（参照 <b>B </b>下図）。 </p>
+        <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">343.</span>
+                </td>
+                <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="5.">傾いたボア</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 32px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">A. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="A. ">ボア直径</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_TEScon-num_A" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 32px;" />
+            <col style="width: 32px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="GRASSETTO">B. </span>
+                </td>
+                <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum="B. ">ボア深さ<br /><img src="../../../../FIGURE/08/arte4-D/d08b0080.png" class="Vid_GR_Autom" /></td>
+            </tr>
+        </table>
+        <p>傾いた角は第2サイドと正のX軸との間にあります。 それゆえ、長方形の角を正しい順番で作図することが必要です。</p>
+        <h4>カットを作成する</h4>
+        <p>カットは線分によって形状的に表されます。</p>
+        <p>線分に関連したレイヤーは、加工作業のタイプやカット深を特定するのに使用します。深さが指定されないときは、0とみなされます。</p>
+        <p class="NOTE_Info">サイドフェイスのカットは管理されません。</p>
+        <h4>切削の作成</h4>
+        <p>切削加工は線分、円弧または開いた折れ線によって形状的に表示されます。</p>
+        <p>ドットは一般的には、切削加工の開始のための座標を特定するのに使用されます。</p>
+        <p>形状的<a href="../../../../_GlossaryDiProgetto/infissi/H-elemento.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">エレメント</a>に関連したレイヤーは、加工作業のタイプや切削深を特定するのに使用します。深さが指定されないときは、0とみなされます。</p>
+        <p class="NOTE_Info">サイドフェイスの切削加工は管理されません。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadTIT_LivelloS"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTIT-LivelloS MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="13" width="16" alt="Closed" data-mc-alt2="Open" />切削加工を作成する方法</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">いくつかの形状的エレメントを含んでいる切削加工を発生させるために、すべての形状<b>A</b>をある単一のレイヤーに描きます。</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TES_puntatoreGrande" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top"><span class="NERO"> &#160;&#160;• &#160;&#160;</span>
+                        </td>
+                        <td class="AutoNumber_p_TES_puntatoreGrande" valign="top" data-mc-autonum=" &#160;&#160;• &#160;&#160;">どの単一の形状的エレメントも単一の切削加工として認識されることを確認し、あなたは3つのレイヤー<b>B</b>、<b>C</b>、<b>D</b>を作成する必要があります（どの<a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup #text #textPopup">形状エレメント<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>特定のプロパティに関連付けられた抽象的なエレメント。点、ライン、面およびスペースはすべて形状エレメントです。</span></a>にも1つのレイヤー）</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_TITper_FIGita" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 32px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top"><span class="NUMFIGURA">344.</span>
+                        </td>
+                        <td class="AutoNumber_p_TITper_FIGita" valign="top" data-mc-autonum="6.">
+                            <br />
+                            <img src="../../../../FIGURE/08/arte4-D/d08b0079.png" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <table style="width: 100%;border-spacing: 0px 0px;margin-left: 0;margin-right: auto;" class="PerMasterWeb">
+            <col />
+            <col />
+            <col style="width: 70px;" />
+            <tbody>
+                <tr>
+                    <td class="PerMasterweb">
+                    </td>
+                    <td class="PerMasterweb">
+                        <p class="XMasterDX"><span style="font-weight: bold;" class="MODELLI/Variablili-MasterEdizione">エディション：</span> <span class="MODELLI/Variablili-MasterN-Edizione">3.0</span></p>
+                    </td>
+                    <td class="PerMasterweb">
+                        <p class="XMasterDX">
+                            <img src="../../../../Resources/Images/MODELLI/Imm-layout/logo_per_BSolid.png" class="Imm_Logo" style="height: 32px;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

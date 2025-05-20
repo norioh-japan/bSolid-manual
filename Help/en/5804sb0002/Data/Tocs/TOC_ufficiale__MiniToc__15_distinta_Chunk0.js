@@ -1,0 +1,1 @@
+define({'/5804-P-Distinte/Distinta-Uso.htm':{i:[2],t:['Managing the work list'],b:['']},'/5804-P-Distinte/Distinta-strumenti.htm':{i:[1],t:['Toolbars'],b:['']},'/5804-P-Distinte/DistintaUsobarcode.htm':{i:[3],t:['Using the list via the reading of the bar codes'],b:['']},'/5804-P-Distinte/Distinta_Presentazione.htm':{i:[0],t:['Introduction to the  environment'],b:['']}});

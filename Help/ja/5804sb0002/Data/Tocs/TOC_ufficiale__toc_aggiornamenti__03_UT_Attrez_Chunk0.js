@@ -1,0 +1,1 @@
+﻿define({'/5804-P-Attrezzaggio/struttura.htm':{i:[0],t:['環境の構造'],b:['']},'/5804-P-Utensili/02_dati-catalogazione/H3UT-legno/UT-LegnGenerali.htm':{i:[1],t:['一般データ'],b:['']},'/5804-P-Utensili/02_dati-catalogazione/h2-Dat_bordi.htm':{i:[3],t:['データ エッジバンドストリップ'],b:['']},'/5804-P-Utensili/Fin-dialogo/UT-nuovo.htm':{i:[2],t:['ダイアログボックス新しいツール'],b:['']}});

@@ -2,6 +2,22 @@
 
 すべての重要な変更はこのファイルに記録されます。
 
+## [v1.0-initial-backup] - 2025-06-01
+
+### 追加
+- 全セクション（01〜08）の完成版をバックアップ
+  - 01-PerIniziare（始めるために）
+  - 02-CADCAM（CAD/CAM）
+  - 03-SimMacchina（機械シミュレーション）
+  - 04-RegolebSolid（bSolidルール）
+  - 05-Utensili（ツール）
+  - 06-Impostaz（設定）
+  - 07-Distinte（リスト）
+  - 08-Attrezzaggio（装備）
+- GitHubにプロジェクトをバックアップ
+  - リポジトリ名: bSolid-manual
+  - タグ: v1.0-initial-backup
+
 ## [v0.8.0] - 2025-05-30
 
 ### 追加

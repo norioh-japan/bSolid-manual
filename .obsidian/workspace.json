@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/02-CADCAM/02-00_overview.md",
+                "file": "docs/02-CADCAM/09-VIDEO.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02-00_overview"
+              "title": "09-VIDEO"
             }
           }
         ]
@@ -202,9 +202,12 @@
   },
   "active": "e561c695c24dfeb6",
   "lastOpenFiles": [
-    "docs/02-CADCAM/02-01_configurazioni.md",
-    "docs/02-CADCAM/02-00_overview.md",
+    "docs/conversion_progress.md",
+    "docs/README.md",
+    "docs/09-Troubleshooting/README.md",
     "docs/02-CADCAM/README.md",
+    "docs/02-CADCAM/02-00_overview.md",
+    "docs/02-CADCAM/02-01_configurazioni.md",
     "docs/01-PerIniziare/README.md",
     "docs/05-Utensili/05-00_overview.md",
     "docs/05-Utensili/README.md",
@@ -215,7 +218,6 @@
     "docs/06-Impostaz/README.md",
     "docs/07-Distinte/README.md",
     "docs/08-Attrezzaggio/README.md",
-    "docs/09-Troubleshooting/README.md",
     "docs/04-RegolebSolid/README.md",
     "docs/03-SimMacchina/README.md",
     "docs/02-CADCAM/02-03_pianoCostr.md",
@@ -227,8 +229,6 @@
     "docs/02-CADCAM/04-Geo2D/02-04-01_point.md",
     "docs/02-CADCAM/04-Geo2D/02-04-03_circle.md",
     "finestre/FinDefAmbLav.md",
-    "finestre/FinOpzioni.md",
-    "finestre/FinStatistiche.md",
     "finestre",
     "docs/09-Troubleshooting",
     "Help/ja/5804sb0002.zip",

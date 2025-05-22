@@ -13,12 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/02-CADCAM/05-Modifica/02-05-02_modify.md",
+                "file": "docs/05-Utensili/README.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7dc91a9092804f0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c08b30a730edc107",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/02-CADCAM/07-Parametric/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02-05-02_modify"
+              "title": "README"
             }
           }
         ]
@@ -53,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "2つのセクション",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -182,51 +202,51 @@
   },
   "active": "e561c695c24dfeb6",
   "lastOpenFiles": [
-    "docs/08-Attrezzaggio/08-04_strumenti.md",
-    "docs/08-Attrezzaggio/08-03_utilizzo.md",
-    "docs/08-Attrezzaggio/08-02_struttura.md",
-    "docs/08-Attrezzaggio/08-01_presentazione.md",
-    "docs/08-Attrezzaggio/08-00_overview.md",
+    "docs/06-Impostaz/README.md",
+    "docs/07-Distinte/README.md",
+    "docs/08-Attrezzaggio/README.md",
+    "docs/09-Troubleshooting/README.md",
+    "docs/04-RegolebSolid/README.md",
+    "docs/03-SimMacchina/README.md",
+    "docs/02-CADCAM/README.md",
+    "docs/02-CADCAM/02-03_pianoCostr.md",
+    "docs/02-CADCAM/02-02_cad-tastiMouse.md",
+    "docs/02-CADCAM/07-Parametric/README.md",
+    "docs/02-CADCAM/06-Geo3D/README.md",
+    "docs/02-CADCAM/05-Modifica/README.md",
+    "docs/02-CADCAM/04-Geo2D/README.md",
+    "docs/02-CADCAM/04-Geo2D/02-04-01_point.md",
+    "docs/02-CADCAM/04-Geo2D/02-04-03_circle.md",
+    "docs/01-PerIniziare/README.md",
+    "docs/02-CADCAM/02-01_configurazioni.md",
+    "finestre/FinDefAmbLav.md",
+    "finestre/FinOpzioni.md",
+    "finestre/FinStatistiche.md",
+    "docs/README.md",
+    "docs/02-CADCAM/07-Parametric/02-07-06_part_family.md",
+    "docs/02-CADCAM/07-Parametric/02-07-01_parameters.md",
+    "docs/02-CADCAM/02-00_overview.md",
+    "README.md",
+    "docs/02-CADCAM/06-Geo3D/02-06-01_solid_primitives.md",
+    "finestre",
+    "docs/09-Troubleshooting",
+    "Help/ja/5804sb0002.zip",
+    "docs/09-BNEST/img",
+    "docs/09-BNEST",
     "docs/08-Attrezzaggio/img",
     "docs/08-Attrezzaggio",
     "docs/07-Distinte/img/distinta_ambiente.png",
     "docs/07-Distinte/img/distinta_menu.png",
-    "docs/07-Distinte/07-04_barcode.md",
-    "docs/07-Distinte/07-03_strumenti.md",
-    "docs/07-Distinte/07-02_utilizzo.md",
-    "docs/07-Distinte/07-01_presentazione.md",
-    "docs/07-Distinte/07-00_overview.md",
     "docs/07-Distinte/img",
     "docs/07-Distinte",
     "docs/06-Impostaz/img/d05b0041.png",
     "docs/06-Impostaz/img/d05b0040.png",
     "docs/06-Impostaz/img/d05b0039.png",
     "docs/06-Impostaz/img/d05b0038.png",
-    "docs/06-Impostaz/06-07_barcode.md",
-    "docs/06-Impostaz/06-06_Lavorazioni.md",
-    "docs/06-Impostaz/06-05_datiTaglio.md",
-    "docs/06-Impostaz/06-04_distinta.md",
-    "docs/06-Impostaz/06-03_sincronizzazione.md",
-    "docs/06-Impostaz/06-02_datiUtente.md",
     "docs/06-Impostaz/img/File_Redo.png",
     "docs/06-Impostaz/img/File_Undo.png",
     "docs/06-Impostaz/img/Selection_Selection_Select.png",
     "docs/06-Impostaz/img/d09b0006.png",
-    "docs/06-Impostaz/06-01_Impost-general.md",
-    "docs/06-Impostaz/06-00_overview.md",
-    "docs/06-Impostaz/img",
-    "docs/06-Impostaz",
-    "docs/05-Utensili/05-03_Uso-reg.md",
-    "docs/02-CADCAM/05-Modifica/02-05-01_transform.md",
-    "docs/02-CADCAM/07-Parametric/02-07-01_parameters.md",
-    "docs/05-Utensili/05-02_dati-catalog.md",
-    "docs/02-CADCAM/06-Geo3D/02-06-01_solid_primitives.md",
-    "docs/02-CADCAM/04-Geo2D/02-04-01_point.md",
-    "docs/02-CADCAM/06-Geo3D/02-06-05_loft.md",
-    "docs/05-Utensili/05-01_esplorare.md",
-    "docs/05-Utensili/img",
-    "docs/05-Utensili",
-    "docs/04-RegolebSolid/img",
-    "docs/03-SimMacchina/img"
+    "docs/06-Impostaz/img"
   ]
 }

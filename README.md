@@ -8,6 +8,7 @@
 📂 docs
  ├─ 01-PerIniziare
  │   ├─ img
+ │   ├─ README.md
  │   ├─ 01-00_overview.md
  │   ├─ 01-01_breve_panoramica.md
  │   └─ 01-02_imp_back_restore.md
@@ -38,26 +39,32 @@
  │   │   ├─ 02-07-04_equations.md
  │   │   ├─ 02-07-05_feature_based.md
  │   │   └─ 02-07-06_part_family.md
+ │   ├─ README.md
+ │   ├─ 09-VIDEO.md
  │   ├─ 02-00_overview.md
  │   ├─ 02-01_configurazioni.md
  │   ├─ 02-02_cad-tastiMouse.md
  │   └─ 02-03_pianoCostr.md
  ├─ 03-SimMacchina
+ │   ├─ README.md
  │   ├─ 03-00_overview.md
  │   ├─ 03-01_Macc-presentaz.md
  │   ├─ 03-02_Macc-struttura01.md
  │   └─ 03-03_Macc-UsoAmbiente.md
  ├─ 04-RegolebSolid
+ │   ├─ README.md
  │   ├─ 04-00_overview.md
  │   ├─ 04-01_esplorare.md
  │   ├─ 04-02_dati-catalog.md
  │   └─ 04-03_Uso-reg.md
  ├─ 05-Utensili
+ │   ├─ README.md
  │   ├─ 05-00_overview.md
  │   ├─ 05-01_esplorare.md
  │   ├─ 05-02_dati-catalog.md
  │   └─ 05-03_Uso-reg.md
  ├─ 06-Impostaz
+ │   ├─ README.md
  │   ├─ 06-00_overview.md
  │   ├─ 06-01_Impost-general.md
  │   ├─ 06-02_datiUtente.md
@@ -67,17 +74,21 @@
  │   ├─ 06-06_Lavorazioni.md
  │   └─ 06-07_barcode.md
  ├─ 07-Distinte
+ │   ├─ README.md
  │   ├─ 07-00_overview.md
  │   ├─ 07-01_presentazione.md
  │   ├─ 07-02_utilizzo.md
  │   ├─ 07-03_strumenti.md
  │   └─ 07-04_barcode.md
  ├─ 08-Attrezzaggio
+ │   ├─ README.md
  │   ├─ 08-00_overview.md
  │   ├─ 08-01_presentazione.md
  │   ├─ 08-02_struttura.md
  │   ├─ 08-03_utilizzo.md
  │   └─ 08-04_strumenti.md
+ ├─ 09-Troubleshooting
+ │   └─ README.md
  └─ tm
      ├─ bsolid_jp.tmx
      └─ glossary.csv
@@ -91,6 +102,7 @@
   - [x] リセット-機械データ保存
   - [x] インターフェイスの基本
   - [x] プロジェクト管理
+  - [x] READMEファイルの追加
   - [ ] その他のファイル
 - [x] 02-CADCAM セクションの基本構造作成
   - [x] 環境設定
@@ -122,26 +134,33 @@
     - [x] 方程式
     - [x] 特徴ベース設計
     - [x] 部品ファミリー
+  - [x] 教育ビデオ
+    - [x] 3次元のフィギュアの作成
+    - [x] プログラミング
+  - [x] READMEファイルの追加
   - [ ] その他のファイル
-- [ ] 他のセクションの変換
+- [x] 他のセクションの変換
   - [x] 03-SimMacchina（機械シミュレーション）セクション
     - [x] 基本構造の作成
     - [x] 個別ファイルの変換
       - [x] 機械シミュレーション紹介
       - [x] 機械構造
       - [x] 環境の使用
+    - [x] READMEファイルの追加
   - [x] 04-RegolebSolid（bSolidルール）セクション
     - [x] 基本構造の作成
     - [x] 個別ファイルの変換
       - [x] ルールの探索
       - [x] データカタログ
       - [x] ルールの使用
+    - [x] READMEファイルの追加
   - [x] 05-Utensili（ツール）セクション
     - [x] 基本構造の作成
     - [x] 個別ファイルの変換
       - [x] ツールの探索
       - [x] データカタログ化
       - [x] ツールの使用
+    - [x] READMEファイルの追加
   - [x] 06-Impostaz（設定）セクション
     - [x] 基本構造の作成
     - [x] 個別ファイルの変換
@@ -152,6 +171,7 @@
       - [x] 切断データ
       - [x] 加工作業
       - [x] バーコード
+    - [x] READMEファイルの追加
   - [x] 07-Distinte（リスト）セクション
     - [x] 基本構造の作成
     - [x] 個別ファイルの変換
@@ -159,6 +179,7 @@
       - [x] リストの使用方法
       - [x] ツールリスト
       - [x] バーコードの使用
+    - [x] READMEファイルの追加
   - [x] 08-Attrezzaggio（装備）セクション
     - [x] 基本構造の作成
     - [x] 個別ファイルの変換
@@ -166,6 +187,10 @@
       - [x] 装備の構造
       - [x] 装備の使用方法
       - [x] 装備ツール
+    - [x] READMEファイルの追加
+  - [x] 09-Troubleshooting（トラブルシューティング）セクション
+    - [x] 基本構造の作成
+    - [x] READMEファイルの追加（よくある問題と解決方法）
 
 ## プロジェクトルール
 

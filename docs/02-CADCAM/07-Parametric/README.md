@@ -4,12 +4,12 @@
 
 ## コンテンツ
 
-- ![パラメータアイコン](../../../FIGURE/15-icone/b15b0001/Parameters.png) [パラメーター](./02-07-01_parameters.md) - パラメーターの基本概念と作成方法
-- ![変数アイコン](../../../FIGURE/15-icone/b15b0001/Variables.png) [変数](./02-07-02_variables.md) - 変数の定義と活用方法
-- ![拘束条件アイコン](../../../FIGURE/15-icone/b15b0001/Constraints.png) [拘束条件](./02-07-03_constraints.md) - ジオメトリの関係性を定義する拘束
-- ![方程式アイコン](../../../FIGURE/15-icone/b15b0001/Equations.png) [方程式](./02-07-04_equations.md) - パラメーター間の関係を定義する数式
-- ![特徴ベース設計アイコン](../../../FIGURE/15-icone/b15b0001/FeatureBased.png) [特徴ベース設計](./02-07-05_feature_based.md) - 特徴を基準とした設計手法
-- ![部品ファミリーアイコン](../../../FIGURE/15-icone/b15b0001/PartFamily.png) [部品ファミリー](./02-07-06_part_family.md) - 同一構造で寸法違いの部品群の作成
+- [パラメーター](./02-07-01_parameters.md) - パラメーターの基本概念と作成方法
+- [変数](./02-07-02_variables.md) - 変数の定義と活用方法
+- [拘束条件](./02-07-03_constraints.md) - ジオメトリの関係性を定義する拘束
+- [方程式](./02-07-04_equations.md) - パラメーター間の関係を定義する数式
+- [特徴ベース設計](./02-07-05_feature_based.md) - 特徴を基準とした設計手法
+- [部品ファミリー](./02-07-06_part_family.md) - 同一構造で寸法違いの部品群の作成
 
 ## 機能概要
 

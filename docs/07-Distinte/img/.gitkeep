@@ -1,0 +1,16 @@
+# リスト管理 - 画像ファイル
+
+このフォルダには以下の画像ファイルが配置されています：
+
+## 既存ファイル
+- distinta_ambiente.png - リスト管理環境
+- distinta_menu.png - メニューアイコン
+
+## 必要な追加ファイル（バーコード関連）
+以下の画像ファイルが07-04_barcode.mdで参照されていますが、現在未配置です：
+
+- distinta_barcode_settings.png - バーコード設定画面
+- distinta_barcode_generate.png - バーコード生成画面
+- distinta_barcode_print.png - バーコード印刷設定画面
+
+**注記**: 上記の画像ファイルが未配置のため、バーコードドキュメントでは画像が表示されません。 

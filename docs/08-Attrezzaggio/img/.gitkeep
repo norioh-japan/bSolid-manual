@@ -1,0 +1,27 @@
+# 装備 - 画像ファイル
+
+このフォルダには以下の画像ファイルが必要です：
+
+## 装備ツールアイコン
+- attrezzaggio_icon.png - 装備環境アクセス用アイコン
+- attrezzaggio_interfaccia.png - 装備環境のインターフェイス
+- attrezzaggio_machine.png - 機械の例示画像
+- attrezzaggio_treelist.png - ツリーリストの例
+- attrezzaggio_tools.png - ツールエリアの例
+
+## 装備操作アイコン
+- attrezzaggio_open.png - 構成を開く
+- attrezzaggio_save.png - 構成を保存
+- attrezzaggio_remove_tool.png - ツールを削除
+- attrezzaggio_remove_all.png - すべてのツールを削除
+- attrezzaggio_import_magazine.png - マガジン設定をインポート
+- attrezzaggio_import_spindle.png - スピンドル設定をインポート
+- attrezzaggio_export_magazine.png - マガジン設定を保存
+- attrezzaggio_export_spindle.png - スピンドル設定を保存
+- attrezzaggio_sync.png - 同期
+
+## 装備設定画像
+- attrezzaggio_single_spindle.png - 単一スピンドルの設定
+- attrezzaggio_multiple_spindles.png - 複数スピンドルの設定
+
+**注記**: 現在これらの画像ファイルは未配置のため、該当するマークダウンファイルでは画像が表示されません。 

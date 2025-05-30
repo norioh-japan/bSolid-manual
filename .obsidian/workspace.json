@@ -182,6 +182,8 @@
   },
   "active": "e561c695c24dfeb6",
   "lastOpenFiles": [
+    "SUMMARY.md",
+    "PRIVATE_DISTRIBUTION_STRATEGY.md",
     "MANUAL_DISTRIBUTION.md",
     "index.md",
     "_data/navigation.yml",
@@ -209,8 +211,6 @@
     "docs/02-CADCAM/02-00_overview.md",
     "docs/02-CADCAM/10-Interface/README.md",
     "docs/02-CADCAM/07-Parametric/README.md",
-    "docs/02-CADCAM/06-Geo3D/README.md",
-    "docs/02-CADCAM/05-Modifica/README.md",
     "bSolid_CAD_CAM_Manual_Complete_20250528_163805.zip",
     "docs/img/impostazioni_icon.png",
     "docs/img",

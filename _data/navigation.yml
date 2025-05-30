@@ -1,0 +1,163 @@
+docs:
+  - title: "01 はじめに"
+    children:
+      - title: "概要"
+        url: /docs/01-PerIniziare/01-00_overview/
+      - title: "簡単な概観"
+        url: /docs/01-PerIniziare/01-01_breve_panoramica/
+      - title: "バックアップと復元"
+        url: /docs/01-PerIniziare/01-02_imp_back_restore/
+      - title: "インターフェース基本"
+        url: /docs/01-PerIniziare/01-03_interface_basics/
+      - title: "プロジェクト管理"
+        url: /docs/01-PerIniziare/01-04_project_management/
+
+  - title: "02 CAD/CAM"
+    children:
+      - title: "概要"
+        url: /docs/02-CADCAM/02-00_overview/
+      - title: "設定"
+        url: /docs/02-CADCAM/02-01_configurazioni/
+      - title: "マウス操作"
+        url: /docs/02-CADCAM/02-02_cad-tastiMouse/
+      - title: "構築平面"
+        url: /docs/02-CADCAM/02-03_pianoCostr/
+      - title: "2D図形"
+        url: /docs/02-CADCAM/04-Geo2D/README/
+      - title: "修正"
+        url: /docs/02-CADCAM/05-Modifica/README/
+      - title: "3D図形"
+        url: /docs/02-CADCAM/06-Geo3D/README/
+      - title: "パラメトリック"
+        url: /docs/02-CADCAM/07-Parametric/README/
+      - title: "インターフェース"
+        url: /docs/02-CADCAM/10-Interface/README/
+
+  - title: "03 機械シミュレーション"
+    children:
+      - title: "概要"
+        url: /docs/03-SimMacchina/03-00_overview/
+      - title: "機械プレゼンテーション"
+        url: /docs/03-SimMacchina/03-01_Macc-presentaz/
+      - title: "機械構造"
+        url: /docs/03-SimMacchina/03-02_Macc-struttura01/
+      - title: "環境使用"
+        url: /docs/03-SimMacchina/03-03_Macc-UsoAmbiente/
+      - title: "高度なシミュレーション"
+        url: /docs/03-SimMacchina/03-04_advanced_simulation/
+      - title: "ワークフローガイド"
+        url: /docs/03-SimMacchina/03-05_workflow_guide/
+      - title: "AI最適化アルゴリズム"
+        url: /docs/03-SimMacchina/03-06_ai_optimization_algorithms/
+
+  - title: "04 bSolidルール"
+    children:
+      - title: "概要"
+        url: /docs/04-RegolebSolid/04-00_overview/
+      - title: "探索"
+        url: /docs/04-RegolebSolid/04-01_esplorare/
+      - title: "データカタログ"
+        url: /docs/04-RegolebSolid/04-02_dati-catalog/
+      - title: "ルール使用"
+        url: /docs/04-RegolebSolid/04-03_Uso-reg/
+      - title: "実用例"
+        url: /docs/04-RegolebSolid/04-04_practical_examples/
+      - title: "高度なルール管理"
+        url: /docs/04-RegolebSolid/04-05_advanced_rule_management/
+
+  - title: "05 工具"
+    children:
+      - title: "概要"
+        url: /docs/05-Utensili/05-00_overview/
+      - title: "探索"
+        url: /docs/05-Utensili/05-01_esplorare/
+      - title: "データカタログ"
+        url: /docs/05-Utensili/05-02_dati-catalog/
+      - title: "ルール使用"
+        url: /docs/05-Utensili/05-03_Uso-reg/
+      - title: "高度最適化"
+        url: /docs/05-Utensili/05-04_advanced_optimization/
+      - title: "統合ワークフロー"
+        url: /docs/05-Utensili/05-05_integration_workflow/
+
+  - title: "06 設定"
+    children:
+      - title: "概要"
+        url: /docs/06-Impostaz/06-00_overview/
+      - title: "一般設定"
+        url: /docs/06-Impostaz/06-01_Impost-general/
+      - title: "ユーザーデータ"
+        url: /docs/06-Impostaz/06-02_datiUtente/
+      - title: "同期"
+        url: /docs/06-Impostaz/06-03_sincronizzazione/
+      - title: "部品表"
+        url: /docs/06-Impostaz/06-04_distinta/
+      - title: "切断データ"
+        url: /docs/06-Impostaz/06-05_datiTaglio/
+      - title: "加工"
+        url: /docs/06-Impostaz/06-06_Lavorazioni/
+      - title: "バーコード"
+        url: /docs/06-Impostaz/06-07_barcode/
+      - title: "AI自動設定"
+        url: /docs/06-Impostaz/06-08_ai_automated_settings/
+      - title: "クラウド企業統合"
+        url: /docs/06-Impostaz/06-09_cloud_enterprise_integration/
+
+  - title: "07 部品表"
+    children:
+      - title: "概要"
+        url: /docs/07-Distinte/07-00_overview/
+      - title: "プレゼンテーション"
+        url: /docs/07-Distinte/07-01_presentazione/
+      - title: "使用"
+        url: /docs/07-Distinte/07-02_utilizzo/
+      - title: "ツール"
+        url: /docs/07-Distinte/07-03_strumenti/
+      - title: "バーコード"
+        url: /docs/07-Distinte/07-04_barcode/
+      - title: "データ分析"
+        url: /docs/07-Distinte/07-05_data_analytics/
+      - title: "システム統合"
+        url: /docs/07-Distinte/07-06_system_integration/
+
+  - title: "08 工具設定"
+    children:
+      - title: "概要"
+        url: /docs/08-Attrezzaggio/08-00_overview/
+      - title: "プレゼンテーション"
+        url: /docs/08-Attrezzaggio/08-01_presentazione/
+      - title: "構造"
+        url: /docs/08-Attrezzaggio/08-02_struttura/
+      - title: "使用"
+        url: /docs/08-Attrezzaggio/08-03_utilizzo/
+      - title: "ツール"
+        url: /docs/08-Attrezzaggio/08-04_strumenti/
+      - title: "AIメンテナンスシステム"
+        url: /docs/08-Attrezzaggio/08-05_ai_maintenance_system/
+      - title: "IoTデジタルツイン"
+        url: /docs/08-Attrezzaggio/08-06_iot_digital_twin/
+      - title: "高度ライフサイクル管理"
+        url: /docs/08-Attrezzaggio/08-07_advanced_lifecycle_management/
+
+  - title: "09 トラブルシューティング"
+    children:
+      - title: "概要"
+        url: /docs/09-Troubleshooting/README/
+      - title: "よくある問題"
+        url: /docs/09-Troubleshooting/09-01_common_problems/
+      - title: "エラーコード"
+        url: /docs/09-Troubleshooting/09-02_error_codes/
+      - title: "パフォーマンス"
+        url: /docs/09-Troubleshooting/09-03_performance/
+      - title: "機械通信"
+        url: /docs/09-Troubleshooting/09-04_machine_communication/
+      - title: "FAQ"
+        url: /docs/09-Troubleshooting/09-05_faq/
+      - title: "ケーススタディ"
+        url: /docs/09-Troubleshooting/09-06_case_studies/
+      - title: "ネットワーク診断"
+        url: /docs/09-Troubleshooting/09-07_network_diagnostics/
+      - title: "データ復旧"
+        url: /docs/09-Troubleshooting/09-08_data_recovery/
+      - title: "高度診断"
+        url: /docs/09-Troubleshooting/09-09_advanced_diagnostics/ 

@@ -1,0 +1,106 @@
+title: bSolid CAD/CAM 完全マニュアル
+description: bSolid CAD/CAMシステムの包括的技術ドキュメント
+author: norioh
+email: norioh.japan@email.com
+
+# GitHub Pages設定
+remote_theme: "mmistakes/minimal-mistakes"
+
+# サイト設定
+lang: ja-JP
+url: https://norioh-japan.github.io
+baseurl: /bSolid-manual
+repository: norioh-japan/bSolid-manual
+
+# 検索機能
+search: true
+search_full_content: true
+
+# マニュアル固有設定
+minimal_mistakes_skin: "default"
+
+# ナビゲーション
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/header-bg.jpg
+
+# フッター
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/norioh-japan/bSolid-manual"
+
+# サイドバー
+sidebar:
+  nav: "docs"
+
+# プラグイン
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# マークダウン設定
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# ファイル除外
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+
+# コレクション
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  # _docs
+  - scope:
+      path: "docs/"
+      type: docs
+    values:
+      layout: single
+      sidebar:
+        nav: "docs"
+      toc: true
+      toc_sticky: true
+      author_profile: false
+      share: true
+      comments: false 
